@@ -38,36 +38,94 @@
 
 ## 💻 AI Coding Tools
 
-### Core Development Environments
+# Merged AI-Infused & Core Development Environments
+
+Below is a consolidated list of AI-enhanced IDEs and core development tools, each with a brief description and a link to get started.
+
 1. **Cursor**  
-   AI-native IDE with integrated pair programming  
-   [cursor.so](https://cursor.so)
+   AI-native IDE with integrated pair programming, intelligent code generation, and smart autocompletion built on a familiar VS Code framework.  
+   [Visit Cursor](https://cursor.so)
 
-2. **Warp Terminal**  
-   AI-assisted command line with collaborative features  
-   [warp.dev](https://www.warp.dev)
+2. **VS Code (with Continue extension)**  
+   A versatile code editor enhanced by the Continue extension for AI-assisted multi-file editing and context-aware code suggestions.  
+   [Download VS Code](https://code.visualstudio.com/) *(Install the Continue extension via the Marketplace)*
 
-3. **Google AI Studio**  
-   Gemini API development platform for advanced multimodal model building  
-   [studio.google](https://aistudio.google.com)
+3. **RepoPrompt**  
+   An AI-powered IDE available via Apple’s TestFlight that offers advanced code assistance and interactive project previews on iOS.  
+   [Join via TestFlight](https://apps.apple.com/us/app/testflight/id899247664)
 
-4. **Claude Console**  
-   Anthropic’s constitutional AI interface for safer interactions  
-   [console.anthropic.com](https://console.anthropic.com)
+4. **Windsurf**  
+   An AI-empowered IDE optimized for the Claude model, delivering context-aware code suggestions and multi-file editing; requires an API key.  
+   [Visit Windsurf](https://windsurfai.com/)
 
-5. **GroqCloud**  
-   Ultra-fast LLM inference API focusing on performance and efficiency  
-   [console.groq.com](https://console.groq.com)
+5. **Cline**  
+   A VS Code plugin tailored for developers using Anthropic’s Claude, recently updated to offer robust AI-driven coding assistance (API key required).  
+   [Learn about Cline](https://github.com/cline/cline/wiki)
 
-6. **OpenAI Playground**  
-   Experiment with ChatGPT and related models using OpenAI's API  
-   [platform.openai.com](https://platform.openai.com)
+6. **Google Project IDX**  
+   Google’s cloud-based IDE built on VS Code, featuring integrated emulators, unique templates, and generative AI assistance for streamlined development.  
+   [Sign up for Project IDX](https://idx.google.com/)
 
-7. **Microsoft Copilot**  
-   Integrated within Microsoft’s ecosystem (VSCode, GitHub, Microsoft 365) for real-time code completion and assistance  
-   [copilot.github.com](https://copilot.github.com)
+7. **Replit**  
+   A cloud-based, collaborative IDE with built-in AI coding tools and instant deployment capabilities across multiple languages.  
+   [Start Coding on Replit](https://replit.com/)
 
----
+8. **bolt.new**  
+   A rapid prototyping tool offering an AI-powered coding environment that lets you instantly create and iterate on projects with minimal setup.  
+   [Try bolt.new](https://bolt.new/)
+
+9. **Lovable.dev**  
+   An AI-enhanced developer platform that accelerates your workflow with smart code generation and interactive project demos.  
+   [Explore Lovable.dev](https://lovable.dev/)
+
+10. **Llamacoder by Together.ai**  
+    An AI-driven coding assistant that leverages large language models to deliver intelligent code completions and debugging support.  
+    [Visit Llamacoder](https://llamacoder.together.ai/)
+
+11. **Warp Terminal**  
+    An AI-assisted command line that transforms traditional terminal workflows with collaborative features and natural language interactions.  
+    [Discover Warp Terminal](https://www.warp.dev)
+
+12. **Google AI Studio**  
+    A development platform for building advanced multimodal models using Google’s Gemini API, designed for cutting-edge AI model creation.  
+    [Visit Google AI Studio](https://aistudio.google.com)
+
+13. **Claude Console**  
+    Anthropic’s constitutional AI interface providing safer, more interactive engagements with code and data directly through its console.  
+    [Access Claude Console](https://console.anthropic.com)
+
+14. **GroqCloud**  
+    An ultra-fast inference API platform focused on performance and efficiency, ideal for deploying large language model applications at scale.  
+    [Visit GroqCloud](https://console.groq.com)
+
+15. **OpenAI Playground**  
+    An interactive environment to experiment with ChatGPT and related models, perfect for testing AI-driven code generation and model interactions.  
+    [Explore OpenAI Playground](https://platform.openai.com)
+
+16. **Microsoft Copilot**  
+    Integrated across Microsoft’s ecosystem (VS Code, GitHub, Microsoft 365), this AI coding assistant offers real-time code completion and collaborative development support.  
+    [Learn about Microsoft Copilot](https://copilot.github.com)
+
+17. **GitHub Codespaces**  
+    A cloud-based development environment that lets you instantly spin up a complete dev environment integrated with GitHub and VS Code, with built-in support for AI tools like Copilot.  
+    [Explore GitHub Codespaces](https://github.com/features/codespaces)
+
+18. **Gitpod**  
+    An automated, cloud-based IDE that provides instant, on-demand development environments to streamline coding workflows and collaboration.  
+    [Visit Gitpod](https://www.gitpod.io)
+
+19. **MarsCode**  
+    An AI-powered online IDE offering cloud-based development with a built-in AI assistant, smart code completion, and debugging features.  
+    [Start with MarsCode](https://www.marscode.com)
+
+20. **Codeium**  
+    A free AI coding assistant providing intelligent code completions and debugging support across multiple editors, designed to boost coding productivity.  
+    [Discover Codeium](https://www.codeium.com)
+
+21. **Tabnine**  
+    An AI-powered code completion tool that integrates with various IDEs to help developers write code faster and more accurately by leveraging large language models.  
+    [Learn about Tabnine](https://www.tabnine.com)
+
 
 ## 🎨 Creative AI Toolkit
 
