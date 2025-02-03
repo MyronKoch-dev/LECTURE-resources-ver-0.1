@@ -1,27 +1,37 @@
+/* Resetting padding and margin for html and body elements to ensure a clean slate for styling */
 html,
 body {
   padding: 0;
   margin: 0;
+  /* Setting a default font family that covers a wide range of platforms and devices */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+/* Styling for anchor tags to inherit color and remove underline */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Applying border-box box-sizing to all elements for consistent layout */
 * {
   box-sizing: border-box;
 }
 
+/* Media query for dark mode preference */
 @media (prefers-color-scheme: dark) {
+
+  /* Setting color scheme to dark for the entire document */
   html {
     color-scheme: dark;
   }
 
+  /* Styling for the body in dark mode */
   body {
     color: white;
+    /* Setting text color to white */
     background: black;
+    /* Setting background color to black */
   }
 }
