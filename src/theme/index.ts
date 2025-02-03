@@ -1,3 +1,7 @@
+// Theme Configuration
+// This file serves as the central configuration for the application's visual design system.
+// It extends Chakra UI's base theme with custom colors, components, and styles.
+
 import { createLocalStorageManager, extendTheme, theme, ThemeConfig } from "@chakra-ui/react";
 
 import Accordion from "./accordion";
@@ -20,13 +24,16 @@ const config: ThemeConfig = {
 
 export const ThemeStorageManager = createLocalStorageManager("andromeda-marketplace-theme");
 
+// Main theme extension configuration
 export default extendTheme({
   config,
+  // Global styles that apply to all elements
   styles: {
     global: {
+      // Custom scrollbar styling for better visual appearance
       "*": {
         scrollbarWidth: "6px",
-        scrollbarColor: "#7F56D9 transparent",
+        scrollbarColor: "#7F56D9 transparent",  // Purple scrollbar
       },
 
       "*::-webkit-scrollbar": {
@@ -44,12 +51,14 @@ export default extendTheme({
     },
   },
   shadows,
+  // Typography configuration - defines font stacks for different text types
   fonts: {
     heading:
       "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
     body: "Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
     mono: "Menlo, monospace",
   },
+  // Component-specific theme overrides
   components: {
     Accordion,
     Button,
@@ -62,7 +71,9 @@ export default extendTheme({
     Tabs,
     Tooltip,
   },
+  // Color palette configuration - defines the app's color scheme
   colors: {
+    // Primary color scheme - Purple-based, used for main UI elements
     primary: {
       25: "#FCFAFF ",
       50: "#F9F5FF",
@@ -76,6 +87,7 @@ export default extendTheme({
       800: "#53389E",
       900: "#42307D",
     },
+    // Gray scale - Used for text, borders, and UI elements
     gray: {
       25: "#FCFCFD",
       50: "#F9FAFB",
@@ -89,6 +101,7 @@ export default extendTheme({
       800: "#1D2939",
       900: "#101828",
     },
+    // Error state colors - Red-based
     error: {
       25: "#FFFBFA",
       50: "#FEF3F2",
@@ -102,6 +115,7 @@ export default extendTheme({
       800: "#912018",
       900: "#7A271A",
     },
+    // Warning state colors - Orange-based
     warning: {
       25: "#FFFCF5",
       50: "#FFFAEB",
@@ -115,6 +129,7 @@ export default extendTheme({
       800: "#93370D",
       900: "#7A2E0E",
     },
+    // Success state colors - Green-based
     success: {
       25: "#F6FEF9",
       50: "#ECFDF3",
@@ -198,6 +213,7 @@ export default extendTheme({
     },
     system: theme.colors.gray
   },
+  // Custom text styles for consistent typography across the app
   textStyles: {
     h1: {
       fontWeight: 700,
