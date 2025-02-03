@@ -49,7 +49,7 @@
 
 3. **Google AI Studio**  
    Gemini API development platform for advanced multimodal model building  
-   [studio.google](https://studio.google)
+   [studio.google](https://aistudio.google.com)
 
 4. **Claude Console**  
    Anthropic’s constitutional AI interface for safer interactions  
