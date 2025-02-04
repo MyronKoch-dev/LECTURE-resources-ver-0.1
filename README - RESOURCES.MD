@@ -10,8 +10,22 @@
   *A decentralized testnet platform for experimental AI and blockchain integrations.*
 
 ---
+## 🔍 AI Search Engines - The entry to AI for most people.
 
-## Original Must-Follow AI Thought Leaders
+| Engine       | Differentiation                                             | Link                         |
+|--------------|-------------------------------------------------------------|------------------------------|
+| Perplexity   | Academic-grade citations and in-depth analysis              | [perplexity.ai](https://perplexity.ai)  |
+| You.com      | Customizable AI agent ecosystem for personalized search     | [you.com](https://you.com)             |
+| Phind        | Developer-focused problem solving and technical queries      | [phind.com](https://phind.com)         |
+| Komo         | Mind map visualization integrated with AI search            | [komo.ai](https://komo.ai)             |
+| Gemini       | Google’s multimodal AI offering next-generation reasoning      | [gemini.google](https://gemini.google) |
+| Copilot      | Seamless integration with Microsoft's ecosystem for coding   | [copilot.microsoft.com](https://copilot.microsoft.com) |
+
+---
+
+## Original Must-Follow AI Thought Leaders - a primer.
+
+You should go on X and immediately follow every one of these people and hit the bell so that you will see every one of their posts. Afterwards, watch their posts for really serious information. When that information appears, look at the comments. Upon occasion, there will be folks in the comments who are really speaking deeply about the subject matter. Follow those people too. After a few months you will have a really amazing network of scientists in the field.
 
 | Account                         | Focus/Role                                                   | Key Contributions                                                                                                                                              | Why Follow                                                                                                             | Profile Link                                  |
 |---------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
@@ -36,9 +50,178 @@
 
 ---
 
-## 💻 AI Coding Tools (This list is not exhaustive.)
+## History, Architecture and use of LLMs.  
 
-# Merged AI-Infused & Core Development Environments
+### Some visualizations:
+
+
+
+1. **AI Timeline**  
+   An interactive timeline documenting recent advancements in AI, covering cultural, political events, and technical breakthroughs.  
+   [Visit AI Timeline](https://ai-timeline.org/)
+
+2. **LLM Visualization**  
+   A 3D visualization and walkthrough of a GPT-style large language model, illustrating each computational step in generating a single token.  
+   [Explore LLM Visualization](https://bbycroft.net/llm)
+
+3. **Transformer Explainer**  
+   An interactive tool that visually explains how transformer-based models, like GPT, process text to predict subsequent tokens.  
+   [Check out Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
+
+4. **Prompt Chaining**  
+   A workflow where the output of one large language model call becomes the input for the next, enabling structured reasoning and step-by-step task completion.  
+   [Learn about Prompt Chaining](https://www.agentrecipes.com/prompt-chaining)
+
+
+
+---
+
+## 🧠 Understanding AI Model Training & Model Sizes
+
+### What Does It Mean to Train a Model?  
+Training an AI model involves feeding it massive amounts of text, images, or other data so it can learn patterns, relationships, and context. The process includes:
+- **Pretraining:** The model learns general knowledge from large datasets.
+- **Fine-tuning:** The model is adjusted for specific tasks or domains.
+- **Reinforcement Learning:** Additional optimization methods, like RLHF (Reinforcement Learning from Human Feedback), improve its behavior.
+
+### What Do Model Sizes Mean?  
+AI models come in different sizes, typically measured in **parameters** (e.g., billions or trillions of values that help process and generate responses).  
+- **Base Model:** The original model trained on general data before fine-tuning for specific tasks.  
+- **Quantized Models:** Smaller, optimized versions of base models that reduce memory usage and improve efficiency (e.g., 4-bit or 8-bit quantization).  
+  - Smaller quantized models run faster and take up less space but may lose some accuracy.  
+
+---
+
+## 🚀 Modern AI Models & Their Differences
+
+### **1. OpenAI - ChatGPT Models**
+#### **ChatGPT-4o ("Omni")**  
+- OpenAI’s flagship model, optimized for reasoning, multimodal inputs (text, image, code), and real-time responses.  
+- **Training:** Uses a mix of supervised fine-tuning and RLHF.  
+- **Speed & Efficiency:** Faster and cheaper than previous GPT-4 models.  
+- **Usage:** Available via ChatGPT, API, and integrated into Microsoft Copilot.  
+
+#### **GPT-4o-1 (Mini)**
+- A **smaller, optimized version** of GPT-4o designed for lower latency and reduced compute requirements.  
+- **Training:** Retains core ChatGPT-4o capabilities but fine-tuned for lightweight performance.  
+
+[Explore ChatGPT](https://openai.com/chatgpt)
+
+---
+
+### **2. Anthropic - Claude Models**
+#### **Claude Opus**
+- The most powerful Claude model, excelling in reasoning, creativity, and extensive memory recall.  
+- **Training:** Constitutional AI ensures ethical responses with structured safety tuning.  
+- **Usage:** Best for research, coding, and deep contextual understanding.  
+
+#### **Claude Sonnet**
+- A **mid-tier model** balancing performance and speed, offering high-quality responses with lower cost.  
+
+#### **Claude Haiku**
+- The **fastest and most lightweight** Claude model, optimized for efficiency over depth.  
+
+[Try Claude](https://www.anthropic.com)
+
+---
+
+### **3. Google - Gemini Models**
+#### **Gemini 1.5 Pro**
+- **Next-gen multimodal model** trained for reasoning across text, image, and video.  
+- **Training:** Uses Google's Mixture of Experts (MoE) technique, optimizing token efficiency.  
+- **Strengths:** Handles massive context windows for long-document understanding.  
+
+#### **Gemini "Thinking Model"**
+- A rumored new variant focused on deep logical reasoning and complex problem-solving.  
+- Expected to improve **autonomous multi-step planning** capabilities.  
+
+[Explore Gemini](https://gemini.google.com)
+
+---
+
+### **4. Meta - Llama Models**
+#### **Llama 3 (Latest Meta AI Model)**
+- Meta's latest **open-weight LLM**, optimized for efficiency and scalability.  
+- **Training:** Uses a combination of **publicly available datasets** and proprietary fine-tuning.  
+- **Strengths:** Competitive performance across reasoning, code generation, and multilingual understanding.  
+- **Variants:**  
+  - Smaller versions optimized for **on-device AI** (e.g., mobile or edge computing).  
+  - Larger versions optimized for **server-level inference**.  
+
+[Check Llama Models](https://ai.meta.com/llama/)
+
+---
+
+### **5. Mistral**
+- A leading **open-source model** designed for **high efficiency and strong performance**.  
+- **Training:** Uses a dense transformer architecture, fine-tuned for reasoning and coding.  
+- **Strengths:** Competitive with proprietary models like GPT-4 in certain benchmarks.  
+
+[Check Mistral](https://mistral.ai)
+
+---
+
+### **6. DeepSeek**
+- A **high-performing open-source model** optimized for reasoning and efficiency.  
+- **Training:** Trained on multilingual and coding-heavy datasets.  
+- **Variants:** Includes DeepSeek models fine-tuned for both text and multimodal inputs.  
+
+[DeepSeek AI](https://deepseek.com) | [DeepSeek on Hugging Face](https://huggingface.co/deepseek-ai)
+
+---
+
+### **7. Qwen (By Alibaba)**
+- An open-source LLM designed for **multilingual understanding** and **complex reasoning**.  
+- **Training:** Optimized for efficiency and available in various sizes.  
+- **Use Cases:** Performs well in knowledge tasks, chatbot applications, and code generation.  
+
+[Explore Qwen](https://huggingface.co/Qwen)
+
+
+---
+## 📢📢📢📢 AI Model Advancements - The Last Week of Shocks 📢📢📢📢
+
+### In the past week, major AI breakthroughs have reshaped the landscape:
+
+### 🚀 **DeepSeek's Rapid Fire Releases**
+- **DeepSeek R1 Chat Model Released**  
+  - Shattered benchmarks, outperforming competitors.  
+  - API costs are **1/10th** of ChatGPT.  
+
+- **Massive PR Campaign:**  
+  - Claims surfaced that R1 has **super-low production costs** and exhibits **GPT-4o-1 level quality**.  
+  - **Result:** Tech sector market crash.  
+
+- **Rumors:**  
+  - R1 might include **robotics training** capabilities.  
+
+- **DeepSeek v3 Chat Model Released**  
+  - PR campaign echoed **super-low production costs** claims.  
+  - Exhibited **GPT-4o quality performance**.  
+
+- **"AGI BOT" Demo Released**  
+  - Claimed **low production costs** and demonstrated **"more human" movement** than any competitor.  
+  - **Key takeaway:** The demo suggested DeepSeek R1 could be used for **real-time decision-making & complex problem-solving**.  
+
+---
+
+### 💥 **Alibaba's Direct Challenge to Big AI Players**
+- **Alibaba Announced Qwen 2.5 1M**  
+  - Features a **1-million token context window**, a **direct affront to Google's Gemini models**.  
+
+- **Alibaba Announced Qwen 2.5-VL**  
+  - Can **control PCs and phones**, a **direct challenge to Claude's "Computer Use" capabilities**.  
+
+---
+
+### 🤔 **Coincidence?**
+- Alibaba and DeepSeek are **both headquartered in the same city**, just **10-20 minutes apart**.  
+- Probably nothing... or maybe everything.  
+
+---
+
+# 💻 AI AI-Infused Coding Tools & Core Development Environments
+ (This list is not exhaustive.) 
 
 Below is a consolidated list of AI-enhanced IDEs and core development tools, each with a brief description and a link to get started.
 
@@ -97,7 +280,7 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
 
 #### - LLM Playgrounds:
 
-12. **Google AI Studio**  
+12. **Google AI Studio**  (My personal favorite.)
     A development platform for building advanced multimodal models using Google’s Gemini API, designed for cutting-edge AI model creation.  
     [Visit Google AI Studio](https://aistudio.google.com)
 
@@ -130,10 +313,42 @@ Perplexity playground - https://labs.perplexity.ai/
     An automated, cloud-based IDE that provides instant, on-demand development environments to streamline coding workflows and collaboration.  
     [Visit Gitpod](https://www.gitpod.io)
 
+## 🛠️ Open Source AI Tools
+
+Below is a selection of open-source AI tools, each with a brief description and a link to get started.
+
+
+2. **LM Studio**  
+   LM Studio allows users to discover, download, and run local large language models (LLMs) entirely offline, ensuring privacy and control over data. It supports various architectures, including Llama, Mistral, Phi, Gemma, DeepSeek, and Qwen.  
+   [Visit LM Studio](https://lmstudio.ai)
+
+3. **AnythingLLM**  
+   An all-in-one AI application that enables users to chat with documents, utilize AI agents, and more, all running locally and offline. It supports custom models and various document types, ensuring full privacy.  
+   [Visit AnythingLLM](https://anythingllm.com)
+
+4. **Jan**  
+   An open-source alternative to ChatGPT, Jan runs entirely offline on your device, allowing users to download and run large language models with full control and privacy.  
+   [Visit Jan](https://jan.ai)
+
+5. **ComfyUI**  
+   A powerful open-source node-based application for creating images, videos, and audio with generative AI. It allows users to design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart-based interface.  
+   [Visit ComfyUI](https://www.comfy.org/)
+
+6. **Qwen (By Alibaba)**  
+   An open-source LLM designed for multilingual understanding and complex reasoning. Optimized for efficiency and available in various sizes. Performs well in knowledge tasks, chatbot applications, and code generation.  
+   [Explore Qwen](https://huggingface.co/Qwen)
+
+7. **DeepSeek**  
+   An open-source AI model developed by a Chinese startup, DeepSeek offers efficient performance comparable to leading models like OpenAI's ChatGPT, but at a fraction of the cost. It is available for use on the web, via app, and through an API.  
+   [Visit DeepSeek](https://deepseek.com) | [DeepSeek on Hugging Face](https://huggingface.co/deepseek-ai)
 
 
 
 
+
+
+
+---
 
 
 ## 🎨 Creative AI Toolkit
@@ -146,6 +361,7 @@ Perplexity playground - https://labs.perplexity.ai/
 | Ideogram     | Typography-focused image generation                  | [ideogram.ai](https://ideogram.ai)             |
 | DALL·E 3     | Latest OpenAI text-to-image generator with improved resolution and style control | [labs.openai.com](https://labs.openai.com)       |
 | Runway ML    | Multimodal video editing and AI-assisted content creation | [runwayml.com](https://runwayml.com)             |
+
 
 ### Audio/Video Production
 1. **Suno**  
@@ -167,16 +383,7 @@ Perplexity playground - https://labs.perplexity.ai/
 
 ---
 
-## 🔍 AI Search Engines
 
-| Engine       | Differentiation                                             | Link                         |
-|--------------|-------------------------------------------------------------|------------------------------|
-| Perplexity   | Academic-grade citations and in-depth analysis              | [perplexity.ai](https://perplexity.ai)  |
-| You.com      | Customizable AI agent ecosystem for personalized search     | [you.com](https://you.com)             |
-| Phind        | Developer-focused problem solving and technical queries      | [phind.com](https://phind.com)         |
-| Komo         | Mind map visualization integrated with AI search            | [komo.ai](https://komo.ai)             |
-| Gemini       | Google’s multimodal AI offering next-generation reasoning      | [gemini.google](https://gemini.google) |
-| Copilot      | Seamless integration with Microsoft's ecosystem for coding   | [copilot.microsoft.com](https://copilot.microsoft.com) |
 
 ---
 
@@ -195,6 +402,7 @@ Perplexity playground - https://labs.perplexity.ai/
    Repository linking research papers with their open-source implementations  
    [paperswithcode.com](https://paperswithcode.com)
 
+---
 ---
 
 ## ▶️ Implementation Checklist
