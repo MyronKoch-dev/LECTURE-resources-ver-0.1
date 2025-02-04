@@ -14,7 +14,13 @@ First, click the button below. Make sure you are logged in to your github and Ve
 Make sure you have active accounts with [GitHub](https://github.com) and [Vercel](https://vercel.com). If you don't have either account, please create them before proceeding.
 
 #### One-Click Deployment
-Click the button below to:
+
+
+- Click the button below, 
+- Then select (or add) your github account,
+- Then name the repo:
+
+From there, the Vercel/Github automation will:
 1. Clone this repo to your GitHub account
 2. Deploy the app to Vercel with CI/CD
 3. Enable automatic deployments on future pushes
