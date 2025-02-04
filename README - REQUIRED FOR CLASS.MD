@@ -8,7 +8,7 @@
 - **Keplr Wallet (Chrome Extension)**  
   [Install Keplr](https://www.keplr.app/get)
 - **Notepad Chrome Extension**  
-  [Install Notepad](https://chromewebstore.google.com/detail/notepad/ffbhefmlcoihbjcmibbfkocmnaiacinp)
+  [Install scratchpad](https://chromewebstore.google.com/detail/scratchpad/khkjjphjlmjloplmcmpphalnlboajeha)
 - **GitHub Account**  
   [Sign Up](https://github.com/)
 - **GitHub Desktop**  
