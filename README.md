@@ -18,7 +18,7 @@ Make sure you have active accounts with [GitHub](https://github.com) and [Vercel
 
 - Click the button below, 
 - Then select (or add) your github account (from the Git Scope dropdown menu),
-- Then name the repo (perhaps name it Andromeda-Workshop)
+- The repo will automatically name itself 'embeddable-workshop-demo'
 
 From there, the Vercel/Github automation will:
 1. Clone this repo to your GitHub account
