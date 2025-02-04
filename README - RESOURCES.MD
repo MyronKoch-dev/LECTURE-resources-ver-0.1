@@ -319,6 +319,24 @@ Perplexity playground - https://labs.perplexity.ai/
 
 Below is a selection of open-source AI tools, each with a brief description and a link to get started.
 
+1. **Ollama**
+
+- **Description:** Ollama is an open-source tool designed to simplify the process of running large language models (LLMs) directly on your local machine. It acts as a model manager and runtime, handling tasks from downloading model files to setting up a local environment for interaction.  [oai_citation_attribution:0‡freecodecamp.org](https://www.freecodecamp.org/news/how-to-run-open-source-llms-on-your-own-computer-using-ollama/?utm_source=chatgpt.com)
+
+- **Key Features:**
+  - **Model Support:** Enables running models like Llama 3.3, DeepSeek-R1, Phi-4, Mistral, and Gemma 2 locally.  [oai_citation_attribution:1‡ollama.com](https://ollama.com/?utm_source=chatgpt.com)
+  - **Platform Compatibility:** Available for macOS, Linux, and Windows, ensuring broad accessibility.
+  - **Integration:** Supports importing models in GGUF and Safetensors formats, allowing customization and flexibility.  [oai_citation_attribution:2‡github.com](https://github.com/ollama/ollama?utm_source=chatgpt.com)
+  - **Developer Tools:** Integrates with code editors like Visual Studio Code and JetBrains through plugins like Continue, facilitating the creation of AI-powered coding assistants.  [oai_citation_attribution:3‡ollama.com](https://ollama.com/blog/continue-code-assistant?utm_source=chatgpt.com)
+
+- **Resources:**
+  - [Official Website](https://ollama.com/)
+  - [GitHub Repository](https://github.com/ollama/ollama)
+  - [Model Library](https://ollama.com/library)
+  - [Documentation](https://ollama.com/docs)
+
+Ollama streamlines the deployment and management of LLMs, making it a valuable tool for developers and researchers interested in leveraging open-source AI models locally.
+
 
 2. **LM Studio**  
    LM Studio allows users to discover, download, and run local large language models (LLMs) entirely offline, ensuring privacy and control over data. It supports various architectures, including Llama, Mistral, Phi, Gemma, DeepSeek, and Qwen.  
