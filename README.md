@@ -17,7 +17,7 @@ Make sure you have active accounts with [GitHub](https://github.com) and [Vercel
 
 
 - Click the button below, 
-- Then select (or add) your github account,
+- Then select (or add) your github account (from the Git Scope dropdown menu),
 - Then name the repo (perhaps name it Andromeda-Workshop)
 
 From there, the Vercel/Github automation will:
