@@ -1,26 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🚀 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## 🎯 Getting Started
 
 First, click the button below. Make sure you are logged in to your github and Vercel accounts.
 
 ---
 
-## Push this button for a single-click CI/CD deployment to Vercel
+## 🚀 Push this button for a single-click CI/CD deployment to Vercel
 
 
 
-#### Prerequisites
+#### ✅ Prerequisites
 Make sure you have active accounts with [GitHub](https://github.com) and [Vercel](https://vercel.com). If you don't have either account, please create them before proceeding.
 
-#### One-Click Deployment
+#### 🔥 One-Click Deployment
 
 
 - Click the button below, 
 - Then select (or add) your github account (from the Git Scope dropdown menu),
 - The repo will automatically name itself 'embeddable-workshop-demo'
 
-From there, the Vercel/Github automation will:
+#### From there, the Vercel/Github automation will:
 1. Clone this repo to your GitHub account
 2. Deploy the app to Vercel with CI/CD
 3. Enable automatic deployments on future pushes
