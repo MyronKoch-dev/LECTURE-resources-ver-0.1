@@ -36,11 +36,13 @@
 
 ---
 
-## 💻 AI Coding Tools
+## 💻 AI Coding Tools (This list is not exhaustive.)
 
 # Merged AI-Infused & Core Development Environments
 
 Below is a consolidated list of AI-enhanced IDEs and core development tools, each with a brief description and a link to get started.
+
+### - AI-imbued IDEs:
 
 1. **Cursor**  
    AI-native IDE with integrated pair programming, intelligent code generation, and smart autocompletion built on a familiar VS Code framework.  
@@ -54,7 +56,7 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
    An AI-powered IDE available via Apple’s TestFlight that offers advanced code assistance and interactive project previews on iOS.  
    [Join via TestFlight](https://apps.apple.com/us/app/testflight/id899247664)
 
-4. **Windsurf**  
+4. **Windsurf (By Codeium)**  
    An AI-empowered IDE optimized for the Claude model, delivering context-aware code suggestions and multi-file editing; requires an API key.  
    [Visit Windsurf](https://windsurfai.com/)
 
@@ -66,6 +68,8 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
    Google’s cloud-based IDE built on VS Code, featuring integrated emulators, unique templates, and generative AI assistance for streamlined development.  
    [Sign up for Project IDX](https://idx.google.com/)
 
+#### - "One-Shot Full Stack App Creation Agents"
+
 7. **Replit**  
    A cloud-based, collaborative IDE with built-in AI coding tools and instant deployment capabilities across multiple languages.  
    [Start Coding on Replit](https://replit.com/)
@@ -74,7 +78,7 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
    A rapid prototyping tool offering an AI-powered coding environment that lets you instantly create and iterate on projects with minimal setup.  
    [Try bolt.new](https://bolt.new/)
 
-9. **Lovable.dev**  
+9.  **Lovable.dev**  
    An AI-enhanced developer platform that accelerates your workflow with smart code generation and interactive project demos.  
    [Explore Lovable.dev](https://lovable.dev/)
 
@@ -82,9 +86,16 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
     An AI-driven coding assistant that leverages large language models to deliver intelligent code completions and debugging support.  
     [Visit Llamacoder](https://llamacoder.together.ai/)
 
+#### - AI-assisted command line:
+
 11. **Warp Terminal**  
     An AI-assisted command line that transforms traditional terminal workflows with collaborative features and natural language interactions.  
     [Discover Warp Terminal](https://www.warp.dev)
+
+12. **Aider**
+    https://aider.chat/
+
+#### - LLM Playgrounds:
 
 12. **Google AI Studio**  
     A development platform for building advanced multimodal models using Google’s Gemini API, designed for cutting-edge AI model creation.  
@@ -102,6 +113,11 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
     An interactive environment to experiment with ChatGPT and related models, perfect for testing AI-driven code generation and model interactions.  
     [Explore OpenAI Playground](https://platform.openai.com)
 
+Perplexity playground - https://labs.perplexity.ai/
+
+
+#### - AI workspace integrations:
+
 16. **Microsoft Copilot**  
     Integrated across Microsoft’s ecosystem (VS Code, GitHub, Microsoft 365), this AI coding assistant offers real-time code completion and collaborative development support.  
     [Learn about Microsoft Copilot](https://copilot.github.com)
@@ -114,17 +130,10 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
     An automated, cloud-based IDE that provides instant, on-demand development environments to streamline coding workflows and collaboration.  
     [Visit Gitpod](https://www.gitpod.io)
 
-19. **MarsCode**  
-    An AI-powered online IDE offering cloud-based development with a built-in AI assistant, smart code completion, and debugging features.  
-    [Start with MarsCode](https://www.marscode.com)
 
-20. **Codeium**  
-    A free AI coding assistant providing intelligent code completions and debugging support across multiple editors, designed to boost coding productivity.  
-    [Discover Codeium](https://www.codeium.com)
 
-21. **Tabnine**  
-    An AI-powered code completion tool that integrates with various IDEs to help developers write code faster and more accurately by leveraging large language models.  
-    [Learn about Tabnine](https://www.tabnine.com)
+
+
 
 
 ## 🎨 Creative AI Toolkit
@@ -299,3 +308,20 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
 *This master list is intended to empower developers, researchers, and creatives to harness the full potential of AI. Always verify the latest updates from official sources and feel free to contribute improvements to this evolving document.*
 
 *Happy innovating!*
+
+
+--- 
+
+In about a week, these blows were cast:
+- DeepSeek R1 chat model released. Blows away benchmarks, and the API costs 1/10 of chatGPT.
+- Widespread press campaign claimed R1 had super-low production costs, and exhibited GPT o1 quality. 
+- Result was market crash for all tech!
+- R1 rumored to have Robotics training
+- --> next, DeepSeek released "v3" chat model 
+- Widespread press campaign claimed super-low production costs, and it exhibited GPT 4o quality. 
+- --> next, "AGI BOT" demo released, claiming low production costs and "more human" movement than any competitor
+- "AGI BOT" demo says DeepSeek R1 can be used in it for real-time decision making and complex problem solving 
+- --> next, Alibaba announced Qwen 2.5 1M - which has a 1Mil token context window.... a direct affront to Google's Gemini models. 
+- --> next, Alibaba announced Qwen 2.5-VL, which can control PCs and phones.... a direct affront to Claude's Computer Use. 
+
+...and as a coincidence, Alibaba and Deepseek are headquartered in the same city, roughly 10-20 mins drive from each other. Probably nothing.
