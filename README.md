@@ -5,7 +5,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, click the button below. Make sure you are logged in to your github and Vercel accounts.
 
 ---
-<div align="center">
 
 ## Push this button for a single-click CI/CD deployment to Vercel
 
@@ -19,6 +18,8 @@ Click the button below to:
 1. Clone this repo to your GitHub account
 2. Deploy the app to Vercel with CI/CD
 3. Enable automatic deployments on future pushes
+<div align="center">
+
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/andromedaprotocol/embeddable-workshop-demo.git)
 
