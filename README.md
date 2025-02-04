@@ -2,6 +2,22 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+First, click the button below. Make sure you are logged in to your github and Vercel accounts.
+
+---
+
+
+
+## Push this button for a single-click CI/CD deployment to Vercel
+
+Pushing this button will clone the current repo into A new GitHub repo in your Github account, and then deploy the app to Vercel.
+From that point forward, every time you push to the repo, Vercel will automatically deploy the app to Vercel.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/andromedaprotocol/embeddable-workshop-demo.git)
+
+---
+
+
 First, run the development server:
 
 ```bash
@@ -23,18 +39,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ## Deploy on Vercel
 
 
----
 
-
-
-## Push this button for a single-click CI/CD deployment to Vercel
-
-Pushing this button will clone the current repo into A new GitHub repo in your Github account, and then deploy the app to Vercel.
-From that point forward, every time you push to the repo, Vercel will automatically deploy the app to Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/andromedaprotocol/embeddable-workshop-demo.git)
-
----
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
