@@ -26,7 +26,7 @@ From there, the Vercel/Github automation will:
 3. Enable automatic deployments on future pushes
 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/andromedaprotocol/embeddable-workshop-demo.git)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fandromedaprotocol%2Fembeddable-workshop-demo&project-name=embeddable-workshop-demo&repository-name=embeddable-workshop-demo)
 
 
 ---
