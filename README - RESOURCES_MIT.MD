@@ -208,39 +208,23 @@ AI models come in different sizes, typically measured in **parameters** (e.g., b
 ---
 ## 📢📢📢📢 AI Model Advancements - The Last Week of Shocks 📢📢📢📢
 
-### In the past week, major AI breakthroughs have reshaped the landscape:
+# AI Market Disruptions – A Timeline  
 
-### 🚀 **DeepSeek's Rapid Fire Releases**
--# AI Market Disruptions – A Timeline
+In about a week, these blows were cast:  
 
-In about a week, these blows were cast:
-
-- **DeepSeek R1 chat model released**  
-  - Blows away benchmarks, and the API costs **1/10 of ChatGPT**.  
-- **Widespread press campaign claimed**  
-  - R1 had **super-low production costs** and exhibited **GPT-4o quality**.  
-- **Result: Market crash for all tech!**  
+- **DeepSeek R1 chat model released.** Blows away benchmarks, and the API costs **1/10 of ChatGPT**.  
+- **Widespread press campaign claimed** R1 had **super-low production costs**, and exhibited **GPT-4o quality**.  
+- **Result was market crash for all tech!**  
 - **R1 rumored to have Robotics training**  
+- **→ Next, DeepSeek released "v3" chat model**  
+- **Widespread press campaign claimed** super-low production costs, and it exhibited **GPT-4o quality**.  
+- **→ Next, "AGI BOT" demo released**, claiming **low production costs** and **"more human" movement** than any competitor.  
+- **"AGI BOT" demo says** DeepSeek R1 **can be used in it for real-time decision making and complex problem solving.**  
+- **→ Next, Alibaba announced Qwen 2.5 1M** - which has a **1 million token context window**.... a **direct affront to Google's Gemini models.**  
+- **→ Next, Alibaba announced Qwen 2.5-VL**, which **can control PCs and phones**.... a **direct affront to Claude's Computer Use.**  
 
-
-### **Next Moves**
-- **DeepSeek released "v3" chat model**  
-  - Widespread press campaign claimed **super-low production costs** and **GPT-4o quality**.  
-- **"AGI BOT" releaseed DeepSeek R1-referenced demo**  
-  - Claimed **low production costs** and showcased **"more human" movement** than any competitor.  
-  - The demo stated that **DeepSeek R1** can be used in it for **real-time decision making** and **complex problem solving**. 
-
-
-### **Alibaba's Counterattack**
-- **Alibaba announced Qwen 2.5 1M**  
-  - Features a **1 million token context window**—a **direct affront** to Google's Gemini models.  
-- **Alibaba announced Qwen 2.5-VL**  
-  - Capable of **controlling PCs and phones**, a **direct affront** to Claude's Computer Use.  
-
-
-### **And a "Coincidence"**
-Alibaba and DeepSeek are **headquartered in the same city**, roughly **10-20 minutes apart**.  
-Probably nothing. 🤔
+...and as a coincidence, **Alibaba and DeepSeek are headquartered in the same city, roughly 10-20 mins drive from each other.**  
+**Probably nothing.** 🤔 
 
 
 ---
