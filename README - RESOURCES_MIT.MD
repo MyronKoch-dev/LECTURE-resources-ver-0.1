@@ -288,13 +288,18 @@ Below is a consolidated list of AI-enhanced IDEs and core development tools, eac
     An AI-driven coding assistant that leverages large language models to deliver intelligent code completions and debugging support.  
     [Visit Llamacoder](https://llamacoder.together.ai/)
 
+11. **Vercel V0**  
+   An AI-powered code generation tool that helps developers quickly build UI components and full-stack applications using natural language prompts, seamlessly integrating with frameworks like Next.js.  
+   [Explore Vercel V0](https://v0.dev)  
+
+
 #### - AI-assisted command line:
 
-11. **Warp Terminal**  
+12. **Warp Terminal**  
     An AI-assisted command line that transforms traditional terminal workflows with collaborative features and natural language interactions.  
     [Discover Warp Terminal](https://www.warp.dev)
 
-12. **Aider**
+13. **Aider**
     https://aider.chat/
 
 #### - LLM Playgrounds:
@@ -322,15 +327,15 @@ Feel free to contribute to this list by submitting a pull request!
 
 #### - AI workspace integrations:
 
-16. **Microsoft Copilot**  
+14. **Microsoft Copilot**  
     Integrated across Microsoft’s ecosystem (VS Code, GitHub, Microsoft 365), this AI coding assistant offers real-time code completion and collaborative development support.  
     [Learn about Microsoft Copilot](https://copilot.github.com)
 
-17. **GitHub Codespaces**  
+15. **GitHub Codespaces**  
     A cloud-based development environment that lets you instantly spin up a complete dev environment integrated with GitHub and VS Code, with built-in support for AI tools like Copilot.  
     [Explore GitHub Codespaces](https://github.com/features/codespaces)
 
-18. **Gitpod**  
+16. **Gitpod**  
     An automated, cloud-based IDE that provides instant, on-demand development environments to streamline coding workflows and collaboration.  
     [Visit Gitpod](https://www.gitpod.io)
 
