@@ -325,7 +325,7 @@ How they differ from OpenAI and Anthropic:
 
 ---
 
-# DeepSeek R1 Model: Core Competencies & Abilities**  
+#  DeepSeek R1 Model: Core Competencies & Abilities**  
 1. **Advanced Natural Language Processing (NLP)**  
    - Contextual understanding, multilingual support, and generative capabilities for tasks like translation, summarization, and dialogue systems.  
 
@@ -358,7 +358,7 @@ How they differ from OpenAI and Anthropic:
 
 ---
 
-**Modern Integrations of DeepSeek R1**  
+# Modern Integrations of DeepSeek R1**  
 1. **Autonomous Vehicles**  
    - Powers ADAS for collision avoidance, in-car voice assistants, and predictive maintenance alerts.  
 
