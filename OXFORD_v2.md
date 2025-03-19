@@ -323,11 +323,86 @@ How they differ from OpenAI and Anthropic:
 | Models             | Combination of internal and external (e.g., OpenAI) | GPT series                                   | Claude series                                  |
 | Core Functionality | Conversational search                           | Broad range of applications                 | Conversational AI assistant                  |
 
-Citations:
-[1] https://www.perplexity.ai
+---
+
+**DeepSeek R1 Model: Core Competencies & Abilities**  
+1. **Advanced Natural Language Processing (NLP)**  
+   - Contextual understanding, multilingual support, and generative capabilities for tasks like translation, summarization, and dialogue systems.  
+
+2. **Multimodal Integration**  
+   - Processes text, images, sensor data, and audio for applications like autonomous systems (e.g., interpreting road signs + voice commands in cars).  
+
+3. **Real-Time Decision-Making**  
+   - Low-latency processing for instant responses in robotics, autonomous vehicles, and financial trading.  
+
+4. **Edge AI & Offline Functionality**  
+   - Operates on-device (e.g., in cars or IoT devices) without cloud dependency for privacy and reliability.  
+
+5. **Autonomous Systems Optimization**  
+   - Self-improving algorithms for adaptive navigation (drones, robots) and dynamic route planning (logistics).  
+
+6. **Predictive Analytics**  
+   - Anticipates failures (predictive maintenance in manufacturing), user behavior (e-commerce), and market trends.  
+
+7. **Ethical AI & Safety Protocols**  
+   - Embedded safeguards for compliance (healthcare, finance) and risk mitigation in critical systems.  
+
+8. **Hyper-Personalization**  
+   - Tailors recommendations (streaming, retail), learning paths (education), and user interfaces.  
+
+9. **Cross-Platform Interoperability**  
+   - Integrates seamlessly with APIs, legacy systems, and IoT ecosystems (smart homes, industrial IoT).  
+
+10. **Generative AI Capabilities**  
+    - Creates code, marketing content, and synthetic data for training or simulations.  
 
 ---
-Answer from Perplexity: pplx.ai/share
+
+**Modern Integrations of DeepSeek R1**  
+1. **Autonomous Vehicles**  
+   - Powers ADAS for collision avoidance, in-car voice assistants, and predictive maintenance alerts.  
+
+2. **Robotics & Drones**  
+   - Industrial robots (assembly line optimization), delivery drones (route planning), and service robots (hospitality).  
+
+3. **Smart City Infrastructure**  
+   - Traffic management systems, energy grid optimization, and public safety monitoring.  
+
+4. **Healthcare Diagnostics**  
+   - Analyzes medical imaging (MRI/CT scans), supports telemedicine, and personalizes treatment plans.  
+
+5. **Enterprise SaaS Platforms**  
+   - Embedded in CRM (Salesforce dynamics), ERP (SAP automation), and collaboration tools (Slack/MS Teams bots).  
+
+6. **Financial Tech**  
+   - Fraud detection, algorithmic trading, and blockchain-based secure transactions.  
+
+7. **E-Commerce & Retail**  
+   - AI-driven personalized shopping, inventory management, and chatbots for 24/7 support.  
+
+8. **Metaverse & AR/VR**  
+   - Enhances virtual environments with NLP-driven avatars and real-time object recognition.  
+
+9. **Precision Agriculture**  
+   - Analyzes satellite/drone data for crop monitoring and automated irrigation systems.  
+
+10. **Aerospace & Defense**  
+    - Mission planning for drones, satellite data processing, and predictive maintenance for aircraft.  
+
+11. **Content Creation & Media**  
+    - Generates scripts, video edits, and social media campaigns using multimodal inputs.  
+
+12. **Legal Tech**  
+    - Automates contract review, compliance checks, and legal research.  
+
+13. **Energy Sustainability**  
+    - Optimizes renewable energy systems (solar/wind) and smart grid management.  
+
+14. **Education 4.0**  
+    - Adaptive learning platforms, AI tutors, and automated grading systems.  
+
+15. **Consumer IoT**  
+    - Smart home automation (voice-controlled ecosystems), wearables (health monitoring), and AR glasses.  
 
 ---
 
