@@ -8,11 +8,11 @@
 | Engine       | Differentiation                                             | Link                         |
 |--------------|-------------------------------------------------------------|------------------------------|
 | Perplexity   | Academic-grade citations and in-depth analysis              | [perplexity.ai](https://perplexity.ai)  |
+| Scira        | Open-source version of Perplexity, using only open-weight models  | [scira.ai](https://scira.ai/about) |
 | You.com      | Customizable AI agent ecosystem for personalized search     | [you.com](https://you.com)             |
 | Phind        | Developer-focused problem solving and technical queries      | [phind.com](https://phind.com)         |
-| Gemini       | Google’s multimodal AI offering next-generation reasoning      | [gemini.google](https://gemini.google) |
+| Gemini       | Google’s multimodal AI offering next-generation reasoning. Recently upgraded!      | [gemini.google](https://gemini.google) |
 | Copilot      | Seamless integration with Microsoft's ecosystem for coding   | [copilot.microsoft.com](https://copilot.microsoft.com) |
-| Scira        | Open-source version of Perplexity, using only open-weight models  | [scira.ai](https://scira.ai/about) |
 
 https://scira.ai/about
 
