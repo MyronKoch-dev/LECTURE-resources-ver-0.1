@@ -450,68 +450,71 @@ How they differ from OpenAI and Anthropic:
 
 ---
 
-## 🚀 Modern AI Models & Their Differences
 
-### **1. OpenAI - ChatGPT Models**
-#### **ChatGPT-4o ("Omni")**
-- OpenAI’s flagship model, optimized for reasoning, multimodal inputs (text, image, code), and real-time responses.
-- **Training:** Uses a mix of supervised fine-tuning and RLHF.
-- **Speed & Efficiency:** Faster and cheaper than previous GPT-4 models.
-- **Usage:** Available via ChatGPT, API, and integrated into Microsoft Copilot.
 
-#### **GPT-4o-1 (Mini)**
-- A **smaller, optimized version** of GPT-4o designed for lower latency and reduced compute requirements.
-- **Training:** Retains core ChatGPT-4o capabilities but fine-tuned for lightweight performance.
 
-[Explore ChatGPT](https://openai.com/chatgpt)
+# 🚀 Modern AI Models & Their Differences
+
+### **1. Anthropic - Claude Models**
+#### **Claude 3.7 Sonnet**
+- **Hybrid reasoning model** designed for complex problem-solving, especially in math and coding.
+- **Training:** Enhanced with up-to-date information as of October 2024.
+- **Strengths:** Excels in agentic coding, finance, and legal tasks; integrates reasoning as a core feature.
+- **Availability:** Accessible via the Claude app, Anthropic's API, Amazon Bedrock, and Google Cloud's Vertex AI.
+- **Pricing:** Maintains the same cost as its predecessor, 3.5 Sonnet, at $3 per million input tokens and $15 per million output tokens.
+
+[Explore Claude](https://www.anthropic.com)
 
 ---
 
-### **2. Anthropic - Claude Models**
-#### **Claude Opus**
-- The most powerful Claude model, excelling in reasoning, creativity, and extensive memory recall.
-- **Training:** Constitutional AI ensures ethical responses with structured safety tuning.
-- **Usage:** Best for research, coding, and deep contextual understanding.
+### **2. OpenAI - GPT Models**
+#### **GPT-4.5 (Orion)**
+- **Enhanced AI model** with reduced hallucination rates, offering improved natural interactions and a broader knowledge base.
+- **Training:** Details not specified.
+- **Strengths:** Better understanding of user intent; maintains a leading position in the chatbot market.
+- **Availability:** Available to ChatGPT Plus, Pro, and Team subscribers. 
 
-#### **Claude Sonnet**
-- A **mid-tier model** balancing performance and speed, offering high-quality responses with lower cost.
+#### **o3-mini and o3-mini-high**
+- **Cost-efficient reasoning models** designed for complex problem-solving with reduced computational requirements.
+- **Training:** Details not specified.
+- **Strengths:** Delivers exceptional STEM capabilities, particularly in science, math, and coding, while maintaining low cost and reduced latency.
+- **Availability:** Accessible to ChatGPT Pro subscribers. 
 
-#### **Claude Haiku**
-- The **fastest and most lightweight** Claude model, optimized for efficiency over depth.
+#### **o1 Pro Mode**
+- **Advanced reasoning model** that allocates additional computational resources for deeper analysis.
+- **Training:** Details not specified.
+- **Strengths:** Provides more accurate and comprehensive responses, especially in data science, programming, and case law analysis.
+- **Availability:** Exclusive to ChatGPT Pro subscribers. 
 
-[Try Claude](https://www.anthropic.com)
+[Learn More](https://openai.com)
 
 ---
 
 ### **3. Google - Gemini Models**
-#### **Gemini 1.5 Pro**
-- **Next-gen multimodal model** trained for reasoning across text, image, and video.
-- **Training:** Uses Google's Mixture of Experts (MoE) technique, optimizing token efficiency.
-- **Strengths:** Handles massive context windows for long-document understanding.
-
-#### **Gemini "Thinking Model"**
-- A rumored new variant focused on deep logical reasoning and complex problem-solving.
-- Expected to improve **autonomous multi-step planning** capabilities.
+#### **Gemini 2.0 Flash**
+- **Next-gen multimodal model** operating at twice the speed of Gemini 1.5 Pro.
+- **Training:** Details not specified.
+- **Strengths:** Offers substantial improvements in speed, reasoning, and multimodal processing capabilities.
 
 [Explore Gemini](https://gemini.google.com)
 
 ---
 
 ### **4. Meta - Llama Models**
-#### **Llama 3 and up (Latest Meta AI Models)**
-- Meta's latest **open-weight LLM**, optimized for efficiency and scalability.
-- **Training:** Uses a combination of **publicly available datasets** and proprietary fine-tuning.
+#### **Llama 3**
+- **Open-weight LLM** optimized for efficiency and scalability.
+- **Training:** Uses a combination of publicly available datasets and proprietary fine-tuning.
 - **Strengths:** Competitive performance across reasoning, code generation, and multilingual understanding.
 - **Variants:**
-  - Smaller versions optimized for **on-device AI** (e.g., mobile or edge computing).
-  - Larger versions optimized for **server-level inference**.
+  - Smaller versions optimized for on-device AI (e.g., mobile or edge computing).
+  - Larger versions optimized for server-level inference.
 
 [Check Llama Models](https://ai.meta.com/llama/)
 
 ---
 
 ### **5. Mistral - Codestral and Mathstral**
-- A leading **open-source model** designed for **high efficiency and strong performance**.
+- **Open-source model** designed for high efficiency and strong performance.
 - **Training:** Uses a dense transformer architecture, fine-tuned for reasoning and coding.
 - **Strengths:** Competitive with proprietary models like GPT-4 in certain benchmarks.
 
@@ -520,7 +523,7 @@ How they differ from OpenAI and Anthropic:
 ---
 
 ### **6. DeepSeek**
-- A **high-performing open-source model** optimized for reasoning and efficiency.
+- **High-performing open-source model** optimized for reasoning and efficiency.
 - **Training:** Trained on multilingual and coding-heavy datasets.
 - **Variants:** Includes DeepSeek models fine-tuned for both text and multimodal inputs.
 
@@ -529,7 +532,7 @@ How they differ from OpenAI and Anthropic:
 ---
 
 ### **7. Qwen (By Alibaba)**
-- An open-source LLM designed for **multilingual understanding** and **complex reasoning**.
+- **Open-source LLM** designed for multilingual understanding and complex reasoning.
 - **Training:** Optimized for efficiency and available in various sizes.
 - **Use Cases:** Performs well in knowledge tasks, chatbot applications, and code generation.
 
@@ -537,10 +540,10 @@ How they differ from OpenAI and Anthropic:
 
 ### 💥 **Alibaba's Direct Challenge to Big AI Players**
 - **Alibaba Announced Qwen 2.5 1M**
-  - Features a **1-million token context window**, a **direct affront to Google's Gemini models**.
+  - Features a **1-million token context window**, a direct challenge to Google's Gemini models.
 
 - **Alibaba Announced Qwen 2.5-VL**
-  - Can **control PCs and phones**, a **direct challenge to Claude's "Computer Use" capabilities**.
+  - Capable of controlling PCs and phones, directly challenging Claude's "Computer Use" capabilities.
 
 
 ---
