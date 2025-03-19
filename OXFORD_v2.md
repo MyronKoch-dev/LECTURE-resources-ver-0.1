@@ -30,7 +30,7 @@ You should go on X and immediately follow every one of these people and hit the 
 | **Swyx (@swyx)**               | Developer, AI content creator, and community luminary         | Recognized for his insightful commentary on AI trends, developer productivity, and the future of tech; runs an influential blog and shares actionable insights on integrating AI into everyday workflows. | Offers a unique blend of technical depth and practical advice, making him invaluable for understanding both the creative and business aspects of AI. | [Profile](https://x.com/swyx)                 |
 | **Teng Yan (@0xPrismatic)** |  Creator of chainofthought.xyz.  Prev: Delphi Digital, medicine   | Focus on decentralized AI development.  | Offers an independent and informed view on AI development.  | [Profile](https://x.com/0xPrismatic) |
 
-
+--- 
 ## History, Architecture and use of LLMs.
 
 ### Some visualizations:
