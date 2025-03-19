@@ -240,7 +240,56 @@ These integrations allow ChatGPT to access and interact with content from these 
 
 ---
 
+# Claude Desktop Features (March 2025)
 
+## Core Functionality
+- **Conversational AI Interface** with access to Claude 3.7 Sonnet and Claude 3.5 Haiku models
+- **Extended Context Window** supporting substantial document uploads and lengthy conversations
+- **Artifacts System** for creating interactive, standalone content in a separate window including:
+  - Code with syntax highlighting
+  - SVG graphics and visualizations
+  - Mermaid diagrams
+  - React components and interactive web applications
+  - HTML/CSS/JavaScript prototypes
+  - Markdown documents
+- **Web Search** integration powered by Brave Search for retrieving current information
+- **Local Search** capabilities for finding location-based information
+- **Dictation Mode** allowing voice input instead of typing (synced from mobile app)
+
+## MCP (Model Context Protocol) Integration
+- **MCP Server Compatibility** allowing Claude to interact with external systems through secure protocols
+- **Local Filesystem Access** enabling Claude to read and manipulate files on your computer (with user permission)
+- **Terminal Control** via MCP servers for command execution (requires setup)
+- **External API Integration** through custom MCP servers
+- **Code Repository Access** to GitHub/GitLab through MCP connectors
+- **Secure Operations** with user confirmation required for sensitive actions
+- **Custom MCP Server Support** using TypeScript SDK and other development tools
+
+## Project Management
+- **Projects Feature** for creating specialized AI workspaces tailored to specific tasks or topics
+- **Workspace Organization** to group related conversations and materials
+- **Contextual Memory** within projects to maintain specialized knowledge
+- **Cross-Project Reference** capabilities for knowledge transfer
+- **Collaboration Tools** for team integration and shared workflows
+
+## Technical Capabilities
+- **Analysis Tool** (JavaScript REPL) for executing code and processing data
+- **Multi-File Upload** supporting PDFs, spreadsheets, images, and code files
+- **Data Visualization** tools with interactive charts and diagrams
+- **Real-time Language Translation** across devices
+- **Mathematical Typesetting** with LaTeX support
+- **Cross-Device Synchronization** of conversations and artifacts
+
+## User Experience
+- **Multi-Platform Support** for Windows, macOS, iOS/iPadOS, and Android
+- **Dark/Light Mode** visual preferences
+- **Customizable Response Styles** through user preferences
+- **Conversation History** with searchable archives
+- **Conversation Export** in various formats
+- **Fast Performance** optimized for desktop environments without browser limitations
+
+
+---
 
 ## 🚀 Modern AI Models & Their Differences
 
