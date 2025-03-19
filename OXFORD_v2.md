@@ -301,6 +301,36 @@ These integrations allow ChatGPT to access and interact with content from these 
 
 ---
 
+#Perplexity AI's models
+
+Perplexity AI uses a variety of large language models (LLMs), but it doesn't publicly disclose all of them. However, here's a breakdown of what's known and how they generally differ from OpenAI and Anthropic:
+
+*   **Focus on Search and Accuracy:** Perplexity AI emphasizes providing accurate answers with proper citations by integrating search directly into its responses.
+*   **Models Used:** While not always explicitly stated, Perplexity AI is known to use models from OpenAI (like GPT-3.5 and GPT-4) and also has its own internally developed models.
+*   **Key Differences:**
+
+    *   **Real-time Information:** Perplexity is designed to provide up-to-date information by actively searching the web during the query.
+    *   **Citations:** A key feature is the inclusion of citations within its responses, allowing users to verify the sources of information.
+    *   **Conversational Search:** Perplexity is tailored for conversational search, maintaining context throughout a conversation to refine answers.
+
+How they differ from OpenAI and Anthropic:
+
+| Feature            | Perplexity AI                                  | OpenAI                                       | Anthropic                                    |
+| ------------------ | ---------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
+| Primary Focus      | Search, accuracy, and up-to-date information | General-purpose AI, model development       | Safety, ethics, and helpfulness               |
+| Citations          | Yes                                            | No (in standard models)                      | No (in standard models)                      |
+| Real-time Data     | Yes                                            | No (without specific plugins or integrations) | No (without specific plugins or integrations) |
+| Models             | Combination of internal and external (e.g., OpenAI) | GPT series                                   | Claude series                                  |
+| Core Functionality | Conversational search                           | Broad range of applications                 | Conversational AI assistant                  |
+
+Citations:
+[1] https://www.perplexity.ai
+
+---
+Answer from Perplexity: pplx.ai/share
+
+---
+
 ## 🚀 Modern AI Models & Their Differences
 
 ### **1. OpenAI - ChatGPT Models**
@@ -393,27 +423,6 @@ These integrations allow ChatGPT to access and interact with content from these 
 - **Alibaba Announced Qwen 2.5-VL**
   - Can **control PCs and phones**, a **direct challenge to Claude's "Computer Use" capabilities**.
 
----
-
-## 📢📢📢📢 AI Model Advancements - The Last Week of Shocks 📢📢📢📢
-
-# AI Market Disruptions – A Timeline
-
-In about a week, these blows were cast:
-
-- **DeepSeek R1 chat model released.** Blows away benchmarks, and the API costs **1/10 of ChatGPT**.
-- **Widespread press campaign claimed** R1 had **super-low production costs**, and exhibited **GPT-4o quality**.
-- **Result was market crash for all tech!**
-- **R1 rumored to have Robotics training**
-- **→ Next, DeepSeek released "v3" chat model**
-- **Widespread press campaign claimed** super-low production costs, and it exhibited **GPT-4o quality**.
-- **→ Next, "AGI BOT" demo released**, claiming **low production costs** and **"more human" movement** than any competitor.
-- **"AGI BOT" demo says** DeepSeek R1 **can be used in it for real-time decision making and complex problem solving.**
-- **→ Next, Alibaba announced Qwen 2.5 1M** - which has a **1 million token context window**.... a **direct affront to Google's Gemini models.**
-- **→ Next, Alibaba announced Qwen 2.5-VL**, which **can control PCs and phones**.... a **direct affront to Claude's Computer Use.**
-
-...and as a coincidence, **Alibaba and DeepSeek are headquartered in the same city, roughly 10-20 mins drive from each other.**
-**Probably nothing.** 🤔
 
 ---
 
