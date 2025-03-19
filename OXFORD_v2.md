@@ -127,6 +127,8 @@ These facets enable AI agents to perform a wide range of tasks, from simple auto
 
 ---
 
+​Certainly, Myron. Here's the comprehensive list of agentic frameworks with their descriptions, best use cases, features, and direct links, formatted in a Markdown code block for your lecture:
+
 ## 🧠 Agentic Frameworks Overview
 
 ### Agentic Frameworks Deep Dive (from User-Friendly to Technical):
@@ -135,47 +137,55 @@ These facets enable AI agents to perform a wide range of tasks, from simple auto
    - **Description**: User-friendly, low-code visual AI workflow builder.
    - **Best For**: Non-technical users or rapid prototyping.
    - **Features**: Drag-and-drop interface, pre-built templates, extensive integrations.
+   - **Link**: [Flowise](https://flowise.ai)
 
 2. **LangFlow**
    - **Description**: Visual interface specifically for deploying LangChain-powered workflows.
    - **Best For**: Beginners looking for an intuitive entry into LangChain without coding.
    - **Features**: Modular workflow creation, easy-to-use design, seamless LLM integration.
+   - **Link**: [LangFlow](https://www.langflow.org)
 
 3. **n8n**
    - **Description**: Commercial-grade, no-code automation tool for business workflows.
    - **Best For**: Business users needing automation solutions integrated with multiple apps and APIs.
    - **Features**: Extensive app integrations, visual workflow editor, scalability.
+   - **Link**: [n8n](https://n8n.io)
 
 4. **Make (formerly Integromat)**
    - **Description**: Commercial automation platform for streamlined workflows across apps.
    - **Best For**: Users seeking pre-built integrations and polished, business-oriented automation.
    - **Features**: Visual editor, comprehensive app integrations, real-time workflow execution.
+   - **Link**: [Make](https://www.make.com)
 
 5. **LangGraph**
    - **Description**: Advanced orchestration framework built on LangChain with added user-friendly wrappers.
    - **Best For**: Developers needing structured workflows and human-in-the-loop capabilities.
    - **Features**: State management, dynamic workflows, robust error handling.
+   - **Link**: [LangGraph](https://github.com/langchain-ai/langgraph)
 
 6. **CrewAI**
    - **Description**: Multi-agent system designed for role-based collaboration and efficient task management.
    - **Best For**: Developers managing complex projects requiring efficient distributed task execution.
    - **Features**: Role-specific tasks, inter-agent communication, extensive LLM support.
+   - **Link**: [CrewAI](https://github.com/joaomdmoura/crewAI)
 
 7. **Hugging Face Transformers Agents 2.0**
    - **Description**: High-performance agent framework featuring dynamic tool-calling and secure code execution.
    - **Best For**: Applications needing secure, reliable, and adaptive execution in mission-critical contexts.
    - **Features**: Tool integration, secure execution environment, real-time adaptability.
+   - **Link**: [Hugging Face Transformers Agents 2.0](https://huggingface.co/docs/transformers/agents)
 
 8. **Swarm (OpenAI)**
    - **Description**: Experimental lightweight framework for real-time multi-agent orchestration.
    - **Best For**: Scenarios requiring dynamic task delegation and rapid agent coordination.
    - **Features**: Real-time decision-making, lightweight design, fast task handoffs.
+   - **Link**: [Swarm (OpenAI)](https://github.com/openai/swarm)
 
 9. **SmolAgents**
    - **Description**: Minimalist framework for quickly creating and deploying lightweight AI agents.
    - **Best For**: Developers aiming for simple and efficient small-scale agent deployment.
    - **Features**: Quick deployment, minimal overhead, straightforward task automation.
-
+   - **Link**: [SmolAgents](https://github.com/smol-ai/smolagents)
 
 
 ---
