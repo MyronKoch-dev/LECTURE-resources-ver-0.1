@@ -301,7 +301,7 @@ These integrations allow ChatGPT to access and interact with content from these 
 
 ---
 
-# Perplexity AI's models
+# Perplexity AI's models - Why they are special
 
 Perplexity AI uses a variety of large language models (LLMs), but it doesn't publicly disclose all of them. However, here's a breakdown of what's known and how they generally differ from OpenAI and Anthropic:
 
