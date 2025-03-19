@@ -75,19 +75,16 @@ AI models come in different sizes, typically measured in **parameters** (e.g., b
 **Definition:**  
 RAG enhances large language models (LLMs) by retrieving relevant external knowledge prior to generating responses. Rather than relying solely on pre-trained knowledge, RAG models query databases, knowledge graphs, or document stores to obtain current or specific contextual information, significantly improving accuracy and reducing model hallucinations.
 
----
 
 ### Graph RAG
 **Definition:**  
 Graph RAG extends traditional RAG by structuring retrieved data as a **graph**, explicitly modeling entities, concepts, and their relationships. This structure enables context-aware retrieval, facilitates more accurate reasoning, and enhances interpretability by leveraging structured knowledge representations such as knowledge graphs, embeddings, or vector databases.
 
----
 
 ### Tabular RAG (Tab RAG)
 **Definition:**  
 Tab RAG specifically targets structured, tabular data sources, enabling large language models to query and integrate structured information (e.g., databases, spreadsheets, CSV files) directly into generated responses. This enhances accuracy for tasks that require precise numerical reasoning, financial analysis, data-driven decisions, or real-time querying from structured datasets.
 
----
 
 ### Key Differences
 
