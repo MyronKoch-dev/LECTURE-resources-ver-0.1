@@ -1,6 +1,6 @@
 # AI Development Resource Master List
 
-> *This master list is a living document—updated as of MArch 2025—to serve as a comprehensive resource for AI development, research, and creative exploration. Use it as a roadmap to navigate the cutting‐edge tools, thought leaders, and emerging trends in the field. Contributions and improvements are welcome via pull requests.*
+> *This master list is a living document—updated as of March 2025—to serve as a comprehensive resource for AI development, research, and creative exploration. Use it as a roadmap to navigate the cutting‐edge tools, thought leaders, and emerging trends in the field. Contributions and improvements are welcome via pull requests.*
 
 
 ---
