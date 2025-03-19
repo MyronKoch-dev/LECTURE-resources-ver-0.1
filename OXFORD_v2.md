@@ -2,6 +2,62 @@
 
 > *This master list is a living document—updated as of MArch 2025—to serve as a comprehensive resource for AI development, research, and creative exploration. Use it as a roadmap to navigate the cutting‐edge tools, thought leaders, and emerging trends in the field. Contributions and improvements are welcome via pull requests.*
 
+
+---
+
+## History, Architecture and use of LLMs.
+
+### Some visualizations:
+
+1. **AI Timeline**  
+   An interactive timeline documenting recent advancements in AI, covering cultural, political events, and technical breakthroughs.  
+   [Visit AI Timeline](https://ai-timeline.org/)
+
+2. **LLM Visualization**  
+   A 3D visualization and walkthrough of a GPT-style large language model, illustrating each computational step in generating a single token.  
+   [Explore LLM Visualization](https://bbycroft.net/llm)
+
+3. **Transformer Explainer**  
+   An interactive tool that visually explains how transformer-based models, like GPT, process text to predict subsequent tokens.  
+   [Check out Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
+
+4. **Prompt Chaining**  
+   A workflow where the output of one large language model call becomes the input for the next, enabling structured reasoning and step-by-step task completion.  
+   [Learn about Prompt Chaining](https://www.agentrecipes.com/prompt-chaining)
+
+---
+
+## 🧠 Understanding AI Model Training & Model Sizes
+
+### What Does It Mean to Train a Model?
+Training an AI model involves feeding it massive amounts of text, images, or other data so it can learn patterns, relationships, and context. The process includes:
+- **Pretraining:** The model learns general knowledge from large datasets.
+- **Fine-tuning:** The model is adjusted for specific tasks or domains.
+- **Reinforcement Learning:** Additional optimization methods, like RLHF (Reinforcement Learning from Human Feedback), improve its behavior.
+
+### What Do Model Sizes Mean?
+AI models come in different sizes, typically measured in **parameters** (e.g., billions or trillions of values that help process and generate responses).
+- **Base Model:** The original model trained on general data before fine-tuning for specific tasks.
+- **Quantized Models:** Smaller, optimized versions of base models that reduce memory usage and improve efficiency (e.g., 4-bit or 8-bit quantization).
+  - Smaller quantized models run faster and take up less space but may lose some accuracy.
+
+---
+
+## How does Retrieval Augmented Generation ("RAG") Compare to Fine-tuning? What is Graph RAG?
+
+### Retrieval-Augmented Generation (RAG)
+**RAG** is an AI framework that enhances large language models (LLMs) by retrieving relevant external knowledge before generating responses. Instead of relying solely on pre-trained knowledge, a RAG model queries a database, knowledge graph, or document store to fetch relevant information, improving accuracy and reducing hallucinations.
+
+### Graph RAG
+**Graph RAG** extends traditional RAG by structuring retrieved data as a **graph**, where entities, concepts, and relationships are explicitly modeled. This enables **context-aware retrieval**, improved reasoning, and better interpretability by leveraging structured knowledge representations like knowledge graphs, embeddings, or vector databases.
+
+### Key Differences
+| Feature       | RAG | Graph RAG |
+|--------------|----|----------|
+| **Data Structure** | Unstructured text/documents | Structured graph of entities/relationships |
+| **Retrieval Method** | Semantic search, embeddings | Context-aware graph traversal, embeddings |
+| **Use Cases** | General knowledge retrieval, chatbots, search augmentation | Scientific research, enterprise knowledge graphs, complex reasoning |
+
 ---
 
 ## Original Must-Follow AI Thought Leaders - a primer.
@@ -109,60 +165,7 @@ These facets enable AI agents to perform a wide range of tasks, from simple auto
    - **Best For**: Developers aiming for simple and efficient small-scale agent deployment.
    - **Features**: Quick deployment, minimal overhead, straightforward task automation.
 
----
 
-## History, Architecture and use of LLMs.
-
-### Some visualizations:
-
-1. **AI Timeline**  
-   An interactive timeline documenting recent advancements in AI, covering cultural, political events, and technical breakthroughs.  
-   [Visit AI Timeline](https://ai-timeline.org/)
-
-2. **LLM Visualization**  
-   A 3D visualization and walkthrough of a GPT-style large language model, illustrating each computational step in generating a single token.  
-   [Explore LLM Visualization](https://bbycroft.net/llm)
-
-3. **Transformer Explainer**  
-   An interactive tool that visually explains how transformer-based models, like GPT, process text to predict subsequent tokens.  
-   [Check out Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
-
-4. **Prompt Chaining**  
-   A workflow where the output of one large language model call becomes the input for the next, enabling structured reasoning and step-by-step task completion.  
-   [Learn about Prompt Chaining](https://www.agentrecipes.com/prompt-chaining)
-
----
-
-## 🧠 Understanding AI Model Training & Model Sizes
-
-### What Does It Mean to Train a Model?
-Training an AI model involves feeding it massive amounts of text, images, or other data so it can learn patterns, relationships, and context. The process includes:
-- **Pretraining:** The model learns general knowledge from large datasets.
-- **Fine-tuning:** The model is adjusted for specific tasks or domains.
-- **Reinforcement Learning:** Additional optimization methods, like RLHF (Reinforcement Learning from Human Feedback), improve its behavior.
-
-### What Do Model Sizes Mean?
-AI models come in different sizes, typically measured in **parameters** (e.g., billions or trillions of values that help process and generate responses).
-- **Base Model:** The original model trained on general data before fine-tuning for specific tasks.
-- **Quantized Models:** Smaller, optimized versions of base models that reduce memory usage and improve efficiency (e.g., 4-bit or 8-bit quantization).
-  - Smaller quantized models run faster and take up less space but may lose some accuracy.
-
----
-
-## How does Retrieval Augmented Generation ("RAG") Compare to Fine-tuning? What is Graph RAG?
-
-### Retrieval-Augmented Generation (RAG)
-**RAG** is an AI framework that enhances large language models (LLMs) by retrieving relevant external knowledge before generating responses. Instead of relying solely on pre-trained knowledge, a RAG model queries a database, knowledge graph, or document store to fetch relevant information, improving accuracy and reducing hallucinations.
-
-### Graph RAG
-**Graph RAG** extends traditional RAG by structuring retrieved data as a **graph**, where entities, concepts, and relationships are explicitly modeled. This enables **context-aware retrieval**, improved reasoning, and better interpretability by leveraging structured knowledge representations like knowledge graphs, embeddings, or vector databases.
-
-### Key Differences
-| Feature       | RAG | Graph RAG |
-|--------------|----|----------|
-| **Data Structure** | Unstructured text/documents | Structured graph of entities/relationships |
-| **Retrieval Method** | Semantic search, embeddings | Context-aware graph traversal, embeddings |
-| **Use Cases** | General knowledge retrieval, chatbots, search augmentation | Scientific research, enterprise knowledge graphs, complex reasoning |
 
 ---
 
