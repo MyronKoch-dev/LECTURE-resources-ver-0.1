@@ -62,83 +62,52 @@ These facets enable AI agents to perform a wide range of tasks, from simple auto
 
 ## 🧠 Agentic Frameworks Overview
 
-### 1. chat.dev
+### Agentic Frameworks Deep Dive (from User-Friendly to Technical):
 
-- **Description:** An early platform enabling developers to create AI-driven conversational agents. It provided foundational tools for building and deploying chatbots across various applications.
+1. **Flowise**
+   - **Description**: User-friendly, low-code visual AI workflow builder.
+   - **Best For**: Non-technical users or rapid prototyping.
+   - **Features**: Drag-and-drop interface, pre-built templates, extensive integrations.
 
-### 2. Microsoft AutoGen
+2. **LangFlow**
+   - **Description**: Visual interface specifically for deploying LangChain-powered workflows.
+   - **Best For**: Beginners looking for an intuitive entry into LangChain without coding.
+   - **Features**: Modular workflow creation, easy-to-use design, seamless LLM integration.
 
-- **Description:** An open-source framework by Microsoft designed for building AI agents that can autonomously or collaboratively perform tasks. AutoGen supports multi-agent interactions and integrates with Microsoft's Semantic Kernel for enhanced AI capabilities.
+3. **n8n**
+   - **Description**: Commercial-grade, no-code automation tool for business workflows.
+   - **Best For**: Business users needing automation solutions integrated with multiple apps and APIs.
+   - **Features**: Extensive app integrations, visual workflow editor, scalability.
 
-- **Key Features:**
-  - Facilitates deterministic and dynamic agentic workflows.
-  - Supports research on multi-agent collaboration.
-  - Enables distributed agents for multi-language applications.
+4. **Make (formerly Integromat)**
+   - **Description**: Commercial automation platform for streamlined workflows across apps.
+   - **Best For**: Users seeking pre-built integrations and polished, business-oriented automation.
+   - **Features**: Visual editor, comprehensive app integrations, real-time workflow execution.
 
-- **Resources:**
-  - [GitHub Repository](https://github.com/microsoft/autogen)
-  - [Microsoft Research Project Page](https://www.microsoft.com/en-us/research/project/autogen/)
+5. **LangGraph**
+   - **Description**: Advanced orchestration framework built on LangChain with added user-friendly wrappers.
+   - **Best For**: Developers needing structured workflows and human-in-the-loop capabilities.
+   - **Features**: State management, dynamic workflows, robust error handling.
 
-### 3. Virtuals Protocol
+6. **CrewAI**
+   - **Description**: Multi-agent system designed for role-based collaboration and efficient task management.
+   - **Best For**: Developers managing complex projects requiring efficient distributed task execution.
+   - **Features**: Role-specific tasks, inter-agent communication, extensive LLM support.
 
-- **Description:** A decentralized framework that allows for the creation, deployment, and governance of AI-powered virtual entities. Virtuals Protocol enables co-ownership and tokenization of AI agents, expanding their revenue potential across applications via blockchain technology.
+7. **Hugging Face Transformers Agents 2.0**
+   - **Description**: High-performance agent framework featuring dynamic tool-calling and secure code execution.
+   - **Best For**: Applications needing secure, reliable, and adaptive execution in mission-critical contexts.
+   - **Features**: Tool integration, secure execution environment, real-time adaptability.
 
-- **Key Features:**
-  - Provides a complete suite of tools for creating AI agents on the Base blockchain.
-  - Offers sophisticated APIs for monetization through advertising and partnerships.
-  - Incorporates an innovative token-burning system to redistribute revenue to token holders.
+8. **Swarm (OpenAI)**
+   - **Description**: Experimental lightweight framework for real-time multi-agent orchestration.
+   - **Best For**: Scenarios requiring dynamic task delegation and rapid agent coordination.
+   - **Features**: Real-time decision-making, lightweight design, fast task handoffs.
 
-- **Resources:**
-  - [Official Website](https://app.virtuals.io)
-  - [X (formerly Twitter) Profile](https://x.com/virtuals_io?lang=en)
-
-### 4. Zerebro
-
-- **Description:** An emerging agentic framework focusing on creative output and social media automation. Zerebro aims to provide tools for developers to build AI agents capable of handling complex tasks in creative industries.
-
-- **Key Features:**
-  - Emphasizes creative applications and social media interactions.
-  - Offers tools for automating content creation and management.
-
-- **Resources:**
-  - [Overview Article](https://en.thebigwhale.io/article-en/ai16z-zerebro-chaos-etc-the-crypto-ai-agents-that-caught-our-attention)
-
-### 5. Centience
-
-- **Description:** A framework designed to enhance the cognitive capabilities of AI agents, enabling them to perform tasks requiring higher-order reasoning and decision-making. Centience focuses on creating agents that can understand and adapt to complex environments.
-
-- **Key Features:**
-  - Enhances cognitive functions of AI agents.
-  - Facilitates higher-order reasoning and adaptive decision-making.
-
-- **Resources:**
-  - [Introduction to Centience](https://www.chaincatcher.com/en/article/2160906)
-
-### 6. Eliza Framework by AI16z
-
-- **Description:** Developed by AI16z, the Eliza Framework is a leading agentic platform that has gained significant traction in the AI community. Named after one of the first chatbot programs, Eliza provides a robust infrastructure for building and deploying AI agents across various applications.
-
-- **Key Features:**
-  - **First-Mover Advantage:** As an early entrant in the agentic framework space, Eliza has established a strong presence and community support.
-  - **TypeScript-Based:** Built using TypeScript, making it accessible for web developers and ensuring seamless integration with web applications.
-  - **Multi-Agent Simulation:** Supports the creation of complex simulations involving multiple interacting agents, suitable for modeling social interactions and other dynamic systems.
-  - **Cross-Platform Compatibility:** Designed to work across various platforms, enhancing its versatility in deployment.
-
-- **Market Position:**
-  - Holds approximately 60% market share among agentic frameworks, attributed to its early entry and comprehensive feature set.
-  - Valued at around $900 million, reflecting its significant impact and adoption in the AI industry.
-
-- **Community and Ecosystem:**
-  - Boasts a vibrant GitHub community with over 6,000 stars and 1,800 forks, indicating active development and collaboration.
-  - Plans to launch an Eliza-based agent Launchpad, aiming to establish AI16z as the base currency for agent-to-agent transactions and the "App Store" for agent services.
-
-- **Resources:**
-  - [Comprehensive Comparison of AI Frameworks](https://www.binance.com/en/square/post/18428713889746)
-  - [AI Agent "First Layer" Melee: Virtuals, AI16z, and Zerebro](https://www.panewslab.com/en/articledetails/eed2q7bx.html)
-
-The Eliza Framework's robust architecture and active community make it a compelling choice for developers looking to build sophisticated AI agents. Its focus on multi-agent simulation and cross-platform compatibility positions it well for a variety of applications, from social interaction modeling to complex system simulations.
-
-These frameworks represent the evolving landscape of agentic AI development, each offering unique features and capabilities to cater to diverse application needs.
+9. **SmolAgents**
+   - **Description**: Minimalist framework for quickly creating and deploying lightweight AI agents.
+   - **Best For**: Developers aiming for simple and efficient small-scale agent deployment.
+   - **Features**: Quick deployment, minimal overhead, straightforward task automation.
 
 ---
 
