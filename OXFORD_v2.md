@@ -84,20 +84,6 @@ AI models come in different sizes, typically measured in **parameters** (e.g., b
 | **Retrieval Method** | Semantic search, embeddings | Context-aware graph traversal, embeddings |
 | **Use Cases** | General knowledge retrieval, chatbots, search augmentation | Scientific research, enterprise knowledge graphs, complex reasoning |
 
----
-
-
----
-## 🔍 AI Search Engines - The entry to AI for most people.  ALL of these are agents!
-
-| Engine       | Differentiation                                             | Link                         |
-|--------------|-------------------------------------------------------------|------------------------------|
-| Perplexity   | Academic-grade citations and in-depth analysis              | [perplexity.ai](https://perplexity.ai)  |
-| Scira        | Open-source version of Perplexity, using only open-weight models  | [scira.ai](https://scira.ai/about) |
-| You.com      | Customizable AI agent ecosystem for personalized search     | [you.com](https://you.com)             |
-| Phind        | Developer-focused problem solving and technical queries      | [phind.com](https://phind.com)         |
-| Gemini       | Google’s multimodal AI offering next-generation reasoning. Recently upgraded!      | [gemini.google](https://gemini.google) |
-| Copilot      | Seamless integration with Microsoft's ecosystem for coding   | [copilot.microsoft.com](https://copilot.microsoft.com) |
 
 ---
 
@@ -116,6 +102,18 @@ Key facets of AI agents include:
 4. **Social Ability:** The capability to interact with other agents or humans, often through communication or collaboration.
 
 These facets enable AI agents to perform a wide range of tasks, from simple automated functions to complex decision-making processes, across various applications.
+
+---
+## 🔍 AI Search Engines - The entry to AI for most people.  ALL of these are agents!
+
+| Engine       | Differentiation                                             | Link                         |
+|--------------|-------------------------------------------------------------|------------------------------|
+| Perplexity   | Academic-grade citations and in-depth analysis              | [perplexity.ai](https://perplexity.ai)  |
+| Scira        | Open-source version of Perplexity, using only open-weight models  | [scira.ai](https://scira.ai/about) |
+| You.com      | Customizable AI agent ecosystem for personalized search     | [you.com](https://you.com)             |
+| Phind        | Developer-focused problem solving and technical queries      | [phind.com](https://phind.com)         |
+| Gemini       | Google’s multimodal AI offering next-generation reasoning. Recently upgraded!      | [gemini.google](https://gemini.google) |
+| Copilot      | Seamless integration with Microsoft's ecosystem for coding   | [copilot.microsoft.com](https://copilot.microsoft.com) |
 
 ---
 
