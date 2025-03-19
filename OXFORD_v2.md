@@ -180,6 +180,67 @@ These facets enable AI agents to perform a wide range of tasks, from simple auto
 
 ---
 
+# ChatGPT Pro Features
+
+- **Unlimited Access to Advanced Models**: Subscribers receive unrestricted use of OpenAI's most advanced models, including OpenAI o1, o1-mini, and GPT-4o. ([openai.com](https://openai.com/index/introducing-chatgpt-pro/?utm_source=chatgpt.com))
+
+- **o1 Pro Mode**: An enhanced version of the o1 model that utilizes additional computational resources to tackle complex problems, delivering more accurate and comprehensive responses. ([openai.com](https://openai.com/index/introducing-chatgpt-pro/?utm_source=chatgpt.com))
+
+- **Advanced Voice Mode**: Engage in real-time, hands-free conversations with ChatGPT, allowing for seamless multitasking and interactive voice interactions. ([openai.com](https://openai.com/index/introducing-chatgpt-pro/?utm_source=chatgpt.com))
+
+- **Priority Access to New Features**: Pro subscribers are among the first to experience new tools and improvements as they are released. ([openai.com](https://openai.com/index/introducing-chatgpt-pro/?utm_source=chatgpt.com))
+
+- **Enhanced Computational Resources**: Access to increased computational power, enabling the handling of more complex queries and tasks efficiently. ([openai.com](https://openai.com/index/introducing-chatgpt-pro/?utm_source=chatgpt.com))
+
+# ChatGPT Desktop App Features
+
+- **Advanced Voice Mode**: Chat with your computer in real-time and get hands-free advice and answers while you work. ([openai.com](https://openai.com/chatgpt/desktop/?utm_source=chatgpt.com))
+
+- **Companion Window**: A dedicated window accessible via keyboard shortcuts (Option + Space on macOS, Alt + Space on Windows), enabling instant queries and interactions without disrupting your workflow. ([openai.com](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/?utm_source=chatgpt.com))
+
+- **File and Image Uploads**: Upload files and images directly within the app for analysis, discussion, or to provide context, facilitating more dynamic interactions. ([pcworld.com](https://www.pcworld.com/article/2494185/chatgpt-desktop-app-finally-comes-to-windows-with-features-missing.html?utm_source=chatgpt.com))
+
+- **Seamless Integration**: The app integrates smoothly with your operating system, allowing for efficient multitasking and quick access to ChatGPT's capabilities. ([openai.com](https://openai.com/chatgpt/desktop/?utm_source=chatgpt.com))
+
+- **Access to Latest AI Models**: Benefit from the most recent AI advancements, including models like GPT-4o, ensuring high-quality and up-to-date responses. ([pcworld.com](https://www.pcworld.com/article/2494185/chatgpt-desktop-app-finally-comes-to-windows-with-features-missing.html?utm_source=chatgpt.com))
+
+- **Enhanced File Handling**: Improved management of file uploads and downloads, making it easier to work with attachments and export results. ([reddit.com](https://www.reddit.com/r/OpenAI/comments/1hjgoha/chatgpt_plus_and_claude_pro_browsers_or_desktop/?utm_source=chatgpt.com))
+
+- **Streamlined User Interface**: A more focused and distraction-free environment, ideal for deep work and managing extensive projects. ([reddit.com](https://www.reddit.com/r/OpenAI/comments/1hjgoha/chatgpt_plus_and_claude_pro_browsers_or_desktop/?utm_source=chatgpt.com))
+
+- **Optimized Performance**: Designed to reduce memory usage compared to browser-based interactions, leading to a smoother experience. ([reddit.com](https://www.reddit.com/r/OpenAI/comments/1hjgoha/chatgpt_plus_and_claude_pro_browsers_or_desktop/?utm_source=chatgpt.com))
+
+- **Cross-Platform Availability**: Available for both macOS and Windows, ensuring a consistent user experience across different operating systems. ([openai.com](https://openai.com/chatgpt/download/?utm_source=chatgpt.com))
+
+- **Regular Updates**: Receive timely updates and new features directly through the app, keeping you at the forefront of AI developments. ([openai.com](https://openai.com/chatgpt/desktop/?utm_source=chatgpt.com))
+
+# Compatible Applications with ChatGPT Desktop App
+
+The ChatGPT Desktop App integrates with various applications to enhance productivity and streamline workflows. The compatible applications include:
+
+- **Text Editors**:
+  - Apple Notes
+  - Notion
+  - TextEdit
+  - Quip
+
+- **Code Editors**:
+  - Xcode
+  - VS Code (including Code, Code Insiders, VSCodium, Cursor, Windsurf)
+  - JetBrains IDEs (including Android Studio, IntelliJ IDEA, PyCharm, WebStorm, PHPStorm, CLion, Rider, RubyMine, AppCode, GoLand, DataGrip)
+  - TextEdit
+
+- **Terminals**:
+  - Terminal
+  - iTerm
+  - Warp
+  - Prompt
+
+These integrations allow ChatGPT to access and interact with content from these applications, providing context-aware assistance and automating tasks within your workflow. ([OpenAI Help Center](https://help.openai.com/en/articles/10119604-work-with-apps-on-macos))
+
+---
+
+
 
 ## 🚀 Modern AI Models & Their Differences
 
