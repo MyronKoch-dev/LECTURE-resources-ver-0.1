@@ -3,13 +3,6 @@
 > *This master list is a living document—updated as of February 2025—to serve as a comprehensive resource for AI development, research, and creative exploration. Use it as a roadmap to navigate the cutting‐edge tools, thought leaders, and emerging trends in the field. Contributions and improvements are welcome via pull requests.*
 
 ---
-
-## 🧭 Core Platform
-- **Andromeda Protocol Testnet**:  
-  [app.testnet.andromedaprotocol.io](https://app.testnet.andromedaprotocol.io/)  
-  *A decentralized testnet platform for experimental AI and blockchain integrations.*
-
----
 ## 🔍 AI Search Engines - The entry to AI for most people.
 
 | Engine       | Differentiation                                             | Link                         |
