@@ -44,7 +44,7 @@ You should go on X and immediately follow every one of these people and hit the 
 
 ## WHAT ARE AGENTS?
 
-An **agent** in artificial intelligence is an autonomous system that perceives its environment through sensors, processes this information, and takes actions via actuators to achieve specific goals. These agents operate independently, making decisions based on their perceptions and predefined objectives.  [oai_citation_attribution:0‡en.wikipedia.org](https://en.wikipedia.org/wiki/Intelligent_agent?utm_source=chatgpt.com)
+OpenAI defines an agent as an automated system capable of independently accomplishing tasks on behalf of users. These tasks can range from executing simple workflows to pursuing complex, open-ended objectives. Agents are built by combining various components, such as models, tools, knowledge and memory systems, guardrails, and orchestration frameworks. This modular approach enables agents to reason, make decisions, interact with their environment, and adapt to user needs
 
 Key facets of AI agents include:
 
