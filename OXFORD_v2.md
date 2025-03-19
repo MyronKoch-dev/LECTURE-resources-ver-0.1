@@ -69,20 +69,33 @@ AI models come in different sizes, typically measured in **parameters** (e.g., b
 
 ---
 
-## How does Retrieval Augmented Generation ("RAG") Compare to Fine-tuning? What is Graph RAG?
+## How does Retrieval Augmented Generation ("RAG") Compare to Fine-tuning? What are Graph RAG and Tab RAG?
 
 ### Retrieval-Augmented Generation (RAG)
-**RAG** is an AI framework that enhances large language models (LLMs) by retrieving relevant external knowledge before generating responses. Instead of relying solely on pre-trained knowledge, a RAG model queries a database, knowledge graph, or document store to fetch relevant information, improving accuracy and reducing hallucinations.
+**Definition:**  
+RAG enhances large language models (LLMs) by retrieving relevant external knowledge prior to generating responses. Rather than relying solely on pre-trained knowledge, RAG models query databases, knowledge graphs, or document stores to obtain current or specific contextual information, significantly improving accuracy and reducing model hallucinations.
+
+---
 
 ### Graph RAG
-**Graph RAG** extends traditional RAG by structuring retrieved data as a **graph**, where entities, concepts, and relationships are explicitly modeled. This enables **context-aware retrieval**, improved reasoning, and better interpretability by leveraging structured knowledge representations like knowledge graphs, embeddings, or vector databases.
+**Definition:**  
+Graph RAG extends traditional RAG by structuring retrieved data as a **graph**, explicitly modeling entities, concepts, and their relationships. This structure enables context-aware retrieval, facilitates more accurate reasoning, and enhances interpretability by leveraging structured knowledge representations such as knowledge graphs, embeddings, or vector databases.
+
+---
+
+### Tabular RAG (Tab RAG)
+**Definition:**  
+Tab RAG specifically targets structured, tabular data sources, enabling large language models to query and integrate structured information (e.g., databases, spreadsheets, CSV files) directly into generated responses. This enhances accuracy for tasks that require precise numerical reasoning, financial analysis, data-driven decisions, or real-time querying from structured datasets.
+
+---
 
 ### Key Differences
-| Feature       | RAG | Graph RAG |
-|--------------|----|----------|
-| **Data Structure** | Unstructured text/documents | Structured graph of entities/relationships |
-| **Retrieval Method** | Semantic search, embeddings | Context-aware graph traversal, embeddings |
-| **Use Cases** | General knowledge retrieval, chatbots, search augmentation | Scientific research, enterprise knowledge graphs, complex reasoning |
+
+| Feature              | RAG                                   | Graph RAG                                            | Tab RAG                                            |
+|----------------------|---------------------------------------|------------------------------------------------------|----------------------------------------------------|
+| **Data Structure**   | Unstructured text/documents           | Structured graph of entities & relationships         | Structured tabular data (tables, CSV, databases)   |
+| **Retrieval Method** | Semantic search, embeddings           | Context-aware graph traversal, embeddings            | SQL queries, structured data lookups, embeddings   |
+| **Use Cases**        | General knowledge retrieval, chatbots, document-based search augmentation | Scientific research, enterprise knowledge graphs, complex logical reasoning | Financial analysis, real-time data queries, structured data tasks |
 
 
 ---
