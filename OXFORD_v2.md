@@ -137,7 +137,7 @@ These facets enable AI agents to perform a wide range of tasks, from simple auto
    - **Description**: User-friendly, low-code visual AI workflow builder.
    - **Best For**: Non-technical users or rapid prototyping.
    - **Features**: Drag-and-drop interface, pre-built templates, extensive integrations.
-   - **Link**: [Flowise](https://flowise.ai)
+   - **Link**: [Flowise](https://flowiseai.com)
 
 2. **LangFlow**
    - **Description**: Visual interface specifically for deploying LangChain-powered workflows.
@@ -185,7 +185,7 @@ These facets enable AI agents to perform a wide range of tasks, from simple auto
    - **Description**: Minimalist framework for quickly creating and deploying lightweight AI agents.
    - **Best For**: Developers aiming for simple and efficient small-scale agent deployment.
    - **Features**: Quick deployment, minimal overhead, straightforward task automation.
-   - **Link**: [SmolAgents](https://github.com/smol-ai/smolagents)
+   - **Link**: [SmolAgents](https://github.com/huggingface/smolagents)
 
 
 ---
