@@ -74,6 +74,7 @@
 | **Anthropic** | **Claude 3.7 Sonnet** | 200 k | ✅ | Hybrid (MoE + Dense) | STEM/code specialist | 8.7 | 83.5 |
 | **Google** | **Gemini 2.5 Flash** | 1 M | ✅* | MoE | “Thinking budgets” cut cost > 6× | 8.3 | 77.9 |
 | | **Gemini 1.5 Pro** | 1 M | ✅ | MoE | Long‑context pioneer | 8.9 | 86.0 |
+| | **Gemma 3 (1–27 B) QAT** | 128 k | ✅ | Dense (QAT) | 4‑bit GGUF; ≈99 % bfloat16 accuracy | 7.8 | 72.5 |
 | **DeepSeek** | **DeepSeek V3 Chat** | 128 k | ✅ | Dense Transf. | +50 % reasoning vs V2 | 8.4 | 80.5 |
 | **Meta** | **Llama‑3 70B** | 8‑128 k | ✅ | Dense Transf. | Open‑weights, commercially usable | 7.9 | 73.0 |
 | **Mistral** | **Mixtral 8×22B** | 64 k | ✅ | Sparse MoE | SoTA open model | 8.1 | 78.0 |
@@ -86,7 +87,7 @@
 
 | Architecture | Core idea | Popular 2025 examples | Strengths | Trade‑offs |
 |---|---|---|---|---|
-| **Dense Transformer** | Every token attends to every other via full attention; parameters fully active each step. | GPT‑4o, Llama‑3 70B, DeepSeek V3 | Strong generalization; mature tooling. | Expensive compute; quadratic memory. |
+| **Dense Transformer** | Every token attends to every other via full attention; parameters fully active each step. | GPT‑4o, Llama‑3 70B, DeepSeek V3, Gemma 3 QAT | Strong generalization; mature tooling. | Expensive compute; quadratic memory. |
 | **Sparse Mixture‑of‑Experts (MoE)** | Router sends each token to a small subset of expert Multilayer Perceptrons (MLPs) → only ~10‑25 % parameters active. | Mixtral 8×22B, OpenAI o‑series, Qwen 2.5‑1M | Higher parameter count at lower FLOPs; easy scaling. | Router complexity; load‑balancing issues. |
 | **Hybrid Dense + MoE (Hierarchical)** | Alternate dense layers with MoE blocks or blend both paths. | Claude 3.7 Sonnet, Gemini 1.5 Pro | Combines dense robustness with MoE efficiency. | Implementation complexity; tuning router‑dense balance. |
 | **State‑Space Models (SSM)** | Replace attention with linear state‑space kernels (convolutional recursion). | Mamba 2.8B, S4‑X, RWKV‑5 | O(T) memory, handles >4 M tokens. | Still experimental; fewer inference libraries. |
@@ -95,6 +96,9 @@
 | **Diffusion Transformer (DiT)** | Use diffusion denoising steps with transformer backbone for images. | Stable Diffusion 3 DiT, DeepFloyd IF | High‑quality image generation. | Not suited for language tasks. |
 
  > *Cheat‑sheet takeaway:* most frontier LLMs are now **Sparse MoE or Hybrid**, balancing capacity with compute. Dense transformers dominate sub‑30 B param models, while SSMs and Retro‑style hybrids target ultra‑long context and factual recall.
+> *QAT = quantization‑aware training; trims VRAM ≈3× while keeping ~99 % accuracy at 4‑bit.*
+ 
+ > *Snapshot 2024‑25:* about two‑thirds of frontier releases use sparse MoE or hybrid blocks, while dense transformers still dominate mid‑size open‑source models.
  
 
  <details>
@@ -240,9 +244,26 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 ---
 
 ## 5 | 🌐 Applied Case Studies
-1. **Andromeda Protocol** – AI‑augmented smart‑contract orchestration (Cosmos SDK).  
-2. **DeepSeek R1** – Edge‑first design for robotics & IoT.  
-3. **Gemini Agents** – Multi‑modal autonomous web workflows (Project Astra demo).  
+1. **GitHub Copilot Agents** – <https://github.blog/copilot-agents>  
+   Full‑stack agent that triages PRs, writes unit tests and explains diffs using OpenAI o3.
+
+2. **Perplexity Pages** – <https://www.perplexity.ai/pages>  
+   Hybrid RAG engine that produces fully‑cited wiki‑style reports in under a minute.
+
+3. **Runway Gen‑3** – <https://runwayml.com/gen3>  
+   Text‑to‑video diffusion transformer already featured in Nike and W+K ads.
+
+4. **Hippocratic AI Nurse Triage** – <https://www.hippocratic.ai/>  
+   Mixtral‑fine‑tuned LLM piloted by U.S. hospitals; passed NCLEX at 85 %.
+
+5. **Google Project Astra** – <https://blog.google/technology/ai/google-project-astra/>  
+   Gemini 2.5 Flash multimodal agent that answers live camera questions (“What city am I in?”).
+
+6. **Alibaba DingTalk Meeting Mind** – <https://www.alibabacloud.com/blog/dingtalk-meeting-mind>  
+   Qwen 2.5‑1M based tool that generates 1‑million‑token meeting summaries and action items.
+
+7. **DeepSeek R1 Robotics Stack** – <https://deepseek.com/blog/r1-robotics>  
+   Warehouse robot powered by DeepSeek V3 on‑device MoE; real‑time pick‑and‑pack.
 
 ---
 
