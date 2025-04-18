@@ -1,4 +1,4 @@
-# **AI Development Resource Master List (Unified Edition – April 18 2025)**
+# **AI Development Resource Master List (Unified Edition – April 18 2025)**
 
 > *Living document originally compiled for Harvard, MIT, and Oxford programs—now merged into a single, deduplicated reference.*  
 > *Contributions via pull‑request are welcome.*
@@ -187,15 +187,22 @@
 | CLI | Claude Code | Code generation and debugging assistant | https://github.com/anthropics/claude-code |
 | CLI | OpenAI Codex CLI | Command-line interface for OpenAI Codex | https://github.com/openai/codex |
 
-### 3.4 Open‑Source Utilities & Creative Suite
+### 3.4 Desktop Chat Clients & Local Runners
+
+| App | What it does | Models supported | Link |
+|---|---|---|---|
+| ChatGPT Desktop | Native macOS / Windows app; global hot‑key, screenshot & file chat | GPT‑4o, o‑series | https://openai.com/chatgpt/desktop/ |
+| Claude Desktop | Anthropic desktop client with drag‑drop files and Claude 3 family | Claude 3.7 Sonnet / Opus | https://support.anthropic.com/en/articles/10065433-installing-claude-for-desktop |
+| Perplexity Desktop | Mac App Store build; "Workspaces" + Research Mode | o4‑mini‑high (Pro) + free LLM | https://www.perplexity.ai/mac |
+| MSTY | Offline‑first multiverse chat with branch views | Any local GGUF + OpenAI / Anthropic | https://msty.app |
+| LM Studio | Discover, download & run OSS LLMs locally | Llama‑3, DeepSeek, Gemma, etc. | https://lmstudio.ai |
+| AnythingLLM Desktop | Turnkey local RAG + chat with multiple OSS models | GGUF / ggml models; OpenAI key optional | https://useanything.com |
+| Chorus | Chat with multiple models side‑by‑side and synthesize answers | OpenAI, Anthropic, local GGUF | https://chorus.sh |
+
+### 3.5 Open‑Source Utilities & Creative Suite
 
 | Category | Tool | What it does | Link |
 |---|---|---|---|
-| Desktop Chat | MSTY | Offline desktop chat app for local/OSS models with branching and RAG | https://msty.app |
-| Desktop Chat | Chorus | Chat with multiple LLMs and auto‑cross‑check answers | https://chorus.sh |
-| Utility | Ollama | Local model runner/manager (macOS, Linux) | https://ollama.com |
-| Utility | LM Studio | GUI playground for downloading, running, and prompting local LLMs | https://lmstudio.ai |
-| Utility | AnythingLLM | Self‑hosted RAG stack with plug‑and‑play embeddings | https://useanything.com |
 | Visual | MidJourney | High‑quality image generation via Discord | https://www.midjourney.com |
 | Visual | Krea | Real‑time generative image & reference search | https://www.krea.ai |
 | Visual | Ideogram | Text‑centric image generation (typography aware) | https://ideogram.ai |
