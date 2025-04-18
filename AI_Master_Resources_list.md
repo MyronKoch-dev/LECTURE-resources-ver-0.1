@@ -100,9 +100,10 @@ Follow on **X/Twitter** with notifications; grow your network by mining quality 
 ---
 ## 7 | 🚀 Modern AI Models & Key Differences (2025‑Q2)
 ### OpenAI
-- **GPT‑4o ("Omni")** – multimodal, RLHF, 128k ctxt.
+- **GPT‑4o ("Omni") (depricated)** – multimodal, RLHF, 128k ctxt.
 - **GPT‑4o‑1 (Mini)** – latency‑optimized.
 - **GPT‑4.5 “Orion”** – lower hallucination.
+- **GPT‑o3** – fast at reasoning, beats nearly all benchmarks achieved by other models.
 - **o3‑mini / o3‑mini‑high & o1 Pro** – cost‑efficient reasoning SKUs.
 
 ### Anthropic
