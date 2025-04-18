@@ -142,16 +142,21 @@
 |---|---|---|
 | **Andromeda Protocol Testnet** | https://app.testnet.andromedaprotocol.io/ | Decentralized sandbox for AI×Blockchain experiments |
 
-### 3.2 AI Search Engines
-| Engine | Differentiation | Link |
-|---|---|---|
-| Perplexity | Academic citations, live web | https://perplexity.ai |
-| Scira | OSS Perplexity‑style search | https://scira.ai/about |
-| You.com | Customizable multi‑agent UX | https://you.com |
-| Phind | Developer‑centric | https://phind.com |
-| Komo | Mind‑map UI | https://komo.ai |
-| Gemini Search | Google multimodal reasoning | https://gemini.google.com |
-| Copilot (Bing) | Microsoft ecosystem | https://copilot.microsoft.com |
+### 3.2 AI Search Engines (Research / Thinking Modes)
+
+| Engine | Modes / Flagship Feature | Model Backend | Free Tier | DR* | Firsts & Notes |
+|---|---|---|---|:---:|---|
+| **[ChatGPT](https://chat.openai.com)** | Multi‑step autonomous research agent | GPT‑4o / o3 | Plus & Enterprise | ✔ | First mainstream Deep‑Research launch (Feb 2025) |
+| **[Google Gemini](https://gemini.google.com)** | In‑depth reports & podcast‑style summaries | Gemini 2.5 Pro | **Free** on web + Edu | ✔ | Added “Deep Research” button Apr 2025 |
+| **[Perplexity](https://www.perplexity.ai)** | Research mode → dozens of queries + citations | o4‑mini‑high | Free (rate‑limited), Pro faster | ✔ | Public rollout Mar 2025 |
+| **[DeepSeek Search](https://search.deepseek.com)** | Thinking mode, chain‑of‑thought answers | DeepSeek‑V3 | Free OSS | ✔ | **First to ship “thinking” mode (Oct 2024)** |
+| **[Bing Copilot](https://copilot.microsoft.com)** | Deep Search: reasoning + source triangulation | GPT‑4o | Free | ✔ | Hybrid lexical + vector retrieval |
+| **[You.com](https://you.com)** | Research mode scans 200+ sources, cluster view | GPT‑4o & Claude | Free & Pro | ✔ | Strong on academic PDFs |
+| **[Phind](https://phind.com)** | Dev‑centric “Explain Code” + research snippets | Mixtral‑fine‑tune | Free & Pro | ❌ | Code reasoning focus |
+| **[Komo AI](https://komo.ai)** | Mind‑map visual search, citation graph | OSS Llama‑3 | Free | ❌ | Good brainstorm UI |
+> *DR = Deep Research (multi‑step autonomous research / thinking mode).*
+
+> **Tip:** For class projects, Perplexity Research or DeepSeek Thinking give free no‑sign‑up access; Gemini Deep Research is free via the Gemini web UI as of Apr 2025.
 
 ### 3.3 AI‑Infused Coding Tools & IDEs
 
@@ -259,11 +264,13 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 5. **Google Project Astra** – <https://blog.google/technology/ai/google-project-astra/>  
    Gemini 2.5 Flash multimodal agent that answers live camera questions (“What city am I in?”).
 
-6. **Alibaba DingTalk Meeting Mind** – <https://www.alibabacloud.com/blog/dingtalk-meeting-mind>  
-   Qwen 2.5‑1M based tool that generates 1‑million‑token meeting summaries and action items.
+6. **Google Meet “Take notes with Gemini”** – <https://workspace.google.com/blog/product-announcements/gemini-for-google-meet-take-notes>  
+   Gemini 1.5 Pro generates real‑time meeting notes, summaries, and action items directly into Google Docs.
 
 7. **DeepSeek R1 Robotics Stack** – <https://deepseek.com/blog/r1-robotics>  
    Warehouse robot powered by DeepSeek V3 on‑device MoE; real‑time pick‑and‑pack.
+8. **Covariant Brain Robotic Picking** – <https://www.covariant.ai/blog/covariant-brain>  
+   Vision‑plus‑LLM hybrid stack deployed in dozens of US/EU warehouses for autonomous item picking and packing.
 
 ---
 
