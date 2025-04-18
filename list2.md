@@ -7,24 +7,28 @@
 
 ## 📑 Table of Contents
 1. 🏛️ Historical Foundations & Core Concepts  
- 2. 🚀 Frontier Models (2025‑Q2)  
+    - 1.1 Interactive Timelines & Visualizers
+    - 1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)
+        - 1.2.1 Training Pipeline Definitions & Recipes
+        - 1.2.2 Software Stack by Training Stage
+2. 🚀 Frontier Models (2025‑Q2)  
+    - 2.1 Model Architecture Cheat‑Sheet
     - 2.2 Model Modalities & Classes
-    - 1.2.1 Training Pipeline Definitions & Recipes
- 3. 🛠️ Ecosystem & Tooling  
-   - 3.1 Core Platform for Experiments  
-   - 3.2 AI Search Engines (Research / Thinking Modes)  
-   - 3.3 AI‑Infused Coding Tools & IDEs  
-   - 3.4 Desktop Chat Clients & Local Runners  
-   - 3.5 Open‑Source Utilities & Creative Suite  
-   - 3.6 Agent Frameworks & Orchestrators  
+3. 🛠️ Ecosystem & Tooling  
+    - 3.1 Core Platform for Experiments  
+    - 3.2 AI Search Engines (Research / Thinking Modes)  
+    - 3.3 AI‑Infused Coding Tools & IDEs  
+    - 3.4 Desktop Chat Clients & Local Runners  
+    - 3.5 Open‑Source Utilities & Creative Suite  
+    - 3.6 Agent Frameworks & Orchestrators  
 4. 🧑‍🔬 Research & Thought Leadership  
 5. 🌐 Applied Case Studies  
 6. ⚖️ Ethics, Safety & Policy  
 7. 🎓 Student Opportunities  
 8. 📜 Appendices & Further Reading  
-   - Prompt Engineering 101  
-   - Quantum Horizons  
-   - Advanced Challenges
+    - Prompt Engineering 101  
+    - Quantum Horizons  
+    - Advanced Challenges
 
 ---
 
@@ -34,6 +38,17 @@
 - **LLM 3‑D Walkthrough:** <https://bbycroft.net/llm>  
 - **Transformer Explainer:** <https://poloclub.github.io/transformer-explainer/>  
 - **Prompt‑Chaining Primer:** <https://www.agentrecipes.com/prompt-chaining>
+
+**Milestones since 1956**
+
+- **1956 — Dartmouth Summer Research Project** coins the term "artificial intelligence." (Source: Dartmouth College)  
+- **1986 — Back‑propagation breakthrough** enables multi‑layer neural nets (Rumelhart, Hinton, Williams). (Nature 323)  
+- **2012 — AlexNet** wins ImageNet, igniting the deep‑learning era. (NeurIPS 2012 paper)  
+- **2017 — "Attention Is All You Need"** introduces the transformer architecture. (arXiv 1706.03762)  
+- **2020 — GPT‑3** shows few‑shot learning with 175 B parameters. (arXiv 2005.14165)  
+- **2022 — ChatGPT** popularises conversational LLMs, hitting 100 M users in two months. (Wikipedia)  
+- **2024 — Gemini 2.5 Pro** reaches a 1‑million‑token context window. (Google DeepMind)  
+- **2025 — GPT‑4o** becomes OpenAI's default multimodal model, replacing GPT‑4. (OpenAI release notes)
 
 ### 1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)
 | Stage | Classic definition | Typical recipe | 2025 upgrade |
@@ -45,49 +60,72 @@
 > **Note — "RLHF" now often means RLAIF or DPO/ORPO:** reward signals can come from strong critic models instead of humans, or the model can be aligned directly on preference pairs without a PPO loop.
 
 <details>
-<summary>🔬 1.2.1 Training Pipeline Definitions & Recipes ▸</summary>
+<summary>🔬 1.2.1 Training Pipeline Definitions & Recipes ▸</summary>
 
 #### Pre‑training  
 **What it is:** unsupervised next‑token prediction on hundreds of billions of tokens so the model internalises syntax, facts, and reasoning priors.  
 **How to do it:**  
 1. Curate corpus (e.g., RefinedWeb) → deduplicate & filter.  
-2. Tokenise with SentencePiece 32 k.  
-3. Train dense or MoE Transformer (ZeRO‑3, bf16) for ~300 B tokens on 256 A100‑80 GB GPUs.  
+2. Tokenise with SentencePiece 32 k.  
+3. Train dense or MoE Transformer (ZeRO‑3, bf16) for ~300 B tokens on 256 A100‑80 GB GPUs.  
 4. Track perplexity; spot‑check MT‑Bench / MMLU.
 
 ---
 
-#### Fine‑tuning (LoRA / QLoRA)  
-**What it is:** parameter‑efficient adaptation to a domain using thousands of labelled examples while freezing > 99 % of original weights.  
+#### Fine‑tuning (LoRA / QLoRA)  
+**What it is:** parameter‑efficient adaptation to a domain using thousands of labelled examples while freezing > 99 % of original weights.  
 **How to do it:**  
 1. Quantise base to 4‑bit with `bitsandbytes`.  
 2. Attach LoRA adapters (`peft.LoraConfig(r=8)`).  
-3. Train 3 epochs, LR 1e‑4, batch 128.  
+3. Train 3 epochs, LR 1e‑4, batch 128.  
 4. Save Δ‑weights or merge for inference.
 
 ---
 
-#### RLHF (PPO loop)  
+#### RLHF (PPO loop)  
 **What it is:** align model outputs with human preferences via a reward model and PPO.  
 **How to do it:**  
-1. Collect ≈100 k SFT prompts + 10 k preference pairs.  
-2. Train reward model (6 B params).  
-3. Optimise policy with `trlx` PPO (KL 0.03, 5 epochs).  
+1. Collect ≈100 k SFT prompts + 10 k preference pairs.  
+2. Train reward model (6 B params).  
+3. Optimise policy with `trlx` PPO (KL 0.03, 5 epochs).  
 4. Validate on MT‑Bench & harmlessness evals.
 
 ---
 
-#### RLAIF & DPO  
+#### RLAIF & DPO  
 **What they are:**  
 * **RLAIF** – swap human raters for GPT‑4 critiques.  
 * **DPO / ORPO** – skip PPO; train directly on preference pairs via closed‑form loss.  
 **How to do it:**  
 1. Use GPT‑4 to rank answers *(RLAIF)* or keep human pairs *(DPO)*.  
-2. For DPO minimise `L = -log σ(β·(rθ(A) – rθ(B)))` with β≈0.1 for 1–3 epochs.  
+2. For DPO minimise `L = -log σ(β·(rθ(A) – rθ(B)))` with β≈0.1 for 1–3 epochs.  
 3. Evaluate alignment; shadow‑deploy before prod.
 
 </details>
- 
+<details>
+<summary> 1.2.2 Software Stack by Training Stage</summary>
+
+| Stage | Tool / Site | Why it matters | Link |
+|---|---|---|---|
+| Data curation & streaming | RefinedWeb toolkit | Large‑scale Common Crawl cleaning & dedup | https://huggingface.co/datasets/tiiuae/falcon-refinedweb |
+|  | Dolma | Modular dataset builder used for C4 / FineWeb | https://github.com/allenai/DataDecide |
+|  | Mosaic StreamingDataset | Shard‑on‑demand data loading | https://docs.mosaicml.com/projects/streaming/ |
+| Pre‑training frameworks | DeepSpeed | ZeRO‑3 / ZeRO‑Infinity, 3D parallelism | https://github.com/microsoft/DeepSpeed |
+|  | Megatron‑DeepSpeed | 100 B‑param GPT/T5 recipe | https://github.com/deepspeedai/Megatron-DeepSpeed |
+|  | T5X | JAX/Flax high‑perf trainer | https://github.com/google-research/t5x |
+|  | Ray Train | Cluster‑scale PyTorch/JAX jobs | https://docs.ray.io/en/latest/train/ |
+| Fine‑tuning / PEFT | PEFT (LoRA/QLoRA) | Adapter training for any transformer | https://github.com/huggingface/peft |
+|  | bitsandbytes | 4‑bit quantisation kernels | https://github.com/bitsandbytes-foundation/bitsandbytes |
+|  | Axolotl | YAML‑driven SFT / QLoRA pipeline | https://github.com/OpenAccess-AI-Collective/axolotl |
+| RLHF / Alignment | DeepSpeed‑Chat | Turn‑key SFT → RM → PPO pipeline | https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat |
+|  | trlX | Distributed PPO / DPO training | https://github.com/CarperAI/trlx |
+|  | RL4LMs | Modular RL for language models | https://github.com/allenai/RL4LMs |
+| Evaluation harnesses | lm‑eval‑harness | Standard MT‑Bench, MMLU, TruthfulQA | https://github.com/EleutherAI/lm-eval-harness |
+|  | HELM | Holistic eval dashboard | https://crfm.stanford.edu/helm/latest/ |
+| Experiment tracking | Weights & Biases (wandb) | Real‑time metrics, artifact versioning, sweep manager | https://wandb.ai |
+</details>
+
+
 
 ### 1.3 Retrieval‑Augmented Generation (RAG) Variants  
 | Variant | Core idea | When it shines |
@@ -198,7 +236,7 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | Class | Core tasks | Canonical architectures | Signature checkpoints |
 |---|---|---|---|
 | **Language (LLM)** | text understanding, code, reasoning | Decoder‑only Transformers; Dense / MoE / Hybrid | GPT‑4o, Claude 3.7 Sonnet, Llama‑3 70B |
-| **Vision** | classification, detection, segmentation, grounding | ViT, Swin, Mask R‑CNN; Vision encoders + decoders | Segment Anything (SAM) | CLIP‑ViT B/16 |
+| **Vision** | classification, detection, segmentation | ViT, Swin, Mask R‑CNN | SAM, CLIP‑ViT B/16 |
 | **Cross‑modal (Vision‑Language)** | image ↔ text alignment, captioning, retrieval | Dual encoders; gated fusion | CLIP | Gemini 2.5 Flash |
 | **Speech / Audio** | ASR, TTS, music generation | Conformer, Transducer, Diffusion‑decoders | Whisper (v3) | Suno v3 | MusicGen |
 | **Diffusion / Generative Media** | images, video, 3‑D assets | Latent Diffusion, DiT | Stable Diffusion 3 | Runway Gen‑3 |
@@ -372,7 +410,7 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
    • Works up to ~300 k‑token meetings; links each note to transcript timecodes.  
    • Lets you ask: "Who owns the Q3 marketing OKR?"
 
-7. **[DeepSeek R1 Robotics Stack](https://github.com/deepseek-ai/DeepSeek-R1)** – on‑device MoE model driving a warehouse Vector arm (≈600 picks / hr).  
+7. **[DeepSeek R1 Robotics Stack](https://github.com/deepseek-ai/DeepSeek-R1)** – on‑device MoE model driving a warehouse Vector arm (≈600 picks / hr).  
    • Demo video: <https://www.youtube.com/watch?v=DhqtwdtfGcM>
 
 8. **[Covariant Brain Robotic Picking](https://covariant.ai/covariant-brain/)**  
@@ -380,6 +418,8 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
    • Achieves 98 % pick accuracy on unseen items.  
    • Self‑improves via federated learning across 50+ robot arms.
 
+9. **NVIDIA Isaac Sim + GR00T Pilot** – simulated warehouse robot running vision foundation model + GPT policy.  
+   • Uses Isaac Sim for synthetic data; GR00T for task planning  [oai_citation_attribution:2‡arXiv](https://arxiv.org/abs/2306.01116?utm_source=chatgpt.com)
 
 ---
 
