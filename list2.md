@@ -94,8 +94,42 @@
 | **Structured Expert (GQA / MQA)** | Multi‑query or grouped‑query attention reduces KV size; acts like lightweight “expert routing.” | Llama‑3, Mistral‑7B | Faster inference, smaller KV cache. | Slight accuracy trade‑off on small models. |
 | **Diffusion Transformer (DiT)** | Use diffusion denoising steps with transformer backbone for images. | Stable Diffusion 3 DiT, DeepFloyd IF | High‑quality image generation. | Not suited for language tasks. |
 
-> *Cheat‑sheet takeaway:* most frontier LLMs are now **Sparse MoE or Hybrid**, balancing capacity with compute. Dense transformers dominate sub‑30 B param models, while SSMs and Retro‑style hybrids target ultra‑long context and factual recall.
----
+ > *Cheat‑sheet takeaway:* most frontier LLMs are now **Sparse MoE or Hybrid**, balancing capacity with compute. Dense transformers dominate sub‑30 B param models, while SSMs and Retro‑style hybrids target ultra‑long context and factual recall.
+ 
+
+ <details>
+ <summary>🔍 Mixture‑of‑Experts (MoE) — How expert MLPs work ▸</summary>
+ 
+ **Expert MLPs = specialist subnetworks**
+ 
+ * **MLP = Multilayer Perceptron** (2‑3 fully‑connected layers).  
+ * In classic transformers, every token passes through the *same* MLP block.  
+ * In an **MoE layer** you have *many* MLPs (the “experts”). A *router* decides which small subset of experts (usually 1‑2) process each token.
+ 
+ ```
+ Token → Router → Expert 3 & Expert 7 → Combine → Next layer
+ ```
+ 
+ ### Why bother?
+ 
+ | Benefit | What it means |
+ |---|---|
+ | **Efficient scaling** | Billions of parameters, but each forward pass touches only ~10‑20 % of them. |
+ | **Specialization** | Experts learn sub‑skills (math vs. dialog, etc.). |
+ | **Modularity** | You can add experts without retraining the whole model. |
+ 
+ ### Example setups
+ 
+ | Model | Expert config | Notes |
+ |---|---|---|
+ | Mixtral 8×22B | 8 experts, 2 active/token | Open‑weights; community favourite. |
+ | OpenAI o‑series (o3/o4‑mini) | *Undisclosed* MoE layers | Used to hit high reasoning at lower cost. |
+ | Gemini 1.5 Pro | Hierarchical MoE | Long‑context, 1 M tokens. |
+ 
+ 
+ </details>
+ 
+ ---
 
 ## 3 | 🛠️ Ecosystem & Tooling
 
