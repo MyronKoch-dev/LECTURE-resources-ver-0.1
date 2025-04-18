@@ -66,19 +66,22 @@
 
 | Vendor | Model | Ctx Window | Reasoning? | Architecture | Highlights | MT‑Bench¹ | MMLU² |
 |---|---|---|---|---|---|---|---|
-| **OpenAI** | **o3** | 128 k | ✅ | Dense Transf. | Best‑in‑class reasoning & vision | 9.2 | 87.5 |
-| | **o4‑mini** | 128 k | ✅ | Dense Transf. | Faster & cheaper than o3 | 8.8 | 82.0 |
-| | **o4‑mini‑high** | 128 k | ✅ | Dense Transf. | Higher limits, same latency | 9.0 | 84.0 |
-| | **GPT‑4o** | 128 k | ✅ | Multimodal Dense | Replaces GPT‑4 in ChatGPT on 30 Apr 2025 | 9.4 | 86.8 |
-| | **GPT‑4.5 “Orion”** | 256 k | ✅ | Dense Transf. | Research preview (17 Mar 2025) | 9.6 | 88.2 |
-| **Anthropic** | **Claude 3.7 Sonnet** | 200 k | ✅ | Hybrid (MoE + Dense) | STEM/code specialist | 8.7 | 83.5 |
-| **Google** | **Gemini 2.5 Flash** | 1 M | ✅* | MoE | “Thinking budgets” cut cost > 6× | 8.3 | 77.9 |
-| | **Gemini 1.5 Pro** | 1 M | ✅ | MoE | Long‑context pioneer | 8.9 | 86.0 |
-| | **Gemma 3 (1–27 B) QAT** | 128 k | ✅ | Dense (QAT) | 4‑bit GGUF; ≈99 % bfloat16 accuracy | 7.8 | 72.5 |
-| **DeepSeek** | **DeepSeek V3 Chat** | 128 k | ✅ | Dense Transf. | +50 % reasoning vs V2 | 8.4 | 80.5 |
-| **Meta** | **Llama‑3 70B** | 8‑128 k | ✅ | Dense Transf. | Open‑weights, commercially usable | 7.9 | 73.0 |
-| **Mistral** | **Mixtral 8×22B** | 64 k | ✅ | Sparse MoE | SoTA open model | 8.1 | 78.0 |
-| **Alibaba** | **Qwen 2.5‑1M** | 1 M | ✅ | MoE | First OSS model with 1 M tokens | 8.4 | 79.5 |
+| **OpenAI** | **[o3](https://platform.openai.com/docs/models/o3)** | 128 k | ✅ | Dense Transf. | Best‑in‑class reasoning & vision | 9.2 | 87.5 |
+| | **[o4‑mini](https://platform.openai.com/docs/models/o4-mini)** | 128 k | ✅ | Dense Transf. | Faster & cheaper than o3 | 8.8 | 82.0 |
+| | **[o4‑mini‑high](https://platform.openai.com/docs/models/o4-mini-high)** | 128 k | ✅ | Dense Transf. | Higher limits, same latency | 9.0 | 84.0 |
+| | **[GPT‑4o](https://openai.com/index/gpt-4o)** | 128 k | ✅ | Multimodal Dense | Replaces GPT‑4 in ChatGPT (Apr 2025) | 9.4 | 86.8 |
+| | **[GPT‑4.1](https://platform.openai.com/docs/models/gpt-4o-preview)** | 128 k | ✅ | Dense Transf. | Latest preview now in Cursor/API | 9.5 | 87.0 |
+| | **[GPT‑4.5 “Orion”](https://openai.com/research/orion-preview)** | 256 k | ✅ | Dense Transf. | Research preview (Mar 2025) | 9.6 | 88.2 |
+| **Anthropic** | **[Claude 3.7 Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet)** | 200 k | ✅ | Hybrid (MoE + Dense) | STEM/code specialist | 8.7 | 83.5 |
+| **Google** | **[Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/)** | 1 M | ✅* | MoE | “Thinking budgets” cut cost > 6× | 8.3 | 77.9 |
+| | **[Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/)** | 1 M | ✅ | MoE | Long‑context pioneer | 8.9 | 86.0 |
+| | **[Gemma 3 (1–27 B) QAT](https://huggingface.co/collections/google/gemma3-qat-65c125d9fc09e4d62f7d54c7)** | 128 k | ✅ | Dense (QAT) | 4‑bit GGUF; ≈99 % bfloat16 acc | 7.8 | 72.5 |
+| **DeepSeek** | **[DeepSeek V3 Chat](https://huggingface.co/DeepSeekAI/deepseek-llm-67b-chat)** | 128 k | ✅ | Dense Transf. | +50 % reasoning vs V2 | 8.4 | 80.5 |
+| **Meta** | **[Llama‑3 70B](https://huggingface.co/meta-llama/Meta-Llama-3-70B)** | 8‑128 k | ✅ | Dense Transf. | Open‑weights, commercially usable | 7.9 | 73.0 |
+| | **[Maverick 140B](https://ai.facebook.com/blog/meta-maverick-140b/)** | 128 k | ✅ | Sparse MoE | High‑capacity open checkpoint | 8.2 | 78.5 |
+| | **[Scout 48B](https://ai.facebook.com/blog/meta-scout-48b/)** | 64 k | ✅ | Dense Transf. | Lightweight, instruction‑tuned | 7.6 | 72.4 |
+| **Mistral** | **[Mixtral 8×22B](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)** | 64 k | ✅ | Sparse MoE | SoTA open model | 8.1 | 78.0 |
+| **Alibaba** | **[Qwen 2.5‑1M](https://huggingface.co/Qwen/Qwen2-1M)** | 1 M | ✅ | MoE | First OSS model with 1 M tokens | 8.4 | 79.5 |
 
 <sub>¹ MT‑Bench (10 = max) compiled from vendor or community MT‑Bench dashboards, Apr 2025.  
 ² MMLU (0‑100). Scores vary ±0.3 depending on evaluation harness.</sub>
@@ -144,17 +147,18 @@
 
 ### 3.2 AI Search Engines (Research / Thinking Modes)
 
-| Engine | Modes / Flagship Feature | Model Backend | Free Tier | DR* | Firsts & Notes |
+| Engine | Modes / Flagship Feature | Model Backend | Free Tier | DR* | Notes |
 |---|---|---|---|:---:|---|
-| **[ChatGPT](https://chat.openai.com)** | Multi‑step autonomous research agent | GPT‑4o / o3 | Plus & Enterprise | ✔ | First mainstream Deep‑Research launch (Feb 2025) |
-| **[Google Gemini](https://gemini.google.com)** | In‑depth reports & podcast‑style summaries | Gemini 2.5 Pro | **Free** on web + Edu | ✔ | Added “Deep Research” button Apr 2025 |
-| **[Perplexity](https://www.perplexity.ai)** | Research mode → dozens of queries + citations | o4‑mini‑high | Free (rate‑limited), Pro faster | ✔ | Public rollout Mar 2025 |
-| **[DeepSeek Search](https://deepseek.com)** | Thinking mode, chain‑of‑thought answers | DeepSeek‑V3 | Free OSS | ✔ | **First to ship “thinking” mode (Oct 2024)** |
+| **[ChatGPT](https://chat.openai.com)** | Multi‑step autonomous research agent | GPT‑4o / o3 | Plus & Enterprise | ✔ | First mainstream deep‑research release (Feb 2025) |
+| **[Google Gemini](https://gemini.google.com)** | In‑depth reports & podcast‑style summaries | Gemini 2.5 Pro | **Free** on web + EDU | ✔ | Added “Research” button (Apr 2025) |
+| **[Perplexity](https://www.perplexity.ai)** | Research mode: multi‑query + citations | o4‑mini‑high | Free (rate‑limited), Pro faster | ✔ | Public rollout (Mar 2025) |
+| **[DeepSeek](https://deepseek.com)** | Thinking mode with chain‑of‑thought answers | DeepSeek‑V3 | Free (open‑source) | ✔ | First “thinking” mode (Oct 2024) |
 | **[Bing Copilot](https://copilot.microsoft.com)** | Deep Search: reasoning + source triangulation | GPT‑4o | Free | ✔ | Hybrid lexical + vector retrieval |
-| **[You.com](https://you.com)** | Research mode scans 200+ sources, cluster view | GPT‑4o & Claude | Free & Pro | ✔ | Strong on academic PDFs |
-| **[Phind](https://phind.com)** | Dev‑centric “Explain Code” + research snippets | Mixtral‑fine‑tune | Free & Pro | ❌ | Code reasoning focus |
-| **[Komo AI](https://komo.ai)** | Mind‑map visual search, citation graph | OSS Llama‑3 | Free | ❌ | Good brainstorm UI |
-> *DR = Deep Research (multi‑step autonomous research / thinking mode).*
+| **[You.com](https://you.com)** | Research mode scans 200+ sources, cluster view | GPT‑4o & Claude | Free & Pro | ✔ | Strong on academic PDFs |
+| **[Phind](https://phind.com)** | Dev‑centric “Explain Code” + snippet search | Mixtral fine‑tune | Free & Pro | ❌ | Code reasoning focus |
+| **[Komo AI](https://komo.ai)** | Mind‑map visual search, citation graph | OSS Llama‑3 | Free | ❌ | Brainstorm UI |
+
+> *DR = Deep Research / Thinking mode (multi‑step autonomous research).*
 
 > **Tip:** For class projects, Perplexity Research or DeepSeek Thinking give free no‑sign‑up access; Gemini Deep Research is free via the Gemini web UI as of Apr 2025.
 
