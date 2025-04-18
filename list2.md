@@ -7,8 +7,10 @@
 
 ## 📑 Table of Contents
 1. 🏛️ Historical Foundations & Core Concepts  
-2. 🚀 Frontier Models (2025‑Q2)  
-3. 🛠️ Ecosystem & Tooling  
+ 2. 🚀 Frontier Models (2025‑Q2)  
+    - 2.2 Model Modalities & Classes
+    - 1.2.1 Training Pipeline Definitions & Recipes
+ 3. 🛠️ Ecosystem & Tooling  
    - 3.1 Core Platform for Experiments  
    - 3.2 AI Search Engines (Research / Thinking Modes)  
    - 3.3 AI‑Infused Coding Tools & IDEs  
@@ -20,7 +22,7 @@
 6. ⚖️ Ethics, Safety & Policy  
 7. 🎓 Student Opportunities  
 8. 📜 Appendices & Further Reading  
-   - Prompt Engineering 101  
+   - Prompt Engineering 101  
    - Quantum Horizons  
    - Advanced Challenges
 
@@ -41,6 +43,50 @@
 | **RLHF** | Collect human preference pairs → reward model → RL (usually PPO) to align outputs. | 5–10 k preference pairs, Proximal Policy Optimization. | **RLAIF** (AI feedback), **DPO/ORPO** skip RL loop; cheaper, faster. |
 
 > **Note — "RLHF" now often means RLAIF or DPO/ORPO:** reward signals can come from strong critic models instead of humans, or the model can be aligned directly on preference pairs without a PPO loop.
+
+<details>
+<summary>🔬 1.2.1 Training Pipeline Definitions & Recipes ▸</summary>
+
+#### Pre‑training  
+**What it is:** unsupervised next‑token prediction on hundreds of billions of tokens so the model internalises syntax, facts, and reasoning priors.  
+**How to do it:**  
+1. Curate corpus (e.g., RefinedWeb) → deduplicate & filter.  
+2. Tokenise with SentencePiece 32 k.  
+3. Train dense or MoE Transformer (ZeRO‑3, bf16) for ~300 B tokens on 256 A100‑80 GB GPUs.  
+4. Track perplexity; spot‑check MT‑Bench / MMLU.
+
+---
+
+#### Fine‑tuning (LoRA / QLoRA)  
+**What it is:** parameter‑efficient adaptation to a domain using thousands of labelled examples while freezing > 99 % of original weights.  
+**How to do it:**  
+1. Quantise base to 4‑bit with `bitsandbytes`.  
+2. Attach LoRA adapters (`peft.LoraConfig(r=8)`).  
+3. Train 3 epochs, LR 1e‑4, batch 128.  
+4. Save Δ‑weights or merge for inference.
+
+---
+
+#### RLHF (PPO loop)  
+**What it is:** align model outputs with human preferences via a reward model and PPO.  
+**How to do it:**  
+1. Collect ≈100 k SFT prompts + 10 k preference pairs.  
+2. Train reward model (6 B params).  
+3. Optimise policy with `trlx` PPO (KL 0.03, 5 epochs).  
+4. Validate on MT‑Bench & harmlessness evals.
+
+---
+
+#### RLAIF & DPO  
+**What they are:**  
+* **RLAIF** – swap human raters for GPT‑4 critiques.  
+* **DPO / ORPO** – skip PPO; train directly on preference pairs via closed‑form loss.  
+**How to do it:**  
+1. Use GPT‑4 to rank answers *(RLAIF)* or keep human pairs *(DPO)*.  
+2. For DPO minimise `L = -log σ(β·(rθ(A) – rθ(B)))` with β≈0.1 for 1–3 epochs.  
+3. Evaluate alignment; shadow‑deploy before prod.
+
+</details>
  
 
 ### 1.3 Retrieval‑Augmented Generation (RAG) Variants  
@@ -147,7 +193,21 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
  
  </details>
  
- ---
+ ### 2.2 Model Modalities & Classes
+
+| Class | Core tasks | Canonical architectures | Signature checkpoints |
+|---|---|---|---|
+| **Language (LLM)** | text understanding, code, reasoning | Decoder‑only Transformers; Dense / MoE / Hybrid | GPT‑4o, Claude 3.7 Sonnet, Llama‑3 70B |
+| **Vision** | classification, detection, segmentation, grounding | ViT, Swin, Mask R‑CNN; Vision encoders + decoders | Segment Anything (SAM) | CLIP‑ViT B/16 |
+| **Cross‑modal (Vision‑Language)** | image ↔ text alignment, captioning, retrieval | Dual encoders; gated fusion | CLIP | Gemini 2.5 Flash |
+| **Speech / Audio** | ASR, TTS, music generation | Conformer, Transducer, Diffusion‑decoders | Whisper (v3) | Suno v3 | MusicGen |
+| **Diffusion / Generative Media** | images, video, 3‑D assets | Latent Diffusion, DiT | Stable Diffusion 3 | Runway Gen‑3 |
+| **Graph Neural Nets (GNN)** | social‑/protein‑/traffic graphs, recommendations | GCN, GAT, GraphSage | PyG demo models |
+| **Retrieval‑Augmented** | knowledge‑dense Q&A with small base LLM | Chunk retriever + Transformer decoder | DeepMind RETRO |
+| **State‑Space (SSM)** | ultra‑long context seq2seq, streaming | Mamba, RWKV | Mamba‑2.8 B |
+| **Reinforcement / Policy** | robotics, games, decision agents | PPO, MuZero, policy transformers | AlphaGo | Gato |
+
+---
 
 ## 3 | 🛠️ Ecosystem & Tooling
 
