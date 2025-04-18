@@ -9,11 +9,20 @@
 1. 🏛️ Historical Foundations & Core Concepts  
 2. 🚀 Frontier Models (2025‑Q2)  
 3. 🛠️ Ecosystem & Tooling  
+   - 3.1 Core Platform for Experiments  
+   - 3.2 AI Search Engines (Research / Thinking Modes)  
+   - 3.3 AI‑Infused Coding Tools & IDEs  
+   - 3.4 Desktop Chat Clients & Local Runners  
+   - 3.5 Open‑Source Utilities & Creative Suite  
+   - 3.6 Agent Frameworks & Orchestrators  
 4. 🧑‍🔬 Research & Thought Leadership  
 5. 🌐 Applied Case Studies  
 6. ⚖️ Ethics, Safety & Policy  
 7. 🎓 Student Opportunities  
 8. 📜 Appendices & Further Reading  
+   - Prompt Engineering 101  
+   - Quantum Horizons  
+   - Advanced Challenges
 
 ---
 
@@ -63,6 +72,8 @@
 ---
 
 ## 2 | 🚀 Frontier Models (2025‑Q2)
+
+Frontier models are the latest, most advanced AI systems from leading labs, setting the state of the art in reasoning, scale, and capabilities.
 
 | Vendor | Model | Ctx Window | Reasoning? | Architecture | Highlights | MT‑Bench¹ | MMLU² |
 |---|---|---|---|---|---|---|---|
@@ -144,6 +155,9 @@
 | Platform | Link | Purpose |
 |---|---|---|
 | **Andromeda Protocol Testnet** | https://app.testnet.andromedaprotocol.io/ | Decentralized sandbox for AI×Blockchain experiments |
+| **Fetch.ai Agentverse** | https://fetch.ai/docs/concepts/agent-services/agentverse-intro | Marketplace & runtime for on‑chain autonomous agents |
+| **ChainML** | https://chainml.xyz | Smart‑contract ⇄ LLM orchestration toolkit |
+| **0xPrompt (0x AI Tools)** | https://0x.org/docs/ai-tools | Open‑source toolkit for LLM agents on Ethereum |
 
 ### 3.2 AI Search Engines (Research / Thinking Modes)
 
@@ -193,7 +207,7 @@
 |---|---|---|---|
 | ChatGPT Desktop | Native macOS / Windows app; global hot‑key, screenshot & file chat | GPT‑4o, o‑series | https://openai.com/chatgpt/desktop/ |
 | Claude Desktop | Anthropic desktop client with drag‑drop files and Claude 3 family | Claude 3.7 Sonnet / Opus | https://support.anthropic.com/en/articles/10065433-installing-claude-for-desktop |
-| Perplexity Desktop | Mac App Store build; "Workspaces" + Research Mode | o4‑mini‑high (Pro) + free LLM | https://www.perplexity.ai/mac |
+| Perplexity Desktop | macOS App Store build; "Workspaces" + Research Mode | o4‑mini‑high (Pro) + free LLM | https://www.perplexity.ai/mac |
 | MSTY | Offline‑first multiverse chat with branch views | Any local GGUF + OpenAI / Anthropic | https://msty.app |
 | LM Studio | Discover, download & run OSS LLMs locally | Llama‑3, DeepSeek, Gemma, etc. | https://lmstudio.ai |
 | AnythingLLM Desktop | Turnkey local RAG + chat with multiple OSS models | GGUF / ggml models; OpenAI key optional | https://useanything.com |
@@ -214,6 +228,19 @@
 | Audio/Video | Descript | AI‑assisted audio & video editing | https://www.descript.com |
 | Audio/Video | Adobe Firefly | Generative image and text effects in Creative Cloud | https://firefly.adobe.com |
 | Audio/Video | Adobe Premiere Pro | Video editor with AI background removal & speech clean‑up | https://www.adobe.com/products/premiere.html |
+| Framework | LangChain | Composable framework for LLM chains, tools & agents | https://github.com/langchain-ai/langchain |
+| Framework | Flowise | Drag‑and‑drop UI wrapper around LangChain for fast demos | https://github.com/FlowiseAI/Flowise |
+| Framework | LlamaIndex | Data framework bridging docs → embeddings → LLM | https://github.com/run-llama/llama_index |
+
+### 3.6 Agent Frameworks & Orchestrators
+
+| Framework | Highlight | Link |
+|---|---|---|
+| AutoGen | Multi‑agent workflow engine (Microsoft) | https://github.com/microsoft/autogen |
+| LangGraph | Graph‑based state‑machine wrapper for LangChain agents | https://github.com/langchain-ai/langgraph |
+| ElizaOS | Decentralized agent OS for Web3 automations | https://github.com/eliza-os/ElizaOS |
+| MetaGPT | Multi‑agent code‑generation (Spec → PR) | https://github.com/geekan/MetaGPT |
+| DSPy | Declarative structured prompting framework | https://github.com/stanfordnlp/dspy |
 
 ---
 
@@ -285,8 +312,8 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
    • Works up to ~300 k‑token meetings; links each note to transcript timecodes.  
    • Lets you ask: "Who owns the Q3 marketing OKR?"
 
-7. **[DeepSeek R1 Robotics Stack](https://github.com/deepseek-ai/DeepSeek-R1)**  
-   • Demo video (Vector arm): <https://www.youtube.com/watch?v=DhqtwdtfGcM>
+7. **[DeepSeek R1 Robotics Stack](https://github.com/deepseek-ai/DeepSeek-R1)** – on‑device MoE model driving a warehouse Vector arm (≈600 picks / hr).  
+   • Demo video: <https://www.youtube.com/watch?v=DhqtwdtfGcM>
 
 8. **[Covariant Brain Robotic Picking](https://covariant.ai/covariant-brain/)**  
    Vision transformer + compact LLM handling SKU variation in JD.com and Ocado warehouses.  
