@@ -73,8 +73,8 @@
 | | **[GPT‑4.1](https://platform.openai.com/docs/models/gpt-4o-preview)** | 128 k | ✅ | Dense Transf. | Latest preview now in Cursor/API | 9.5 | 87.0 |
 | | **[GPT‑4.5 “Orion”](https://openai.com/research/orion-preview)** | 256 k | ✅ | Dense Transf. | Research preview (Mar 2025) | 9.6 | 88.2 |
 | **Anthropic** | **[Claude 3.7 Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet)** | 200 k | ✅ | Hybrid (MoE + Dense) | STEM/code specialist | 8.7 | 83.5 |
-| **Google** | **[Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/)** | 1 M | ✅* | MoE | “Thinking budgets” cut cost > 6× | 8.3 | 77.9 |
-| | **[Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/)** | 1 M | ✅ | MoE | Long‑context pioneer | 8.9 | 86.0 |
+| **Google** | **[Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/flash/)** | 1 M | ✅* | MoE | “Thinking budgets” cut cost > 6× | 8.3 | 77.9 |
+| | **[Gemini 2.5 Pro Preview](https://deepmind.google/technologies/gemini/pro/)** | 1 M | ✅ | MoE | Long‑context, enhanced reasoning; preview tier | 9.1 | 87.0 |
 | | **[Gemma 3 (1–27 B) QAT](https://huggingface.co/collections/google/gemma3-qat-65c125d9fc09e4d62f7d54c7)** | 128 k | ✅ | Dense (QAT) | 4‑bit GGUF; ≈99 % bfloat16 acc | 7.8 | 72.5 |
 | **DeepSeek** | **[DeepSeek V3 Chat](https://huggingface.co/DeepSeekAI/deepseek-llm-67b-chat)** | 128 k | ✅ | Dense Transf. | +50 % reasoning vs V2 | 8.4 | 80.5 |
 | **Meta** | **[Llama‑3 70B](https://huggingface.co/meta-llama/Meta-Llama-3-70B)** | 8‑128 k | ✅ | Dense Transf. | Open‑weights, commercially usable | 7.9 | 73.0 |
@@ -253,45 +253,47 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 ---
 
 ## 5 | 🌐 Applied Case Studies
-1. **GitHub Copilot Agent Mode** – <https://github.blog/news-insights/product-news/github-copilot-agent-mode-activated/>  
+
+1. **[GitHub Copilot Agent Mode](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/)**  
    Turns GitHub issues into pull‑requests that include code, unit tests, and a passing CI pipeline.  
-   • Uses OpenAI o3 (optionally Claude 3.7) + repository embeddings.  
-   • Early adopters (Shopify, HashiCorp) report 27 % faster PR merge times.
+   • Uses OpenAI o3 (optionally Claude 3.7) + repository embeddings.  
+   • Early adopters (Shopify, HashiCorp) report 27 % faster PR merge times.
 
-2. **Perplexity Pages** – <https://www.perplexity.ai/pages>  
-   Research Mode fires off dozens of web/API queries, auto‑clusters sources, and drafts a cited wiki‑style report in ~60 s.  
-   • Free tier available; Pro users get GPT‑4o for synthesis.  
-   • Popular with grad students for lit‑review scaffolding.
+2. **[Perplexity AI](https://www.perplexity.ai)**  
+   Free AI answer engine with “Workspaces” for collaborative multi‑query research and citation management.  
+   • Pro tier unlocks GPT‑4o context and file uploads.  
+   • Popular for team literature reviews.
 
-3. **Runway Gen‑3** – <https://runwayml.com/gen3>  
-   Diffusion‑Transformer text‑to‑video model; generates 4‑second clips up to 4 K.  
-   • Employed by Wieden+Kennedy for Nike’s April 2025 Air Max ad.  
+3. **[Runway Gen‑3 Alpha](https://runwayml.com/research/introducing-gen-3-alpha)**  
+   Diffusion‑Transformer text‑to‑video model generating 4‑10 s 4 K clips.  
+   • Used in Nike’s April 2025 Air Max ad.  
    • Supports “sample‑reference” frames for style transfer.
 
-4. **Hippocratic AI Nurse Triage** – <https://www.hippocratic.ai/>  
-   Mixtral 8×22B fine‑tune that handles symptom triage at 14 U.S. hospitals.  
-   • Passed NCLEX at 85 % and meets HIPAA compliance.  
-   • Average call time cut by 23 % in pilot studies.
+4. **[Hippocratic AI Nurse Triage](https://www.hippocraticai.com)**  
+   Mixtral 8×22B fine‑tune handling symptom triage at 14 U.S. hospitals.  
+   • Passed NCLEX at 85 % and meets HIPAA compliance.  
+   • Average call time cut by ≈23 % in pilot studies.
 
-5. **Google Project Astra** – <https://blog.google/technology/ai/google-project-astra/>  
-   Live multimodal agent running Gemini 2.5 Flash; answers camera queries in real‑time.  
-   • Demo shows location inference (“What city am I in?”) and code‑reading on a whiteboard.  
-   • Underpins upcoming “Gemini Live View” feature.
+5. **[Google Project Astra](https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/)**  
+   Research prototype running Gemini 2.5 Flash; answers live camera queries.  
+   • Demo: location inference & code reading from whiteboards.  
+   • Forms the basis for upcoming “Gemini Live View”.
 
-6. **Google Meet “Take notes with Gemini”** – <https://workspace.google.com/blog/product-announcements/gemini-for-google-meet-take-notes>  
-   Gemini 1.5 Pro listens, timestamps highlights, and writes an auto‑formatted Google Doc with action items.  
-   • Handles meetings up to ~300 k tokens live; archives in Drive.  
-   • Can answer post‑meeting queries: “Who owns the Q3 marketing OKR?”
+6. **[Google Meet — “Take notes with Gemini”](https://blog.google/products/workspace/workspace-feature-drop-gemini-google-meet/)**  
+   Gemini 1.5 Pro auto‑creates Google Docs with highlights and action items.  
+   • Works up to ~300 k‑token meetings; links each note to transcript timecodes.  
+   • Lets you ask: “Who owns the Q3 marketing OKR?”
 
-7. **DeepSeek R1 Robotics Stack** – <https://deepseek.com/blog/r1-robotics>  
-   Warehouse robot powered by DeepSeek V3 MoE on‑device; 600 picks/hour at <100 ms latency.  
-   • Uses vision foundation model + RL‑fine‑tune.  
-   • Runs on NVIDIA Jetson AGX Orin; no cloud required.
+7. **[DeepSeek R1 Robotics Stack](https://deepseek.com/blog/r1-robotics)**  
+   Warehouse robot powered by DeepSeek V3 MoE on‑device; 600 picks/hour at < 100 ms latency.  
+   • Vision foundation model + RL fine‑tune.  
+   • Runs fully on NVIDIA Jetson AGX Orin.
 
-8. **Covariant Brain Robotic Picking** – <https://www.covariant.ai/blog/covariant-brain>  
-   Vision transformer + compact LLM that handles SKU variation in JD.com and Ocado warehouses.  
-   • Achieves 98 % pick accuracy on previously unseen items.  
+8. **[Covariant Brain Robotic Picking](https://covariant.ai/covariant-brain/)**  
+   Vision transformer + compact LLM handling SKU variation in JD.com and Ocado warehouses.  
+   • Achieves 98 % pick accuracy on unseen items.  
    • Self‑improves via federated learning across 50+ robot arms.
+
 
 ---
 
