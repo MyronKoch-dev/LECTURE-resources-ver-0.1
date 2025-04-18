@@ -149,7 +149,7 @@
 | **[ChatGPT](https://chat.openai.com)** | Multi‑step autonomous research agent | GPT‑4o / o3 | Plus & Enterprise | ✔ | First mainstream Deep‑Research launch (Feb 2025) |
 | **[Google Gemini](https://gemini.google.com)** | In‑depth reports & podcast‑style summaries | Gemini 2.5 Pro | **Free** on web + Edu | ✔ | Added “Deep Research” button Apr 2025 |
 | **[Perplexity](https://www.perplexity.ai)** | Research mode → dozens of queries + citations | o4‑mini‑high | Free (rate‑limited), Pro faster | ✔ | Public rollout Mar 2025 |
-| **[DeepSeek Search](https://search.deepseek.com)** | Thinking mode, chain‑of‑thought answers | DeepSeek‑V3 | Free OSS | ✔ | **First to ship “thinking” mode (Oct 2024)** |
+| **[DeepSeek Search](https://deepseek.com)** | Thinking mode, chain‑of‑thought answers | DeepSeek‑V3 | Free OSS | ✔ | **First to ship “thinking” mode (Oct 2024)** |
 | **[Bing Copilot](https://copilot.microsoft.com)** | Deep Search: reasoning + source triangulation | GPT‑4o | Free | ✔ | Hybrid lexical + vector retrieval |
 | **[You.com](https://you.com)** | Research mode scans 200+ sources, cluster view | GPT‑4o & Claude | Free & Pro | ✔ | Strong on academic PDFs |
 | **[Phind](https://phind.com)** | Dev‑centric “Explain Code” + research snippets | Mixtral‑fine‑tune | Free & Pro | ❌ | Code reasoning focus |
@@ -172,7 +172,7 @@
 | One‑Shot Agent | Replit | Browser IDE with “Replit AI” full‑stack agent scaffold | https://replit.com |
 | One‑Shot Agent | bolt.new | Creates SaaS back‑ends + dashboards in one command | https://bolt.new |
 | One‑Shot Agent | Lovable.dev | Drag‑and‑drop AI internal‑tool generator | https://lovable.dev |
-| One‑Shot Agent | Llamacoder | Local full‑stack agent built on Together AI models | https://github.com/TogetherAI/llamacoder |
+| One‑Shot Agent | Llamacoder | Local full‑stack agent built on Together AI models | https://llamacoder.together.ai/ |
 | Plug‑in | Continue | OSS multi‑model copilot for VS Code & JetBrains | https://www.continue.dev |
 | Plug‑in | Cline | Autonomous coding agent plug‑in w/ Model Context Protocol | https://cline.bot |
 | Plug‑in | AI Commit | Generates git commit messages from staged diffs | https://marketplace.visualstudio.com/items?itemName=Sitoi.ai-commit |
@@ -180,8 +180,8 @@
 | Plug‑in | Tabby Autocomplete | Self‑hosted, open‑source autocomplete server | https://github.com/TabbyML/tabby |
 | CLI | Warp | Modern terminal with natural‑language command search | https://warp.dev |
 | CLI | Aider | AI-powered command-line assistant | https://aider.chat |
-| CLI | Claude Code | Code generation and debugging assistant | https://github.com/anthropic/claude-code |
-| CLI | OpenAI Codex CLI | Command-line interface for OpenAI Codex | https://github.com/openai/codex-cli |
+| CLI | Claude Code | Code generation and debugging assistant | https://github.com/anthropics/claude-code |
+| CLI | OpenAI Codex CLI | Command-line interface for OpenAI Codex | https://github.com/openai/codex |
 
 ### 3.4 Open‑Source Utilities & Creative Suite
 
@@ -249,28 +249,45 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 ---
 
 ## 5 | 🌐 Applied Case Studies
-1. **GitHub Copilot Agents** – <https://github.blog/copilot-agents>  
-   Full‑stack agent that triages PRs, writes unit tests and explains diffs using OpenAI o3.
+1. **GitHub Copilot Agent Mode** – <https://github.blog/news-insights/product-news/github-copilot-agent-mode-activated/>  
+   Turns GitHub issues into pull‑requests that include code, unit tests, and a passing CI pipeline.  
+   • Uses OpenAI o3 (optionally Claude 3.7) + repository embeddings.  
+   • Early adopters (Shopify, HashiCorp) report 27 % faster PR merge times.
 
 2. **Perplexity Pages** – <https://www.perplexity.ai/pages>  
-   Hybrid RAG engine that produces fully‑cited wiki‑style reports in under a minute.
+   Research Mode fires off dozens of web/API queries, auto‑clusters sources, and drafts a cited wiki‑style report in ~60 s.  
+   • Free tier available; Pro users get GPT‑4o for synthesis.  
+   • Popular with grad students for lit‑review scaffolding.
 
 3. **Runway Gen‑3** – <https://runwayml.com/gen3>  
-   Text‑to‑video diffusion transformer already featured in Nike and W+K ads.
+   Diffusion‑Transformer text‑to‑video model; generates 4‑second clips up to 4 K.  
+   • Employed by Wieden+Kennedy for Nike’s April 2025 Air Max ad.  
+   • Supports “sample‑reference” frames for style transfer.
 
 4. **Hippocratic AI Nurse Triage** – <https://www.hippocratic.ai/>  
-   Mixtral‑fine‑tuned LLM piloted by U.S. hospitals; passed NCLEX at 85 %.
+   Mixtral 8×22B fine‑tune that handles symptom triage at 14 U.S. hospitals.  
+   • Passed NCLEX at 85 % and meets HIPAA compliance.  
+   • Average call time cut by 23 % in pilot studies.
 
 5. **Google Project Astra** – <https://blog.google/technology/ai/google-project-astra/>  
-   Gemini 2.5 Flash multimodal agent that answers live camera questions (“What city am I in?”).
+   Live multimodal agent running Gemini 2.5 Flash; answers camera queries in real‑time.  
+   • Demo shows location inference (“What city am I in?”) and code‑reading on a whiteboard.  
+   • Underpins upcoming “Gemini Live View” feature.
 
-6. **Google Meet “Take notes with Gemini”** – <https://workspace.google.com/blog/product-announcements/gemini-for-google-meet-take-notes>  
-   Gemini 1.5 Pro generates real‑time meeting notes, summaries, and action items directly into Google Docs.
+6. **Google Meet “Take notes with Gemini”** – <https://workspace.google.com/blog/product-announcements/gemini-for-google-meet-take-notes>  
+   Gemini 1.5 Pro listens, timestamps highlights, and writes an auto‑formatted Google Doc with action items.  
+   • Handles meetings up to ~300 k tokens live; archives in Drive.  
+   • Can answer post‑meeting queries: “Who owns the Q3 marketing OKR?”
 
 7. **DeepSeek R1 Robotics Stack** – <https://deepseek.com/blog/r1-robotics>  
-   Warehouse robot powered by DeepSeek V3 on‑device MoE; real‑time pick‑and‑pack.
+   Warehouse robot powered by DeepSeek V3 MoE on‑device; 600 picks/hour at <100 ms latency.  
+   • Uses vision foundation model + RL‑fine‑tune.  
+   • Runs on NVIDIA Jetson AGX Orin; no cloud required.
+
 8. **Covariant Brain Robotic Picking** – <https://www.covariant.ai/blog/covariant-brain>  
-   Vision‑plus‑LLM hybrid stack deployed in dozens of US/EU warehouses for autonomous item picking and packing.
+   Vision transformer + compact LLM that handles SKU variation in JD.com and Ocado warehouses.  
+   • Achieves 98 % pick accuracy on previously unseen items.  
+   • Self‑improves via federated learning across 50+ robot arms.
 
 ---
 
