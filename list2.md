@@ -21,6 +21,7 @@
     - 3.4 Desktop Chat Clients & Local Runners  
     - 3.5 Open‑Source Utilities & Creative Suite  
     - 3.6 Agent Frameworks & Orchestrators  
+    - 3.7 Web3 × AI — Protocols & Marketplaces
 4. 🧑‍🔬 Research & Thought Leadership  
 5. 🌐 Applied Case Studies  
 6. ⚖️ Ethics, Safety & Policy  
@@ -103,7 +104,7 @@
 
 </details>
 <details>
-<summary> 1.2.2 Software Stack by Training Stage</summary>
+<summary>🚀 1.2.2 Software Stack by Training Stage </summary>
 
 | Stage | Tool / Site | Why it matters | Link |
 |---|---|---|---|
@@ -162,6 +163,10 @@
 ---
 
 ## 2 | 🚀 Frontier Models (2025‑Q2)
+> **➡️ Expandables:** click any ▸ arrow to open the full table.
+
+<details>
+<summary>🔍 Frontier Models table ▸</summary>
 
 Frontier models are the latest, most advanced AI systems from leading labs, setting the state of the art in reasoning, scale, and capabilities.
 
@@ -186,6 +191,7 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 
 <sub>¹ MT‑Bench (10 = max) compiled from vendor or community MT‑Bench dashboards, Apr 2025.  
 ² MMLU (0‑100). Scores vary ±0.3 depending on evaluation harness.</sub>
+</details>
 
 ### 2.1 🔍 Model Architecture Cheat‑Sheet
 
@@ -199,45 +205,34 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | **Structured Expert (GQA / MQA)** | Multi‑query or grouped‑query attention reduces KV size; acts like lightweight "expert routing." | Llama‑3, Mistral‑7B | Faster inference, smaller KV cache. | Slight accuracy trade‑off on small models. |
 | **Diffusion Transformer (DiT)** | Use diffusion denoising steps with transformer backbone for images. | Stable Diffusion 3 DiT, DeepFloyd IF | High‑quality image generation. | Not suited for language tasks. |
 
- > *Cheat‑sheet takeaway:* most frontier LLMs are now **Sparse MoE or Hybrid**, balancing capacity with compute. Dense transformers dominate sub‑30 B param models, while SSMs and Retro‑style hybrids target ultra‑long context and factual recall.
-> *QAT = quantization‑aware training; trims VRAM ≈3× while keeping ~99 % accuracy at 4‑bit.*
- 
- > *Snapshot 2024‑25:* about two‑thirds of frontier releases use sparse MoE or hybrid blocks, while dense transformers still dominate mid‑size open‑source models.
- 
+<details>
+<summary>🔍 State‑Space Models (SSM) — Linear‑time context ▸</summary>
 
- <details>
- <summary>🔍 Mixture‑of‑Experts (MoE) — How expert MLPs work ▸</summary>
- 
- **Expert MLPs = specialist subnetworks**
- 
- * **MLP = Multilayer Perceptron** (2‑3 fully‑connected layers).  
- * In classic transformers, every token passes through the *same* MLP block.  
- * In an **MoE layer** you have *many* MLPs (the "experts"). A *router* decides which small subset of experts (usually 1‑2) process each token.
- 
- ```
- Token → Router → Expert 3 & Expert 7 → Combine → Next layer
- ```
- 
- ### Why bother?
- 
- | Benefit | What it means |
- |---|---|
- | **Efficient scaling** | Billions of parameters, but each forward pass touches only ~10‑20 % of them. |
- | **Specialization** | Experts learn sub‑skills (math vs. dialog, etc.). |
- | **Modularity** | You can add experts without retraining the whole model. |
- 
- ### Example setups
- 
- | Model | Expert config | Notes |
- |---|---|---|
- | Mixtral 8×22B | 8 experts, 2 active/token | Open‑weights; community favourite. |
- | OpenAI o‑series (o3/o4‑mini) | *Undisclosed* MoE layers | Used to hit high reasoning at lower cost. |
- | Gemini 1.5 Pro | Hierarchical MoE | Long‑context, 1 M tokens. |
- 
- 
- </details>
- 
- ### 2.2 Model Modalities & Classes
+SSMs replace O(N²) attention with **state‑space convolution kernels**.  
+* **Key idea:** hidden state hₜ evolves via linear ODE; output is causal convolution.  
+* **Why:** O(T) memory → streaming windows up to 4 M tokens (Mamba 2.8 B).  
+* **Trade‑off:** still maturing; fewer inference libraries than Transformers.
+
+</details>
+
+<details>
+<summary>🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸</summary>
+
+DeepMind **RETRO** mixes a decoder with a **nearest‑neighbor lookup**:
+
+1. Chunk current hidden tokens → vector DB search  
+2. Fuse top‑K neighbors via cross‑attention  
+3. Continue autoregressive generation
+
+Benefits = factual recall with a smaller base model.  
+Costs = retrieval latency & datastore infra.
+
+</details>
+
+### 2.2 Model Modalities & Classes
+
+<details>
+<summary>🔍 Model Modalities table ▸</summary>
 
 | Class | Core tasks | Canonical architectures | Signature checkpoints |
 |---|---|---|---|
@@ -250,6 +245,7 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | **Retrieval‑Augmented** | knowledge‑dense Q&A with small base LLM | Chunk retriever + Transformer decoder | DeepMind RETRO |
 | **State‑Space (SSM)** | ultra‑long context seq2seq, streaming | Mamba, RWKV | Mamba‑2.8 B |
 | **Reinforcement / Policy** | robotics, games, decision agents | PPO, MuZero, policy transformers | AlphaGo | Gato |
+</details>
 
 ---
 
@@ -282,6 +278,9 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 
 ### 3.3 AI‑Infused Coding Tools & IDEs
 
+<details>
+<summary>🛠️ Coding Tools table ▸</summary>
+
 | Category | Tool | What it does | Link |
 |---|---|---|---|
 | IDE | Cursor | Context‑aware IDE built around LLM pair‑programming | https://www.cursor.sh |
@@ -304,8 +303,12 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | CLI | Aider | AI-powered command-line assistant | https://aider.chat |
 | CLI | Claude Code | Code generation and debugging assistant | https://github.com/anthropics/claude-code |
 | CLI | OpenAI Codex CLI | Command-line interface for OpenAI Codex | https://github.com/openai/codex |
+</details>
 
 ### 3.4 Desktop Chat Clients & Local Runners
+
+<details>
+<summary>💬 Desktop Chat table ▸</summary>
 
 | App | What it does | Models supported | Link |
 |---|---|---|---|
@@ -316,8 +319,12 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | LM Studio | Discover, download & run OSS LLMs locally | Llama‑3, DeepSeek, Gemma, etc. | https://lmstudio.ai |
 | AnythingLLM Desktop | Turnkey local RAG + chat with multiple OSS models | GGUF / ggml models; OpenAI key optional | https://useanything.com |
 | Chorus | Chat with multiple models side‑by‑side and synthesize answers | OpenAI, Anthropic, local GGUF | https://chorus.sh |
+</details>
 
 ### 3.5 Open‑Source Utilities & Creative Suite
+
+<details>
+<summary>🎨 Utilities & Creative Suite ▸</summary>
 
 | Category | Tool | What it does | Link |
 |---|---|---|---|
@@ -335,6 +342,7 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | Framework | LangChain | Composable framework for LLM chains, tools & agents | https://github.com/langchain-ai/langchain |
 | Framework | Flowise | Drag‑and‑drop UI wrapper around LangChain for fast demos | https://github.com/FlowiseAI/Flowise |
 | Framework | LlamaIndex | Data framework bridging docs → embeddings → LLM | https://github.com/run-llama/llama_index |
+</details>
 
 ### 3.6 Agent Frameworks & Orchestrators
 
@@ -345,6 +353,27 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | ElizaOS | Decentralized agent OS for Web3 automations | https://github.com/eliza-os/ElizaOS |
 | MetaGPT | Multi‑agent code‑generation (Spec → PR) | https://github.com/geekan/MetaGPT |
 | DSPy | Declarative structured prompting framework | https://github.com/stanfordnlp/dspy |
+
+### 3.7 Web3 × AI — Protocols & Marketplaces
+
+<details>
+<summary>⛓️ Web3 × AI table ▸</summary>
+
+| Category | Project / Protocol | Core value‑prop | Link |
+|---|---|---|---|
+| On‑chain agent frameworks | Andromeda OS | Cross‑chain "App DAO" framework that lets LLM agents invoke Cosmos smart contracts | https://andromedaprotocol.io |
+|  | Fetch.ai Agentverse | Marketplace + runtime for autonomous agents with token incentives | https://fetch.ai |
+|  | ChainML | Smart‑contract ⇄ LLM orchestration toolkit | https://chainml.xyz |
+| Decentralized model training / inference | Bittensor | Incentivised peer‑to‑peer gradient & inference network | https://bittensor.com |
+|  | Gensyn | Pay‑as‑you‑go distributed GPU training on idle hardware | https://gensyn.ai |
+|  | Filecoin FVM | Smart contracts over IPFS data; emerging LLM‑training marketplaces | https://filecoin.io |
+|  | Akash Network | Spot GPU marketplace (A100 / H100) for model inference | https://akash.network |
+|  | Render Network | Tokenized GPU render farm for diffusion models | https://rendernetwork.com |
+| Data & model marketplaces | Ocean Protocol | ERC‑721 data NFTs + compute‑to‑data swaps | https://oceanprotocol.com |
+| Verifiable AI / on‑chain proofs | ORA Protocol | zk‑style proofs for ML inference (opML) | https://mirror.xyz/orablog.eth/tHHeXtvl__w8qJiYo6Uu0Iac964Wm0hoVfiL-VDf-Nw |
+|  | EigenLayer × Ritual | Restaked ETH secures decentralized model actions | https://www.blog.eigenlayer.xyz/ritual-eigenlayer-ai-x-restaking/ |
+| Identity & trust | Worldcoin / World ID | Iris‑based proof‑of‑personhood for human ≠ AI distinction | https://worldcoin.org/blog/worldcoin/proof-of-personhood-what-it-is-why-its-needed |
+</details>
 
 ---
 
@@ -435,7 +464,6 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 - **EU AI Act** passed 13 Mar 2025; tiered compliance for foundation models.  
 - **NIST AI RMF 2.0** draft (Feb 2025) introduces continuous assurance.
 + **U.S. Executive Order 14110** – "Safe, Secure, Trustworthy AI" (Jan 2025).  
-+ **NIST AI RMF 2.0 Draft** – public‑comment version (Feb 2025).
 
 ### 📅 Policy Countdown
 
@@ -490,28 +518,3 @@ Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with Ope
 ---
 
 *Happy innovating! Pull requests welcome → **#ai‑dev‑master‑list***
-
-<details>
-<summary>🔍 State‑Space Models (SSM) — Linear‑time context ▸</summary>
-
-SSMs replace quadratic attention with **state‑space convolution kernels**.
-
-* **Key idea:** hidden state `h_t` evolves via linear ODE; output is causal convolution.  
-* **Practical win:** **O(T)** memory; 4 M‑token streaming with Mamba 2.8 B.  
-* **Trade‑off:** fewer mature inference kernels; still catching up on code tasks.
-
-</details>
-
-<details>
-<summary>🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸</summary>
-
-DeepMind **RETRO** mixes a decoder with a **nearest‑neighbor lookup table**:
-
-1. Chunk current hidden tokens → vector DB search  
-2. Fuse top‑K neighbors via cross‑attention  
-3. Continue autoregressive generation
-
-Benefits: factual recall with a **smaller base model**; modular datastore upgrades.  
-Costs: retrieval latency & infra complexity.
-
-</details>
