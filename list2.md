@@ -125,7 +125,13 @@
 | Experiment tracking | Weights & Biases (wandb) | Real‑time metrics, artifact versioning, sweep manager | https://wandb.ai |
 </details>
 
+#### 🧪 Mini‑Labs (hands‑on)
 
+| Lab | GPU need | Guide |
+|---|---|---|
+| 4‑bit QLoRA fine‑tune TinyLLM‑7B | Free Colab T4 | <https://github.com/OpenAccess-AI-Collective/axolotl/wiki/Colab-Quickstart> |
+| RLHF with trlX on 100 prompts | 1× A100 40 GB | <https://github.com/CarperAI/trlx/blob/main/examples/summarize/ppo_summary.py> |
+| Evaluate with lm‑eval‑harness | CPU‑only | <https://github.com/EleutherAI/lm-eval-harness#quickstart> |
 
 ### 1.3 Retrieval‑Augmented Generation (RAG) Variants  
 | Variant | Core idea | When it shines |
@@ -159,24 +165,24 @@
 
 Frontier models are the latest, most advanced AI systems from leading labs, setting the state of the art in reasoning, scale, and capabilities.
 
-| Vendor | Model | Ctx Window | Reasoning? | Architecture | Highlights | MT‑Bench¹ | MMLU² |
-|---|---|---|---|---|---|---|---|
-| **OpenAI** | **[o3](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Best‑in‑class reasoning & vision | 9.2 | 87.5 |
-| | **[o4‑mini](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Faster & cheaper than o3 | 8.8 | 82.0 |
-| | **[o4‑mini‑high](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Higher limits, same latency | 9.0 | 84.0 |
-| | **[GPT‑4o](https://openai.com/index/gpt-4o-system-card/)** | 128 k | ✅ | Multimodal Dense | Replaces GPT‑4 in ChatGPT (Apr 2025) | 9.4 | 86.8 |
-| | **[GPT‑4.1](https://platform.openai.com/docs/models#gpt-4.1)** | 128 k | ✅ | Dense Transf. | Latest preview now in Cursor/API | 9.5 | 87.0 |
-| | **[GPT‑4.5 "Orion"](https://openai.com/index/introducing-gpt-4-5/)** | 256 k | ✅ | Dense Transf. | Research preview (Mar 2025) | 9.6 | 88.2 |
-| **Anthropic** | **[Claude 3.7 Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet)** | 200 k | ✅ | Hybrid (MoE + Dense) | STEM/code specialist | 8.7 | 83.5 |
-| **Google** | **[Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/flash/)** | 1 M | ✅* | MoE | "Thinking budgets" cut cost > 6× | 8.3 | 77.9 |
-| | **[Gemini 2.5 Pro Preview](https://deepmind.google/technologies/gemini/pro/)** | 1 M | ✅ | MoE | Long‑context, enhanced reasoning; preview tier | 9.1 | 87.0 |
-| | **[Gemma 3 (1–27 B) QAT](https://huggingface.co/lmstudio-community/gemma-3-27B-it-qat-GGUF)** | 128 k | ✅ | Dense (QAT) | 4‑bit GGUF; ≈99 % bfloat16 acc | 7.8 | 72.5 |
-| **DeepSeek** | **[DeepSeek V3](https://huggingface.co/deepseek-ai/DeepSeek-V3)** | 128 k | ✅ | Dense Transf. | +50 % reasoning vs V2 | 8.4 | 80.5 |
-| **Meta** | **[Llama‑3 70B](https://huggingface.co/meta-llama/Meta-Llama-3-70B)** | 8‑128 k | ✅ | Dense Transf. | Open‑weights, commercially usable | 7.9 | 73.0 |
-| | **[Maverick 140B](https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct)** | 128 k | ✅ | Sparse MoE | High‑capacity open checkpoint | 8.2 | 78.5 |
-| | **[Scout 48B](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct-Original)** | 64 k | ✅ | Dense Transf. | Lightweight, instruction‑tuned | 7.6 | 72.4 |
-| **Mistral** | **[Mixtral 8×22B](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)** | 64 k | ✅ | Sparse MoE | SoTA open model | 8.1 | 78.0 |
-| **Alibaba** | **[Qwen 2.5‑1M](https://huggingface.co/collections/Qwen/qwen25-1m-679325716327ec07860530ba)** | 1 M | ✅ | MoE | First OSS model with 1 M tokens | 8.4 | 79.5 |
+| Vendor | Model | Ctx Window | Reasoning? | Architecture | Highlights | Strength | MT‑Bench¹ | MMLU² |
+|---|---|---|---|---|---|---|---|---|
+| **OpenAI** | **[o3](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Best‑in‑class reasoning & vision | Cost‑‑optimised "frontier lite" | 9.2 | 87.5 |
+| | **[o4‑mini](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Faster & cheaper than o3 | Cost‑‑optimised "frontier lite" | 8.8 | 82.0 |
+| | **[o4‑mini‑high](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Higher limits, same latency | Cost‑‑optimised "frontier lite" | 9.0 | 84.0 |
+| | **[GPT‑4o](https://openai.com/index/gpt-4o-system-card/)** | 128 k | ✅ | Multimodal Dense | Replaces GPT‑4 in ChatGPT (Apr 2025) | Multimodal & fastest reasoning latency | 9.4 | 86.8 |
+| | **[GPT‑4.1](https://platform.openai.com/docs/models#gpt-4.1)** | 128 k | ✅ | Dense Transf. | Latest preview now in Cursor/API | Latest reasoning preview for devs | 9.5 | 87.0 |
+| | **[GPT‑4.5 "Orion"](https://openai.com/index/introducing-gpt-4-5/)** | 256 k | ✅ | Dense Transf. | Research preview (Mar 2025) | Highest benchmark scores to date | 9.6 | 88.2 |
+| **Anthropic** | **[Claude 3.7 Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet)** | 200 k | ✅ | Hybrid (MoE + Dense) | STEM/code specialist | Long‑form writing & STEM code | 8.7 | 83.5 |
+| **Google** | **[Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/flash/)** | 1 M | ✅* | MoE | "Thinking budgets" cut cost > 6× | 1 M‑token context window + low cost | 8.3 | 77.9 |
+| | **[Gemini 2.5 Pro Preview](https://deepmind.google/technologies/gemini/pro/)** | 1 M | ✅ | MoE | Long‑context, enhanced reasoning; preview tier | High‑accuracy long‑context preview | 9.1 | 87.0 |
+| | **[Gemma 3 (1–27 B) QAT](https://huggingface.co/lmstudio-community/gemma-3-27B-it-qat-GGUF)** | 128 k | ✅ | Dense (QAT) | 4‑bit GGUF; ≈99 % bfloat16 acc | 4‑bit QAT checkpoint for local GPUs | 7.8 | 72.5 |
+| **DeepSeek** | **[DeepSeek V3](https://huggingface.co/deepseek-ai/DeepSeek-V3)** | 128 k | ✅ | Dense Transf. | +50 % reasoning vs V2 | Open‑weights reasoning boost vs V2 | 8.4 | 80.5 |
+| **Meta** | **[Llama‑3 70B](https://huggingface.co/meta-llama/Meta-Llama-3-70B)** | 8‑128 k | ✅ | Dense Transf. | Open‑weights, commercially usable | Fully open, strong coding | 7.9 | 73.0 |
+| | **[Maverick 140B](https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct)** | 128 k | ✅ | Sparse MoE | High‑capacity open checkpoint | Largest open MoE | 8.2 | 78.5 |
+| | **[Scout 48B](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct-Original)** | 64 k | ✅ | Dense Transf. | Lightweight, instruction‑tuned | Lightweight, low‑latency | 7.6 | 72.4 |
+| **Mistral** | **[Mixtral 8×22B](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)** | 64 k | ✅ | Sparse MoE | SoTA open model | Best open‑source general model | 8.1 | 78.0 |
+| **Alibaba** | **[Qwen 2.5‑1M](https://huggingface.co/collections/Qwen/qwen25-1m-679325716327ec07860530ba)** | 1 M | ✅ | MoE | First OSS model with 1 M tokens | First OSS model with 1 M+ context | 8.4 | 79.5 |
 
 <sub>¹ MT‑Bench (10 = max) compiled from vendor or community MT‑Bench dashboards, Apr 2025.  
 ² MMLU (0‑100). Scores vary ±0.3 depending on evaluation harness.</sub>
@@ -428,6 +434,8 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 - **Anthropic RSP** – Responsible scaling policy v2 (Mar 2025).  
 - **EU AI Act** passed 13 Mar 2025; tiered compliance for foundation models.  
 - **NIST AI RMF 2.0** draft (Feb 2025) introduces continuous assurance.
++ **U.S. Executive Order 14110** – "Safe, Secure, Trustworthy AI" (Jan 2025).  
++ **NIST AI RMF 2.0 Draft** – public‑comment version (Feb 2025).
 
 ### 📅 Policy Countdown
 
@@ -437,6 +445,8 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 | Anthropic Responsible Scaling Policy v2 | **Mar 31 2025** – threshold checks activated | Claude family deployments |
 | NIST AI RMF 2.0 (Draft) | **Jul 2025** – public comment closes | US federal procurement |
 | UK AI Safety Institute Evaluations | **Q3 2025** – initial model eval suite published | Models > 10¹⁴ params |
+| U.S. EO 14110 guidance | **Oct 2025** – OMB implementation memo due | All federal contracts |
+| NIST AI RMF 2.0 Final | **Dec 2025** – Final framework published | U.S. critical‑infra vendors |
 
 ---
 
@@ -458,9 +468,50 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
   - Sam Altman – *Moore's Law for Everything*  
   - Yann LeCun – *Energy‑Based Models*
 
+### Prompt Engineering 101
+
+| Pattern | Core idea | Example / Colab |
+|---|---|---|
+| Chain‑of‑Thought (CoT) | Let the model "think aloud." | https://github.com/ysymyth/GSM8K-CoT |
+| ReAct | Interleave reasoning & tool actions. | https://github.com/ydixon/reaxt-agent-search-demo |
+| Self‑Critique / Reflexion | Model critiques & revises its own answer. | https://github.com/reflexion-ai/reflexion |
+| Tree‑of‑Thought | Branch multiple reasoning paths, vote on best. | https://github.com/princeton-nlp/tree-of-thought |
+
+**Quick exemplar prompts**
+
+* **CoT:** "Let's think step-by-step and solve the math problem."  
+* **ReAct:** "Search['1956 AI conference'] then answer."  
+* **Self‑Critique:** "Give an answer, critique it, then improve the answer."  
+* **ToT:** "Generate three reasoning paths and vote for the best one."
+
 ### Advanced Challenges
 Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with OpenFold • Spoof GPT‑5 via Llama‑3‑400B • Optimize NVIDIA Blackwell inference
 
 ---
 
 *Happy innovating! Pull requests welcome → **#ai‑dev‑master‑list***
+
+<details>
+<summary>🔍 State‑Space Models (SSM) — Linear‑time context ▸</summary>
+
+SSMs replace quadratic attention with **state‑space convolution kernels**.
+
+* **Key idea:** hidden state `h_t` evolves via linear ODE; output is causal convolution.  
+* **Practical win:** **O(T)** memory; 4 M‑token streaming with Mamba 2.8 B.  
+* **Trade‑off:** fewer mature inference kernels; still catching up on code tasks.
+
+</details>
+
+<details>
+<summary>🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸</summary>
+
+DeepMind **RETRO** mixes a decoder with a **nearest‑neighbor lookup table**:
+
+1. Chunk current hidden tokens → vector DB search  
+2. Fuse top‑K neighbors via cross‑attention  
+3. Continue autoregressive generation
+
+Benefits: factual recall with a **smaller base model**; modular datastore upgrades.  
+Costs: retrieval latency & infra complexity.
+
+</details>
