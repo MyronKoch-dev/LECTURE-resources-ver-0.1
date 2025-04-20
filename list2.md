@@ -33,7 +33,7 @@
 
 ---
 
-## 1 | 🏛️ Historical Foundations & Core Concepts
+# 1 | 🏛️ Historical Foundations & Core Concepts
 ### 1.1 Interactive Timelines & Visualizers
 - **AI Timeline:** <https://ai-timeline.org/>  
 - **LLM 3‑D Walkthrough:** <https://bbycroft.net/llm>  
@@ -52,81 +52,43 @@
 - **2025 — GPT‑4o** becomes OpenAI's default multimodal model, replacing GPT‑4. (OpenAI release notes)
 
 ### 1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)
+<details>
+<summary>⚙️ Training‑Pipeline table ▸</summary>
+
 | Stage | Classic definition | Typical recipe | 2025 upgrade |
 |---|---|---|---|
 | **Pre‑training** | Train on *massive* unlabeled corpora to learn general language + world knowledge. | Trillions of tokens, next‑token prediction over web + code; dense or MoE. | Data curriculum (RefinedWeb, Synthoid), inference‑aware training (OpenAI o‑series). |
 | **Fine‑tuning** | Adapt the base model to a specific domain/task with smaller labeled data. | LoRA / QLoRA on medical Q&A, code, policy docs. | Multi‑head PEFT; Sparse LoRA for large MoE shards. |
 | **RLHF** | Collect human preference pairs → reward model → RL (usually PPO) to align outputs. | 5–10 k preference pairs, Proximal Policy Optimization. | **RLAIF** (AI feedback), **DPO/ORPO** skip RL loop; cheaper, faster. |
 
-> **Note — "RLHF" now often means RLAIF or DPO/ORPO:** reward signals can come from strong critic models instead of humans, or the model can be aligned directly on preference pairs without a PPO loop.
-
-<details>
-<summary>🔬 1.2.1 Training Pipeline Definitions & Recipes ▸</summary>
-
-#### Pre‑training  
-**What it is:** unsupervised next‑token prediction on hundreds of billions of tokens so the model internalises syntax, facts, and reasoning priors.  
-**How to do it:**  
-1. Curate corpus (e.g., RefinedWeb) → deduplicate & filter.  
-2. Tokenise with SentencePiece 32 k.  
-3. Train dense or MoE Transformer (ZeRO‑3, bf16) for ~300 B tokens on 256 A100‑80 GB GPUs.  
-4. Track perplexity; spot‑check MT‑Bench / MMLU.
-
----
-
-#### Fine‑tuning (LoRA / QLoRA)  
-**What it is:** parameter‑efficient adaptation to a domain using thousands of labelled examples while freezing > 99 % of original weights.  
-**How to do it:**  
-1. Quantise base to 4‑bit with `bitsandbytes`.  
-2. Attach LoRA adapters (`peft.LoraConfig(r=8)`).  
-3. Train 3 epochs, LR 1e‑4, batch 128.  
-4. Save Δ‑weights or merge for inference.
-
----
-
-#### RLHF (PPO loop)  
-**What it is:** align model outputs with human preferences via a reward model and PPO.  
-**How to do it:**  
-1. Collect ≈100 k SFT prompts + 10 k preference pairs.  
-2. Train reward model (6 B params).  
-3. Optimise policy with `trlx` PPO (KL 0.03, 5 epochs).  
-4. Validate on MT‑Bench & harmlessness evals.
-
----
-
-#### RLAIF & DPO  
-**What they are:**  
-* **RLAIF** – swap human raters for GPT‑4 critiques.  
-* **DPO / ORPO** – skip PPO; train directly on preference pairs via closed‑form loss.  
-**How to do it:**  
-1. Use GPT‑4 to rank answers *(RLAIF)* or keep human pairs *(DPO)*.  
-2. For DPO minimise `L = -log σ(β·(rθ(A) – rθ(B)))` with β≈0.1 for 1–3 epochs.  
-3. Evaluate alignment; shadow‑deploy before prod.
-
 </details>
+
 <details>
-<summary>🚀 1.2.2 Software Stack by Training Stage </summary>
+<summary>🛠️ Software Stack by Training Stage ▸</summary>
 
 | Stage | Tool / Site | Why it matters | Link |
 |---|---|---|---|
-| Data curation & streaming | RefinedWeb toolkit | Large‑scale Common Crawl cleaning & dedup | https://huggingface.co/datasets/tiiuae/falcon-refinedweb |
+| **Data curation & streaming** | RefinedWeb toolkit | Large‑scale Common Crawl cleaning & dedup | https://huggingface.co/datasets/tiiuae/falcon-refinedweb |
 |  | Dolma | Modular dataset builder used for C4 / FineWeb | https://github.com/allenai/DataDecide |
 |  | Mosaic StreamingDataset | Shard‑on‑demand data loading | https://docs.mosaicml.com/projects/streaming/ |
-| Pre‑training frameworks | DeepSpeed | ZeRO‑3 / ZeRO‑Infinity, 3D parallelism | https://github.com/microsoft/DeepSpeed |
-|  | Megatron‑DeepSpeed | 100 B‑param GPT/T5 recipe | https://github.com/deepspeedai/Megatron-DeepSpeed |
+| **Pre‑training frameworks** | DeepSpeed | ZeRO‑3 / ZeRO‑Infinity, 3D parallelism | https://github.com/microsoft/DeepSpeed |
+|  | Megatron‑DeepSpeed | 100 B‑param GPT/T5 recipe | https://github.com/deepspeedai/Megatron-DeepSpeed |
 |  | T5X | JAX/Flax high‑perf trainer | https://github.com/google-research/t5x |
 |  | Ray Train | Cluster‑scale PyTorch/JAX jobs | https://docs.ray.io/en/latest/train/ |
-| Fine‑tuning / PEFT | PEFT (LoRA/QLoRA) | Adapter training for any transformer | https://github.com/huggingface/peft |
+| **Fine‑tuning / PEFT** | PEFT (LoRA/QLoRA) | Adapter training for any transformer | https://github.com/huggingface/peft |
 |  | bitsandbytes | 4‑bit quantisation kernels | https://github.com/bitsandbytes-foundation/bitsandbytes |
 |  | Axolotl | YAML‑driven SFT / QLoRA pipeline | https://github.com/OpenAccess-AI-Collective/axolotl |
-| RLHF / Alignment | DeepSpeed‑Chat | Turn‑key SFT → RM → PPO pipeline | https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat |
+| **RLHF / Alignment** | DeepSpeed‑Chat | Turn‑key SFT → RM → PPO pipeline | https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat |
 |  | trlX | Distributed PPO / DPO training | https://github.com/CarperAI/trlx |
 |  | RL4LMs | Modular RL for language models | https://github.com/allenai/RL4LMs |
-| Evaluation harnesses | lm‑eval‑harness | Standard MT‑Bench, MMLU, TruthfulQA | https://github.com/EleutherAI/lm-eval-harness |
+| **Evaluation harnesses** | lm‑eval‑harness | Standard MT‑Bench, MMLU, TruthfulQA | https://github.com/EleutherAI/lm-eval-harness |
 |  | HELM | Holistic eval dashboard | https://crfm.stanford.edu/helm/latest/ |
-| Experiment tracking | Weights & Biases (wandb) | Real‑time metrics, artifact versioning, sweep manager | https://wandb.ai |
+| **Experiment tracking** | Weights & Biases (wandb) | Real‑time metrics, artifact versioning, sweep manager | https://wandb.ai |
+
 </details>
 
-#### 🧪 Mini‑Labs (hands‑on)
+<details>
+<summary>🧪 Mini‑Labs table ▸</summary>
 
 | Lab | GPU need | Guide |
 |---|---|---|
@@ -134,7 +96,12 @@
 | RLHF with trlX on 100 prompts | 1× A100 40 GB | <https://github.com/CarperAI/trlx/blob/main/examples/summarize/ppo_summary.py> |
 | Evaluate with lm‑eval‑harness | CPU‑only | <https://github.com/EleutherAI/lm-eval-harness#quickstart> |
 
+</details>
+
 ### 1.3 Retrieval‑Augmented Generation (RAG) Variants  
+<details>
+<summary>🔍 RAG‑Variants table ▸</summary>
+
 | Variant | Core idea | When it shines |
 |---|---|---|
 | **Plain RAG** | Vector similarity search over text chunks | General chatbots & Q&A |
@@ -145,6 +112,8 @@
 | **Context‑Compression RAG** | Retrieve → summarize/compress → feed to model | Token‑efficient answers on small‑ctx LLMs |
 | **Agentic / Tool‑RAG** | Retrieval step wrapped inside an agent that can also call tools | Dynamic workflows e.g., "lookup → calculate" |
 | **Multimodal RAG** | Index images/audio/video embeddings alongside text | Diagrams, lecture slides, podcasts |
+
+</details>
 
 <details>
 <summary>🛠️ How each RAG variant works ▸</summary>
@@ -162,8 +131,8 @@
 
 ---
 
-## 2 | 🚀 Frontier Models (2025‑Q2)
-> **➡️ Expandables:** click any ▸ arrow to open the full table.
+# 2 | 🚀 Frontier Models (2025‑Q2)
+> **➡️ Expandables:** click any ▸ arrow to open the full table.
 
 <details>
 <summary>🔍 Frontier Models table ▸</summary>
@@ -195,6 +164,9 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 
 ### 2.1 🔍 Model Architecture Cheat‑Sheet
 
+<details>
+<summary>🏗️ Model Architecture Cheat‑Sheet table ▸</summary>
+
 | Architecture | Core idea | Popular 2025 examples | Strengths | Trade‑offs |
 |---|---|---|---|---|
 | **Dense Transformer** | Every token attends to every other via full attention; parameters fully active each step. | GPT‑4o, Llama‑3 70B, DeepSeek V3, Gemma 3 QAT | Strong generalization; mature tooling. | Expensive compute; quadratic memory. |
@@ -205,18 +177,20 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | **Structured Expert (GQA / MQA)** | Multi‑query or grouped‑query attention reduces KV size; acts like lightweight "expert routing." | Llama‑3, Mistral‑7B | Faster inference, smaller KV cache. | Slight accuracy trade‑off on small models. |
 | **Diffusion Transformer (DiT)** | Use diffusion denoising steps with transformer backbone for images. | Stable Diffusion 3 DiT, DeepFloyd IF | High‑quality image generation. | Not suited for language tasks. |
 
+</details>
+
 <details>
-<summary>🔍 State‑Space Models (SSM) — Linear‑time context ▸</summary>
+<summary>🔍 State‑Space Models (SSM) — Linear‑time context ▸</summary>
 
 SSMs replace O(N²) attention with **state‑space convolution kernels**.  
 * **Key idea:** hidden state hₜ evolves via linear ODE; output is causal convolution.  
-* **Why:** O(T) memory → streaming windows up to 4 M tokens (Mamba 2.8 B).  
+* **Why:** O(T) memory → streaming windows up to 4 M tokens (Mamba 2.8 B).  
 * **Trade‑off:** still maturing; fewer inference libraries than Transformers.
 
 </details>
 
 <details>
-<summary>🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸</summary>
+<summary>🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸</summary>
 
 DeepMind **RETRO** mixes a decoder with a **nearest‑neighbor lookup**:
 
@@ -224,8 +198,8 @@ DeepMind **RETRO** mixes a decoder with a **nearest‑neighbor lookup**:
 2. Fuse top‑K neighbors via cross‑attention  
 3. Continue autoregressive generation
 
-Benefits = factual recall with a smaller base model.  
-Costs = retrieval latency & datastore infra.
+Benefits = factual recall with a smaller base model.  
+Costs = retrieval latency & datastore infra.
 
 </details>
 
@@ -239,7 +213,8 @@ Costs = retrieval latency & datastore infra.
 | **Language (LLM)** | text understanding, code, reasoning | Decoder‑only Transformers; Dense / MoE / Hybrid | GPT‑4o, Claude 3.7 Sonnet, Llama‑3 70B |
 | **Vision** | classification, detection, segmentation | ViT, Swin, Mask R‑CNN | SAM, CLIP‑ViT B/16 |
 | **Cross‑modal (Vision‑Language)** | image ↔ text alignment, captioning, retrieval | Dual encoders; gated fusion | CLIP | Gemini 2.5 Flash |
-| **Speech / Audio** | ASR, TTS, music generation | Conformer, Transducer, Diffusion‑decoders | Whisper (v3) | Suno v3 | MusicGen |
+| **Speech / Audio (ASR)** | transcription, voice control | Conformer, Transducer | Whisper (v3) |
+|  | **TTS / Music Gen** | Diffusion‑decoders | Suno v3, MusicGen |
 | **Diffusion / Generative Media** | images, video, 3‑D assets | Latent Diffusion, DiT | Stable Diffusion 3 | Runway Gen‑3 |
 | **Graph Neural Nets (GNN)** | social‑/protein‑/traffic graphs, recommendations | GCN, GAT, GraphSage | PyG demo models |
 | **Retrieval‑Augmented** | knowledge‑dense Q&A with small base LLM | Chunk retriever + Transformer decoder | DeepMind RETRO |
@@ -249,9 +224,12 @@ Costs = retrieval latency & datastore infra.
 
 ---
 
-## 3 | 🛠️ Ecosystem & Tooling
+# 3 | 🛠️ Ecosystem & Tooling
 
 ### 3.1 Core Platform for Experiments
+<details>
+<summary>🧪 Core‑Platform table ▸</summary>
+
 | Platform | Link | Purpose |
 |---|---|---|
 | **Andromeda Protocol Testnet** | https://app.testnet.andromedaprotocol.io/ | Decentralized sandbox for AI×Blockchain experiments |
@@ -259,7 +237,12 @@ Costs = retrieval latency & datastore infra.
 | **ChainML** | https://chainml.xyz | Smart‑contract ⇄ LLM orchestration toolkit |
 | **0xPrompt (0x AI Tools)** | https://0x.org/docs/ai-tools | Open‑source toolkit for LLM agents on Ethereum |
 
+</details>
+
 ### 3.2 AI Search Engines (Research / Thinking Modes)
+
+<details>
+<summary>🔎 AI‑Search‑Engines table ▸</summary>
 
 | Engine | Modes / Flagship Feature | Model Backend | Free Tier | DR* | Notes |
 |---|---|---|---|:---:|---|
@@ -275,6 +258,8 @@ Costs = retrieval latency & datastore infra.
 > *DR = Deep Research / Thinking mode (multi‑step autonomous research).*
 
 > **Tip:** For class projects, Perplexity Research or DeepSeek Thinking give free no‑sign‑up access; Gemini Deep Research is free via the Gemini web UI as of Apr 2025.
+
+</details>
 
 ### 3.3 AI‑Infused Coding Tools & IDEs
 
@@ -346,6 +331,9 @@ Costs = retrieval latency & datastore infra.
 
 ### 3.6 Agent Frameworks & Orchestrators
 
+<details>
+<summary>🤖 Agent‑Frameworks table ▸</summary>
+
 | Framework | Highlight | Link |
 |---|---|---|
 | AutoGen | Multi‑agent workflow engine (Microsoft) | https://github.com/microsoft/autogen |
@@ -353,6 +341,8 @@ Costs = retrieval latency & datastore infra.
 | ElizaOS | Decentralized agent OS for Web3 automations | https://github.com/eliza-os/ElizaOS |
 | MetaGPT | Multi‑agent code‑generation (Spec → PR) | https://github.com/geekan/MetaGPT |
 | DSPy | Declarative structured prompting framework | https://github.com/stanfordnlp/dspy |
+
+</details>
 
 ### 3.7 Web3 × AI — Protocols & Marketplaces
 
@@ -377,7 +367,10 @@ Costs = retrieval latency & datastore infra.
 
 ---
 
-## 4 | 🧑‍🔬 Research & Thought Leadership
+# 4 | 🧑‍🔬 Research & Thought Leadership
+<details>
+<summary>🧑‍🔬 Research & Thought Leadership table ▸</summary>
+
 Follow on **X/Twitter** with notifications; mine quality replies for other high-signal accounts.
 
 | Account | Focus / Role | Why Follow |
@@ -411,9 +404,14 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 | **[Margaret Mitchell (@mmitchell_ai)](https://x.com/mmitchell_ai)** | Chief Ethics Scientist, Hugging Face; fairness & bias researcher | Model accountability |
 | **[Paul Kedrosky (@pkedrosky)](https://x.com/pkedrosky)** | VC at SK Ventures; macro‑economics of AI adoption | Market signal threads |
 
+</details>
+
 ---
 
-## 5 | 🌐 Applied Case Studies
+# 5 | 🌐 Applied Case Studies
+
+<details>
+<summary>🌐 Applied Case Studies ▸</summary>
 
 1. **[GitHub Copilot Agent Mode](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/)**  
    Turns GitHub issues into pull‑requests that include code, unit tests, and a passing CI pipeline.  
@@ -456,16 +454,19 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 9. **NVIDIA Isaac Sim + GR00T Pilot** – simulated warehouse robot running vision foundation model + GPT policy.  
    • Uses Isaac Sim for synthetic data; GR00T for task planning  [oai_citation_attribution:2‡arXiv](https://arxiv.org/abs/2306.01116?utm_source=chatgpt.com)
 
+</details>
+
 ---
 
-## 6 | ⚖️ Ethics, Safety & Policy
+# 6 | ⚖️ Ethics, Safety & Policy
 - **OpenAI Preparedness Team** – Catastrophic risk benchmarks.  
 - **Anthropic RSP** – Responsible scaling policy v2 (Mar 2025).  
 - **EU AI Act** passed 13 Mar 2025; tiered compliance for foundation models.  
 - **NIST AI RMF 2.0** draft (Feb 2025) introduces continuous assurance.
-+ **U.S. Executive Order 14110** – "Safe, Secure, Trustworthy AI" (Jan 2025).  
+- **U.S. Executive Order 14110** – "Safe, Secure, Trustworthy AI" (Jan 2025).
 
-### 📅 Policy Countdown
+<details>
+<summary>⚖️ Policy‑Countdown table ▸</summary>
 
 | Regulation / Policy | Enforcement or Key Milestone | Affects |
 |---|---|---|
@@ -473,12 +474,14 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 | Anthropic Responsible Scaling Policy v2 | **Mar 31 2025** – threshold checks activated | Claude family deployments |
 | NIST AI RMF 2.0 (Draft) | **Jul 2025** – public comment closes | US federal procurement |
 | UK AI Safety Institute Evaluations | **Q3 2025** – initial model eval suite published | Models > 10¹⁴ params |
-| U.S. EO 14110 guidance | **Oct 2025** – OMB implementation memo due | All federal contracts |
+| U.S. EO 14110 guidance | **Oct 2025** – OMB implementation memo due | All federal contracts |
 | NIST AI RMF 2.0 Final | **Dec 2025** – Final framework published | U.S. critical‑infra vendors |
+
+</details>
 
 ---
 
-## 7 | 🎓 Student Opportunities
+# 7 | 🎓 Student Opportunities
 - **Implementation Checklist**  
   - [ ] Follow all X accounts & enable 🔔  
   - [ ] Benchmark three search engines  
@@ -489,7 +492,7 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 
 ---
 
-## 8 | 📜 Appendices & Further Reading
+# 8 | 📜 Appendices & Further Reading
 ### Mandatory Reading
 * **Books:** *The Coming Wave*, *A Thousand Brains*, *Human Compatible*  
 * **Manifestos & Threads:**  
@@ -498,6 +501,9 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 
 ### Prompt Engineering 101
 
+<details>
+<summary>📝 Prompt‑Engineering table ▸</summary>
+
 | Pattern | Core idea | Example / Colab |
 |---|---|---|
 | Chain‑of‑Thought (CoT) | Let the model "think aloud." | https://github.com/ysymyth/GSM8K-CoT |
@@ -505,12 +511,7 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 | Self‑Critique / Reflexion | Model critiques & revises its own answer. | https://github.com/reflexion-ai/reflexion |
 | Tree‑of‑Thought | Branch multiple reasoning paths, vote on best. | https://github.com/princeton-nlp/tree-of-thought |
 
-**Quick exemplar prompts**
-
-* **CoT:** "Let's think step-by-step and solve the math problem."  
-* **ReAct:** "Search['1956 AI conference'] then answer."  
-* **Self‑Critique:** "Give an answer, critique it, then improve the answer."  
-* **ToT:** "Generate three reasoning paths and vote for the best one."
+</details>
 
 ### Advanced Challenges
 Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with OpenFold • Spoof GPT‑5 via Llama‑3‑400B • Optimize NVIDIA Blackwell inference
@@ -518,3 +519,4 @@ Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with Ope
 ---
 
 *Happy innovating! Pull requests welcome → **#ai‑dev‑master‑list***
+
