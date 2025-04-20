@@ -35,6 +35,10 @@
 
 # 1 | 🏛️ Historical Foundations & Core Concepts
 ### 1.1 Interactive Timelines & Visualizers
+
+<details>
+<summary>🔭 Interactive Timelines & Visualizers ▸</summary>
+
 - **AI Timeline:** <https://ai-timeline.org/>  
 - **LLM 3‑D Walkthrough:** <https://bbycroft.net/llm>  
 - **Transformer Explainer:** <https://poloclub.github.io/transformer-explainer/>  
@@ -51,6 +55,8 @@
 - **2024 — Gemini 2.5 Pro** reaches a 1‑million‑token context window. (Google DeepMind)  
 - **2025 — GPT‑4o** becomes OpenAI's default multimodal model, replacing GPT‑4. (OpenAI release notes)
 
+</details>
+
 ### 1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)
 <details>
 <summary>⚙️ Training‑Pipeline table ▸</summary>
@@ -64,26 +70,26 @@
 </details>
 
 <details>
-<summary>🛠️ Software Stack by Training Stage ▸</summary>
+<summary>🛠️ Software Stack by Training Stage ▸</summary>
 
 | Stage | Tool / Site | Why it matters | Link |
 |---|---|---|---|
-| **Data curation & streaming** | RefinedWeb toolkit | Large‑scale Common Crawl cleaning & dedup | https://huggingface.co/datasets/tiiuae/falcon-refinedweb |
+| **Data curation & streaming** | RefinedWeb toolkit | Large‑scale Common Crawl cleaning & dedup | https://huggingface.co/datasets/tiiuae/falcon-refinedweb |
 |  | Dolma | Modular dataset builder used for C4 / FineWeb | https://github.com/allenai/DataDecide |
 |  | Mosaic StreamingDataset | Shard‑on‑demand data loading | https://docs.mosaicml.com/projects/streaming/ |
 | **Pre‑training frameworks** | DeepSpeed | ZeRO‑3 / ZeRO‑Infinity, 3D parallelism | https://github.com/microsoft/DeepSpeed |
-|  | Megatron‑DeepSpeed | 100 B‑param GPT/T5 recipe | https://github.com/deepspeedai/Megatron-DeepSpeed |
+|  | Megatron‑DeepSpeed | 100 B‑param GPT/T5 recipe | https://github.com/deepspeedai/Megatron-DeepSpeed |
 |  | T5X | JAX/Flax high‑perf trainer | https://github.com/google-research/t5x |
 |  | Ray Train | Cluster‑scale PyTorch/JAX jobs | https://docs.ray.io/en/latest/train/ |
 | **Fine‑tuning / PEFT** | PEFT (LoRA/QLoRA) | Adapter training for any transformer | https://github.com/huggingface/peft |
 |  | bitsandbytes | 4‑bit quantisation kernels | https://github.com/bitsandbytes-foundation/bitsandbytes |
 |  | Axolotl | YAML‑driven SFT / QLoRA pipeline | https://github.com/OpenAccess-AI-Collective/axolotl |
-| **RLHF / Alignment** | DeepSpeed‑Chat | Turn‑key SFT → RM → PPO pipeline | https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat |
+| **RLHF / Alignment** | DeepSpeed‑Chat | Turn‑key SFT → RM → PPO pipeline | https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat |
 |  | trlX | Distributed PPO / DPO training | https://github.com/CarperAI/trlx |
 |  | RL4LMs | Modular RL for language models | https://github.com/allenai/RL4LMs |
 | **Evaluation harnesses** | lm‑eval‑harness | Standard MT‑Bench, MMLU, TruthfulQA | https://github.com/EleutherAI/lm-eval-harness |
 |  | HELM | Holistic eval dashboard | https://crfm.stanford.edu/helm/latest/ |
-| **Experiment tracking** | Weights & Biases (wandb) | Real‑time metrics, artifact versioning, sweep manager | https://wandb.ai |
+| **Experiment tracking** | Weights & Biases (wandb) | Real‑time metrics, artifact versioning, sweep manager | https://wandb.ai |
 
 </details>
 
@@ -141,9 +147,9 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 
 | Vendor | Model | Ctx Window | Reasoning? | Architecture | Highlights | Strength | MT‑Bench¹ | MMLU² |
 |---|---|---|---|---|---|---|---|---|
-| **OpenAI** | **[o3](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Best‑in‑class reasoning & vision | Cost‑‑optimised "frontier lite" | 9.2 | 87.5 |
-| | **[o4‑mini](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Faster & cheaper than o3 | Cost‑‑optimised "frontier lite" | 8.8 | 82.0 |
-| | **[o4‑mini‑high](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Higher limits, same latency | Cost‑‑optimised "frontier lite" | 9.0 | 84.0 |
+| **OpenAI** | **[o3](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Best‑in‑class reasoning & vision | Cost‑optimised "frontier lite" | 9.2 | 87.5 |
+| | **[o4‑mini](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Faster & cheaper than o3 | Cost‑optimised "frontier lite" | 8.8 | 82.0 |
+| | **[o4‑mini‑high](https://openai.com/index/introducing-o3-and-o4-mini/)** | 128 k | ✅ | Dense Transf. | Higher limits, same latency | Cost‑optimised "frontier lite" | 9.0 | 84.0 |
 | | **[GPT‑4o](https://openai.com/index/gpt-4o-system-card/)** | 128 k | ✅ | Multimodal Dense | Replaces GPT‑4 in ChatGPT (Apr 2025) | Multimodal & fastest reasoning latency | 9.4 | 86.8 |
 | | **[GPT‑4.1](https://platform.openai.com/docs/models#gpt-4.1)** | 128 k | ✅ | Dense Transf. | Latest preview now in Cursor/API | Latest reasoning preview for devs | 9.5 | 87.0 |
 | | **[GPT‑4.5 "Orion"](https://openai.com/index/introducing-gpt-4-5/)** | 256 k | ✅ | Dense Transf. | Research preview (Mar 2025) | Highest benchmark scores to date | 9.6 | 88.2 |
@@ -482,6 +488,10 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 ---
 
 # 7 | 🎓 Student Opportunities
+
+<details>
+<summary>🎓 Student Opportunities ▸</summary>
+
 - **Implementation Checklist**  
   - [ ] Follow all X accounts & enable 🔔  
   - [ ] Benchmark three search engines  
@@ -489,6 +499,17 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
   - [ ] Replicate Graph RAG tutorial in LangChain  
 - **Events & Fellowships**  
   NeurIPS • CVPR • AI Engineer Summit • MIT EmTech • ETHDenver • DEFCON AI Village • Stanford HAI Fellowships
+
+</details>
+
+### Advanced Challenges
+
+<details>
+<summary>⚡ Advanced Challenges ▸</summary>
+
+Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with OpenFold • Spoof GPT‑5 via Llama‑3‑400B • Optimize NVIDIA Blackwell inference
+
+</details>
 
 ---
 
@@ -512,9 +533,6 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 | Tree‑of‑Thought | Branch multiple reasoning paths, vote on best. | https://github.com/princeton-nlp/tree-of-thought |
 
 </details>
-
-### Advanced Challenges
-Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with OpenFold • Spoof GPT‑5 via Llama‑3‑400B • Optimize NVIDIA Blackwell inference
 
 ---
 
