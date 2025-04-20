@@ -44,7 +44,10 @@
 - **Transformer Explainer:** <https://poloclub.github.io/transformer-explainer/>  
 - **Prompt‑Chaining Primer:** <https://www.agentrecipes.com/prompt-chaining>
 
-**Milestones since 1956**
+</details>
+
+<details>
+<summary>📅 Historical Milestones since 1956 ▸</summary>
 
 - **1956 — Dartmouth Summer Research Project** coins the term "artificial intelligence." (Source: Dartmouth College)  
 - **1986 — Back‑propagation breakthrough** enables multi‑layer neural nets (Rumelhart, Hinton, Williams). (Nature 323)  
