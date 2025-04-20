@@ -17,6 +17,7 @@
     - 1.3 Retrieval-Augmented Generation (RAG) Variants
         - 🔍 RAG‑Variants table ▸
         - 🛠️ How each RAG variant works ▸
+    - 1.4 Prompt Engineering 101
 2. [🚀 Frontier Models (2025‑Q2)](#section-2)
     - 🔍 Frontier Models table ▸
     - 2.1 Model Architecture Cheat‑Sheet
@@ -42,7 +43,6 @@
     - 6.4 Ethics Guidelines Timeline
 7. [🎓 Student Opportunities](#section-7)
 8. [📜 Appendices & Further Reading](#section-8)
-    - Prompt Engineering 101
     - Quantum Horizons
     - Advanced Challenges
 
@@ -151,6 +151,20 @@
 * **Context‑Compression RAG** – Retrieve → summarize/compress → feed to the model. Saves tokens and latency on small‑context LLMs.  
 * **Agentic / Tool‑RAG** – Retrieval step is wrapped inside an agent that can also invoke tools (e.g., calculators, APIs) and iterate. Enables dynamic workflows.  
 * **Multimodal RAG** – Index image/audio/video embeddings alongside text so the same query can pull diagrams, screenshots, or podcasts as evidence.
+
+</details>
+
+### 1.4 | 📝 Prompt Engineering 101
+
+<details>
+<summary>📝 Prompt‑Engineering table ▸</summary>
+
+| Pattern | Core idea | Example / Colab |
+|---|---|---|
+| Chain‑of‑Thought (CoT) | Let the model "think aloud." | https://github.com/ysymyth/GSM8K-CoT |
+| ReAct | Interleave reasoning & tool actions. | https://github.com/ydixon/reaxt-agent-search-demo |
+| Self‑Critique / Reflexion | Model critiques & revises its own answer. | https://github.com/reflexion-ai/reflexion |
+| Tree‑of‑Thought | Branch multiple reasoning paths, vote on best. | https://github.com/princeton-nlp/tree-of-thought |
 
 </details>
 
@@ -590,25 +604,12 @@ Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with Ope
 
 <a id="section-8"></a>
 # 8 | 📜 Appendices & Further Reading
+
 ### Mandatory Reading
 * **Books:** *The Coming Wave*, *A Thousand Brains*, *Human Compatible*  
 * **Manifestos & Threads:**  
   - Sam Altman – *Moore's Law for Everything*  
   - Yann LeCun – *Energy‑Based Models*
-
-### Prompt Engineering 101
-
-<details>
-<summary>📝 Prompt‑Engineering table ▸</summary>
-
-| Pattern | Core idea | Example / Colab |
-|---|---|---|
-| Chain‑of‑Thought (CoT) | Let the model "think aloud." | https://github.com/ysymyth/GSM8K-CoT |
-| ReAct | Interleave reasoning & tool actions. | https://github.com/ydixon/reaxt-agent-search-demo |
-| Self‑Critique / Reflexion | Model critiques & revises its own answer. | https://github.com/reflexion-ai/reflexion |
-| Tree‑of‑Thought | Branch multiple reasoning paths, vote on best. | https://github.com/princeton-nlp/tree-of-thought |
-
-</details>
 
 ---
 
