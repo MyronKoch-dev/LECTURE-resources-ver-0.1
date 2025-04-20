@@ -25,6 +25,10 @@
 4. 🧑‍🔬 Research & Thought Leadership  
 5. 🌐 Applied Case Studies  
 6. ⚖️ Ethics, Safety & Policy  
+    - 6.1 Key AI Safety & Regulatory Initiatives
+    - 6.2 International AI Governance Initiatives
+    - 6.3 Industry Self-Regulation Efforts
+    - 6.4 Ethics Guidelines Timeline
 7. 🎓 Student Opportunities  
 8. 📜 Appendices & Further Reading  
     - Prompt Engineering 101  
@@ -468,23 +472,74 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 ---
 
 # 6 | ⚖️ Ethics, Safety & Policy
-- **OpenAI Preparedness Team** – Catastrophic risk benchmarks.  
-- **Anthropic RSP** – Responsible scaling policy v2 (Mar 2025).  
-- **EU AI Act** passed 13 Mar 2025; tiered compliance for foundation models.  
-- **NIST AI RMF 2.0** draft (Feb 2025) introduces continuous assurance.
-- **U.S. Executive Order 14110** – "Safe, Secure, Trustworthy AI" (Jan 2025).
 
 <details>
-<summary>⚖️ Policy‑Countdown table ▸</summary>
+<summary>🔍 Key AI Safety & Regulatory Initiatives ▸</summary>
 
-| Regulation / Policy | Enforcement or Key Milestone | Affects |
-|---|---|---|
-| EU AI Act Codes of Practice | **May 2 2025** – draft codes become binding | All frontier‑model providers serving EU |
-| Anthropic Responsible Scaling Policy v2 | **Mar 31 2025** – threshold checks activated | Claude family deployments |
-| NIST AI RMF 2.0 (Draft) | **Jul 2025** – public comment closes | US federal procurement |
-| UK AI Safety Institute Evaluations | **Q3 2025** – initial model eval suite published | Models > 10¹⁴ params |
-| U.S. EO 14110 guidance | **Oct 2025** – OMB implementation memo due | All federal contracts |
-| NIST AI RMF 2.0 Final | **Dec 2025** – Final framework published | U.S. critical‑infra vendors |
+### Notable AI Ethics & Regulatory Frameworks
+
+- **OpenAI Preparedness Team** – Established to benchmark and mitigate catastrophic risks from advanced AI systems, including developing monitoring systems to detect potential misuse, coordinating external red-teaming exercises, and creating technical standards to ensure safe development of increasingly capable AI. [OpenAI Safety & Security](https://openai.com/safety)
+
+- **Anthropic RSP** – Responsible Scaling Policy v2 (Mar 2025) implements graduated deployment protocols based on capability thresholds, requires formal safety evaluations before releasing models exceeding predefined capabilities, and establishes governance structures that can veto deployment of potentially dangerous systems. [Anthropic Responsible Scaling](https://www.anthropic.com/responsibility)
+
+- **EU AI Act** – Passed on 13 Mar 2025, introduces tiered compliance requirements for foundation models based on computational resources, with strict transparency and robustness requirements for high-risk systems, mandatory disclosure of AI-generated content, and significant penalties for non-compliance (up to 7% of global annual revenue). [EU AI Act Overview](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+
+- **NIST AI RMF 2.0** – The draft (Feb 2025) introduces continuous assurance mechanisms that require regular auditing of AI systems throughout their lifecycle, integrates adversarial testing requirements, and provides sector-specific implementation paths for critical infrastructure applications including healthcare, finance, and transportation. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
+- **U.S. Executive Order 14110** – "Safe, Secure, Trustworthy AI" (Jan 2025) mandates safety testing for advanced AI systems before public release, establishes a national AI research agenda with $2B in funding, requires watermarking of AI-generated content by federal contractors, and implements data privacy protections for Americans in AI training and deployment. [Executive Order 14110](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/)
+
+</details>
+
+<details>
+<summary>🌏 International AI Governance Initiatives ▸</summary>
+
+### Global AI Governance Beyond EU/US
+
+- **China's AI Governance Framework** – Released Dec 2024, focuses on "managed innovation" with mandatory registration of foundation models above 100B parameters, regular audits for alignment with "core socialist values," and special governance procedures for models deployed in critical sectors. [China MIIT Guidelines](https://www.miit.gov.cn/ai-governance)
+
+- **UAE National AI Strategy 2031** – Establishes the world's first "AI Ministry" with a $10B investment fund, regulatory sandboxes for AI startups, and a 5-tier certification system for model deployment based on risk profiles. [UAE AI Strategy](https://ai.gov.ae/strategy/)
+
+- **Singapore's AI Verify Foundation** – Created Apr 2025 as the first international AI testing and certification body, providing standardized transparency reports and safety certifications for foundation models deployed across ASEAN nations. [AI Verify](https://www.aiverify.sg)
+
+- **G7 Hiroshima AI Process** – Multilateral framework requiring "AI impact statements" for high-risk applications, establishing the International AI Safety Laboratory with rotating leadership, and developing model capability assessment standards. [G7 Digital Ministers](https://www.g7hiroshima.go.jp/ai-process)
+
+</details>
+
+<details>
+<summary>🏢 Industry Self-Regulation Efforts ▸</summary>
+
+### Corporate Governance & Voluntary Standards
+
+- **Frontier Model Forum** – Consortium of OpenAI, Anthropic, Google, and Microsoft promoting shared safety standards, red-teaming protocols, and publishing threat models and mitigation techniques. [FMF Charter](https://frontiermodel.org)
+
+- **Partnership on AI Responsible Scaling Pledge** – Signed by 47 AI labs and cloud providers in Feb 2025, committing to pre-deployment adversarial testing, establishing safety teams with veto authority, and implementing capability thresholds with graduated release processes. [PAI Pledge](https://partnershiponai.org/responsible-scaling)
+
+- **IEEE 2802-2025 Standard** – Industry-developed technical standard for watermarking and provenance tracking of AI-generated content, with compliance certification program for model providers. [IEEE 2802](https://standards.ieee.org/ai-2802)
+
+- **Llama Safety Alignment Playbook** – Meta's open-source framework (Mar 2025) for safety alignment including evaluation datasets, jailbreak resistance metrics, and RLHF preference data collection guidelines used across the open model ecosystem. [Llama Safety](https://ai.meta.com/llama/safety-alignment)
+
+</details>
+
+<details>
+<summary>⏳ Ethics Guidelines Timeline ▸</summary>
+
+### Evolution of AI Ethics Principles (2016-2025)
+
+- **2016: Partnership on AI** – First industry coalition (Amazon, Apple, Google, Facebook, IBM, Microsoft) to establish ethical guidelines for AI development.
+
+- **2018: Montreal Declaration** – Early comprehensive framework introducing principles of well-being, autonomy, justice, privacy, knowledge, democracy, and responsibility.
+
+- **2019: OECD AI Principles** – Established global reference point with five values-based principles and recommendations for trustworthy AI, adopted by 38 countries.
+
+- **2021: UNESCO AI Ethics Recommendation** – First global standard-setting instrument addressing issues like protecting data, banning social scoring, and environmental impacts.
+
+- **2022: NIST AI Risk Management Framework 1.0** – Introduced structured approach to identifying, assessing, and managing AI risks.
+
+- **2023: EU AI Act (First Draft)** – Pioneered risk-based regulatory approach with tiered compliance requirements based on potential harm.
+
+- **2024: White House Executive Order 14110** – Shifted focus to catastrophic AI risk mitigation and model evaluation requirements.
+
+- **2025: Global AI Safety Summit Accord** – Established international red teaming network, capability assessment standards, and joint risk monitoring system across 32 countries.
 
 </details>
 
