@@ -6,7 +6,7 @@
 ---
 
 ## 📑 Table of Contents
-1. 🏛️ Historical Foundations & Core Concepts
+1. [🏛️ Historical Foundations & Core Concepts](#section-1)
     - 1.1 Interactive Timelines & Visualizers
         - 🔭 Interactive Timelines & Visualizers ▸
         - 📅 Historical Milestones since 1956 ▸
@@ -17,7 +17,7 @@
     - 1.3 Retrieval-Augmented Generation (RAG) Variants
         - 🔍 RAG‑Variants table ▸
         - 🛠️ How each RAG variant works ▸
-2. 🚀 Frontier Models (2025‑Q2)
+2. [🚀 Frontier Models (2025‑Q2)](#section-2)
     - 🔍 Frontier Models table ▸
     - 2.1 Model Architecture Cheat‑Sheet
         - 🏗️ Model Architecture Cheat‑Sheet table ▸
@@ -25,7 +25,7 @@
         - 🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸
     - 2.2 Model Modalities & Classes
         - 🔍 Model Modalities table ▸
-3. 🛠️ Ecosystem & Tooling
+3. [🛠️ Ecosystem & Tooling](#section-3)
     - 3.1 Core Platform for Experiments (Focus: AI × Web3)
     - 3.2 AI Search Engines (Research / Thinking Modes)
     - 3.3 AI‑Infused Coding Tools & IDEs
@@ -33,21 +33,22 @@
     - 3.5 Open‑Source Utilities & Creative Suite
     - 3.6 Agent Frameworks & Orchestrators
     - 3.7 Web3 × AI — Protocols & Marketplaces
-4. 🧑‍🔬 Research & Thought Leadership
-5. 🌐 Applied Case Studies
-6. ⚖️ Ethics, Safety & Policy
+4. [🧑‍🔬 Research & Thought Leadership](#section-4)
+5. [🌐 Applied Case Studies](#section-5)
+6. [⚖️ Ethics, Safety & Policy](#section-6)
     - 6.1 Key AI Safety & Regulatory Initiatives
     - 6.2 International AI Governance Initiatives
     - 6.3 Industry Self-Regulation Efforts
     - 6.4 Ethics Guidelines Timeline
-7. 🎓 Student Opportunities
-8. 📜 Appendices & Further Reading
+7. [🎓 Student Opportunities](#section-7)
+8. [📜 Appendices & Further Reading](#section-8)
     - Prompt Engineering 101
     - Quantum Horizons
     - Advanced Challenges
 
 ---
 
+<a id="section-1"></a>
 # 1 | 🏛️ Historical Foundations & Core Concepts
 ### 1.1 Interactive Timelines & Visualizers
 
@@ -155,6 +156,7 @@
 
 ---
 
+<a id="section-2"></a>
 # 2 | 🚀 Frontier Models (2025‑Q2)
 
 <details>
@@ -247,6 +249,7 @@ Costs = retrieval latency & datastore infra.
 
 ---
 
+<a id="section-3"></a>
 # 3 | 🛠️ Ecosystem & Tooling
 
 ### 3.1 Core Platform for Experiments (Focus: AI × Web3)
@@ -390,6 +393,7 @@ Costs = retrieval latency & datastore infra.
 
 ---
 
+<a id="section-4"></a>
 # 4 | 🧑‍🔬 Research & Thought Leadership
 <details>
 <summary>🧑‍🔬 Research & Thought Leadership table ▸</summary>
@@ -431,6 +435,7 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 
 ---
 
+<a id="section-5"></a>
 # 5 | 🌐 Applied Case Studies
 
 <details>
@@ -481,6 +486,7 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 
 ---
 
+<a id="section-6"></a>
 # 6 | ⚖️ Ethics, Safety & Policy
 
 <details>
@@ -555,6 +561,7 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 
 ---
 
+<a id="section-7"></a>
 # 7 | 🎓 Student Opportunities
 
 <details>
@@ -581,6 +588,7 @@ Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with Ope
 
 ---
 
+<a id="section-8"></a>
 # 8 | 📜 Appendices & Further Reading
 ### Mandatory Reading
 * **Books:** *The Coming Wave*, *A Thousand Brains*, *Human Compatible*  
