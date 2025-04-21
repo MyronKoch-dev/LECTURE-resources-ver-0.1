@@ -153,7 +153,7 @@
 ### 1.4 | 📝 Prompt Engineering 101
 
 <details>
-<summary>�� Prompt‑Engineering Table ▸</summary>
+<summary> 📝 Prompt‑Engineering Table ▸</summary>
 
 | Pattern | Core idea | Example / Colab |
 |---|---|---|
