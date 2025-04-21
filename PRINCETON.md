@@ -23,7 +23,6 @@
     - [3.4 ⭐ Desktop Chat Clients \& Local Runners](#34--desktop-chat-clients--local-runners)
     - [3.5 ⭐ Open‑Source Utilities \& Creative Suite](#35--opensource-utilities--creative-suite)
     - [3.6 ⭐ Agent Frameworks \& Orchestrators](#36--agent-frameworks--orchestrators)
-      - [LangChain Ecosystem \& Visual Wrappers](#langchain-ecosystem--visual-wrappers)
       - [Multi-Agent Workflow Engines](#multi-agent-workflow-engines)
       - [Minimalist \& Open-Source Agent Libraries](#minimalist--open-source-agent-libraries)
       - [Tool-Use \& Integration-Focused](#tool-use--integration-focused)
@@ -43,18 +42,18 @@
 # 1 | 🏛️ Historical Foundations & Core Concepts
 ### 1.1 ⭐ Interactive Timelines & Visualizers
 
-<details>
-<summary>🔭 Interactive Timelines & Visualizers ▸</summary>
+
+🔭 Interactive Timelines & Visualizers ▸
 
 - **AI Timeline:** <https://ai-timeline.org/>  
 - **LLM 3‑D Walkthrough:** <https://bbycroft.net/llm>  
 - **Transformer Explainer:** <https://poloclub.github.io/transformer-explainer/>  
 - **Prompt‑Chaining Primer:** <https://www.agentrecipes.com/prompt-chaining>
 
-</details>
 
-<details>
-<summary>📅 Historical Milestones Since 1956 ▸</summary>
+
+
+📅 Historical Milestones Since 1956 ▸
 
 - **1956 — Dartmouth Summer Research Project** coins the term "artificial intelligence." (Source: Dartmouth College)  
 - **1986 — Back‑propagation breakthrough** enables multi‑layer neural nets (Rumelhart, Hinton, Williams). (Nature 323)  
@@ -65,11 +64,11 @@
 - **2024 — Gemini 2.5 Pro** reaches a 1‑million‑token context window. (Google DeepMind)  
 - **2025 — GPT‑4o** becomes OpenAI's default multimodal model, replacing GPT‑4. (OpenAI release notes)
 
-</details>
+
 
 ### 1.2 ⭐ Training Pipeline (Pre‑train → Fine‑tune → RLHF)
-<details>
-<summary>⚙️ Training‑Pipeline Table ▸</summary>
+
+⚙️ Training‑Pipeline Table ▸
 
 | Stage | Classic definition | Typical recipe | 2025 upgrade |
 |---|---|---|---|
@@ -77,10 +76,10 @@
 | **Fine‑tuning** | Adapt the base model to a specific domain/task with smaller labeled data. | LoRA / QLoRA on medical Q&A, code, policy docs. | Multi‑head PEFT; Sparse LoRA for large MoE shards. |
 | **RLHF** | Collect human preference pairs → reward model → RL (usually PPO) to align outputs. | 5–10 k preference pairs, Proximal Policy Optimization. | **RLAIF** (AI feedback), **DPO/ORPO** skip RL loop; cheaper, faster. |
 
-</details>
 
-<details>
-<summary>🛠️ Software Stack by Training Stage ▸</summary>
+
+
+🛠️ Software Stack by Training Stage ▸
 
 | Stage | Tool / Site | Why it matters | Link |
 |---|---|---|---|
@@ -101,10 +100,10 @@
 |  | HELM | Holistic eval dashboard | https://crfm.stanford.edu/helm/latest/ |
 | **Experiment tracking** | Weights & Biases (wandb) | Real‑time metrics, artifact versioning, sweep manager | https://wandb.ai |
 
-</details>
 
-<details>
-<summary>🧪 Mini‑Labs Table ▸</summary>
+
+
+🧪 Mini‑Labs Table ▸
 
 | Lab | GPU need | Guide |
 |---|---|---|
@@ -112,11 +111,11 @@
 | RLHF with trlX on 100 prompts | 1× A100 40 GB | <https://github.com/CarperAI/trlx/blob/main/examples/summarize/ppo_summary.py> |
 | Evaluate with lm‑eval‑harness | CPU‑only | <https://github.com/EleutherAI/lm-eval-harness#quickstart> |
 
-</details>
+
 
 ### 1.3 ⭐ Retrieval-Augmented Generation (RAG) Variants  
-<details>
-<summary>🔍 RAG‑Variants Table ▸</summary>
+
+🔍 RAG‑Variants Table ▸
 
 | Variant | Core idea | When it shines |
 |---|---|---|
@@ -129,10 +128,10 @@
 | **Agentic / Tool‑RAG** | Retrieval step wrapped inside an agent that can also call tools | Dynamic workflows e.g., "lookup → calculate" |
 | **Multimodal RAG** | Index images/audio/video embeddings alongside text | Diagrams, lecture slides, podcasts |
 
-</details>
 
-<details>
-<summary>🛠️ How Each RAG Variant Works ▸</summary>
+
+
+🛠️ How Each RAG Variant Works ▸
 
 * **Plain RAG (base‑line)** – Embed → similarity search → stuff context. General‑purpose and fast.  
 * **Graph RAG** – Build a knowledge graph (nodes = entities / code symbols), follow edges, then fetch passages. Excels at multi‑hop reasoning and large codebases.  
@@ -143,12 +142,12 @@
 * **Agentic / Tool‑RAG** – Retrieval step is wrapped inside an agent that can also invoke tools (e.g., calculators, APIs) and iterate. Enables dynamic workflows.  
 * **Multimodal RAG** – Index image/audio/video embeddings alongside text so the same query can pull diagrams, screenshots, or podcasts as evidence.
 
-</details>
+
 
 ### 1.4 ⭐ | 📝 Prompt Engineering 101
 
-<details>
-<summary> 📝 Prompt‑Engineering Table ▸</summary>
+
+ 📝 Prompt‑Engineering Table ▸
 
 | Pattern | Core idea | Example / Colab |
 |---|---|---|
@@ -158,15 +157,15 @@
 | Tree‑of‑Thought | Branch multiple reasoning paths, vote on best. | https://github.com/princeton-nlp/tree-of-thought |
 | Prompting‑Induced Planning | Break tasks into planning steps using chain‑of‑thought induced prompts. | https://cookbook.openai.com/examples/gpt4-1_prompting_guide#prompting-induced-planning--chain-of-thought |
 
-</details>
+
 
 ---
 
 <a id="section-2"></a>
 # 2 | 🚀 Frontier Models (2025‑Q2)
 
-<details>
-<summary>🔍 Frontier Models table ▸</summary>
+
+🔍 Frontier Models table ▸
 
 Frontier models are the latest, most advanced AI systems from leading labs, setting the state of the art in reasoning, scale, and capabilities.
 
@@ -191,12 +190,12 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 
 <sub>¹ MT‑Bench (10 = max) compiled from vendor or community MT‑Bench dashboards, Apr 2025.  
 ² MMLU (0‑100). Scores vary ±0.3 depending on evaluation harness.</sub>
-</details>
+
 
 ### 2.1 ⭐ 🔍 Model Architecture Cheat‑Sheet
 
-<details>
-<summary>🏗️ Model Architecture Cheat‑Sheet table ▸</summary>
+
+🏗️ Model Architecture Cheat‑Sheet table ▸
 
 | Architecture | Core idea | Popular 2025 examples | Strengths | Trade‑offs |
 |---|---|---|---|---|
@@ -208,20 +207,20 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 | **Structured Expert (GQA / MQA)** | Multi‑query or grouped‑query attention reduces KV size; acts like lightweight "expert routing." | Llama‑3, Mistral‑7B | Faster inference, smaller KV cache. | Slight accuracy trade‑off on small models. |
 | **Diffusion Transformer (DiT)** | Use diffusion denoising steps with transformer backbone for images. | Stable Diffusion 3 DiT, DeepFloyd IF | High‑quality image generation. | Not suited for language tasks. |
 
-</details>
 
-<details>
-<summary>🔍 State‑Space Models (SSM) — Linear‑time Context ▸</summary>
+
+
+🔍 State‑Space Models (SSM) — Linear‑time Context ▸
 
 SSMs replace O(N²) attention with **state‑space convolution kernels**.  
 * **Key idea:** hidden state hₜ evolves via linear ODE; output is causal convolution.  
 * **Why:** O(T) memory → streaming windows up to 4 M tokens (Mamba 2.8 B).  
 * **Trade‑off:** still maturing; fewer inference libraries than Transformers.
 
-</details>
 
-<details>
-<summary>🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸</summary>
+
+
+🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸
 
 DeepMind **RETRO** mixes a decoder with a **nearest‑neighbor lookup**:
 
@@ -232,12 +231,12 @@ DeepMind **RETRO** mixes a decoder with a **nearest‑neighbor lookup**:
 Benefits = factual recall with a smaller base model.  
 Costs = retrieval latency & datastore infra.
 
-</details>
+
 
 ### 2.2 ⭐ Model Modalities & Classes
 
-<details>
-<summary>🔍 Model Modalities table ▸</summary>
+
+🔍 Model Modalities table ▸
 
 | Class | Core tasks | Canonical architectures | Signature checkpoints |
 |---|---|---|---|
@@ -251,7 +250,7 @@ Costs = retrieval latency & datastore infra.
 | **Retrieval‑Augmented** | knowledge‑dense Q&A with small base LLM | Chunk retriever + Transformer decoder | DeepMind RETRO |
 | **State‑Space (SSM)** | ultra‑long context seq2seq, streaming | Mamba, RWKV | Mamba‑2.8 B |
 | **Reinforcement / Policy** | robotics, games, decision agents | PPO, MuZero, policy transformers | AlphaGo | Gato |
-</details>
+
 
 ---
 
@@ -259,8 +258,8 @@ Costs = retrieval latency & datastore infra.
 # 3 | 🛠️ Ecosystem & Tooling
 
 ### 3.1 ⭐ Core Platform for Experiments (Focus: AI × Web3)
-<details>
-<summary>🧪 Core‑Platform table ▸</summary>
+
+🧪 Core‑Platform table ▸
 
 | Platform | Link | Purpose |
 |---|---|---|
@@ -269,12 +268,12 @@ Costs = retrieval latency & datastore infra.
 | **ChainML** | https://chainml.xyz | Smart‑contract ⇄ LLM orchestration toolkit |
 | **0xPrompt (0x AI Tools)** | https://0x.org/docs/ai-tools | Open‑source toolkit for LLM agents on Ethereum |
 
-</details>
+
 
 ### 3.2 ⭐ AI Search Engines (Research / Thinking Modes)
 
-<details>
-<summary>🔎 AI‑Search‑Engines Table ▸</summary>
+
+🔎 AI‑Search‑Engines Table ▸
 
 | Engine | Modes / Flagship Feature | Model Backend | Free Tier | DR* | Notes |
 |---|---|---|---|:---:|---|
@@ -292,12 +291,12 @@ Costs = retrieval latency & datastore infra.
 
 > **Tip:** For class projects, Perplexity Research or DeepSeek Thinking give free no‑sign‑up access; Gemini Deep Research is free via the Gemini web UI as of Apr 2025.
 
-</details>
+
 
 ### 3.3 ⭐ AI‑Infused Coding Tools & IDEs
 
-<details>
-<summary>🛠️ Coding Tools table ▸</summary>
+
+🛠️ Coding Tools table ▸
 
 | Category | Tool | What it does | Link |
 |---|---|---|---|
@@ -321,12 +320,12 @@ Costs = retrieval latency & datastore infra.
 | CLI | Aider | AI-powered command-line assistant | https://aider.chat |
 | CLI | Claude Code | Code generation and debugging assistant | https://github.com/anthropics/claude-code |
 | CLI | OpenAI Codex CLI | Command-line interface for OpenAI Codex | https://github.com/openai/codex |
-</details>
+
 
 ### 3.4 ⭐ Desktop Chat Clients & Local Runners
 
-<details>
-<summary>💬 Desktop Chat Table ▸</summary>
+
+💬 Desktop Chat Table ▸
 
 | App | What it does | Models supported | Link |
 |---|---|---|---|
@@ -337,12 +336,12 @@ Costs = retrieval latency & datastore infra.
 | LM Studio | Discover, download & run OSS LLMs locally | Llama‑3, DeepSeek, Gemma, etc. | https://lmstudio.ai |
 | AnythingLLM Desktop | Turnkey local RAG + chat with multiple OSS models | GGUF / ggml models; OpenAI key optional | https://useanything.com |
 | Chorus | Chat with multiple models side‑by‑side and synthesize answers | OpenAI, Anthropic, local GGUF | https://chorus.sh |
-</details>
+
 
 ### 3.5 ⭐ Open‑Source Utilities & Creative Suite
 
-<details>
-<summary>🎨 Open‑Source Utilities & Creative Suite ▸</summary>
+
+🎨 AI Creative Suite ▸
 
 | Category | Tool | What it does | Link |
 |---|---|---|---|
@@ -357,22 +356,19 @@ Costs = retrieval latency & datastore infra.
 | Audio/Video | Descript | AI‑assisted audio & video editing | https://www.descript.com |
 | Audio/Video | Adobe Firefly | Generative image and text effects in Creative Cloud | https://firefly.adobe.com |
 | Audio/Video | Adobe Premiere Pro | Video editor with AI background removal & speech clean‑up | https://www.adobe.com/products/premiere.html |
-| Framework | LangChain | Composable framework for LLM chains, tools & agents | https://github.com/langchain-ai/langchain |
-| Framework | Flowise | Drag‑and‑drop UI wrapper around LangChain for fast demos | https://github.com/FlowiseAI/Flowise |
-| Framework | LlamaIndex | Data framework bridging docs → embeddings → LLM | https://github.com/run-llama/llama_index |
-</details>
+
 
 ### 3.6 ⭐ Agent Frameworks & Orchestrators
 
-<details>
-<summary>🤖 Agent‑Frameworks Table ▸</summary>
+🤖 Agent Frameworks & Core Libraries Table ▸
 
-#### LangChain Ecosystem & Visual Wrappers
-
-| Framework   | Highlight                                                    | Link                                               |
-|-------------|--------------------------------------------------------------|----------------------------------------------------|
-| LangGraph   | Graph‑based state‑machine wrapper for LangChain agents       | https://github.com/langchain-ai/langgraph          |
-| Langflow    | Visual UI for LangChain/RAG workflows                        | https://github.com/logspace-ai/langflow            |
+| Framework/Tool | Description                                                  | Link                                               |
+|----------------|--------------------------------------------------------------|----------------------------------------------------|
+| LangChain      | Composable framework for LLM chains, tools & agents          | https://github.com/langchain-ai/langchain          |
+| LangGraph      | Graph‑based state‑machine wrapper for LangChain agents       | https://github.com/langchain-ai/langgraph          |
+| Flowise        | Drag‑and‑drop UI wrapper around LangChain for fast demos     | https://github.com/FlowiseAI/Flowise               |
+| Langflow       | Visual UI for LangChain/RAG workflows                        | https://github.com/logspace-ai/langflow            |
+| LlamaIndex     | Data framework bridging docs → embeddings → LLM              | https://github.com/run-llama/llama_index           |
 
 #### Multi-Agent Workflow Engines
 
@@ -406,12 +402,12 @@ Costs = retrieval latency & datastore infra.
 |-------------|--------------------------------------------------------------|----------------------------------------------------|
 | n8n         | General-purpose workflow automation platform (can orchestrate LLMs and agentic tasks; broader than just agent frameworks) | https://n8n.io/ |
 
-</details>
+
 
 ### 3.7 ⭐ Web3 × AI — Protocols & Marketplaces
 
-<details>
-<summary>⛓️ Web3 × AI Table ▸</summary>
+
+⛓️ Web3 × AI Table ▸
 
 | Category | Project / Protocol | Core value‑prop | Link |
 |---|---|---|---|
@@ -427,14 +423,14 @@ Costs = retrieval latency & datastore infra.
 | Verifiable AI / on‑chain proofs | ORA Protocol | zk‑style proofs for ML inference (opML) | https://mirror.xyz/orablog.eth/tHHeXtvl__w8qJiYo6Uu0Iac964Wm0hoVfiL-VDf-Nw |
 |  | EigenLayer × Ritual | Restaked ETH secures decentralized model actions | https://www.blog.eigenlayer.xyz/ritual-eigenlayer-ai-x-restaking/ |
 | Identity & trust | Worldcoin / World ID | Iris‑based proof‑of‑personhood for human ≠ AI distinction | https://worldcoin.org/blog/worldcoin/proof-of-personhood-what-it-is-why-its-needed |
-</details>
+
 
 ---
 
 <a id="section-4"></a>
 # 4 | 🧑‍🔬 Research & Thought Leadership
-<details>
-<summary>🧑‍🔬 Research & Thought Leadership table ▸</summary>
+
+🧑‍🔬 Research & Thought Leadership table ▸
 
 Follow on **X/Twitter** with notifications; mine quality replies for other high-signal accounts.
 
@@ -469,15 +465,15 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 | **[Margaret Mitchell (@mmitchell_ai)](https://x.com/mmitchell_ai)** | Chief Ethics Scientist, Hugging Face; fairness & bias researcher | Model accountability |
 | **[Paul Kedrosky (@pkedrosky)](https://x.com/pkedrosky)** | VC at SK Ventures; macro‑economics of AI adoption | Market signal threads |
 
-</details>
+
 
 ---
 
 <a id="section-5"></a>
 # 5 | 🌐 Applied Case Studies
 
-<details>
-<summary>🌐 Applied Case Studies ▸</summary>
+
+🌐 Applied Case Studies ▸
 
 1. **[GitHub Copilot Agent Mode](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/)**  
    Turns GitHub issues into pull‑requests that include code, unit tests, and a passing CI pipeline.  
@@ -520,15 +516,15 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 9. **NVIDIA Isaac Sim + GR00T Pilot** – simulated warehouse robot running vision foundation model + GPT policy.  
    • Uses Isaac Sim for synthetic data; GR00T for task planning  [oai_citation_attribution:2‡arXiv](https://arxiv.org/abs/2306.01116?utm_source=chatgpt.com)
 
-</details>
+
 
 ---
 
 <a id="section-6"></a>
 # 6 | 🎓 Student Opportunities
 
-<details>
-<summary>🎓 Student Opportunities ▸</summary>
+
+🎓 Student Opportunities ▸
 
 - **Implementation Checklist**  
   - [ ] Follow all X accounts & enable 🔔  
@@ -538,16 +534,16 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 - **Events & Fellowships**  
   NeurIPS • CVPR • AI Engineer Summit • MIT EmTech • ETHDenver • DEFCON AI Village • Stanford HAI Fellowships
 
-</details>
+
 
 ### Advanced Challenges
 
-<details>
-<summary>⚡ Advanced Challenges ▸</summary>
+
+⚡ Advanced Challenges ▸
 
 Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with OpenFold • Spoof GPT‑5 via Llama‑3‑400B • Optimize NVIDIA Blackwell inference
 
-</details>
+
 
 ---
 
