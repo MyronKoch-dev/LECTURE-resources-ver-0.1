@@ -6,45 +6,35 @@
 ---
 
 ## 📑 Table of Contents
-1. [🏛️ Historical Foundations & Core Concepts](#section-1)
-    - 1.1 Interactive Timelines & Visualizers
-        - 🔭 Interactive Timelines & Visualizers ▸
-        - 📅 Historical Milestones since 1956 ▸
-    - 1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)
-        - ⚙️ Training‑Pipeline table ▸
-        - 🛠️ Software Stack by Training Stage ▸
-        - 🧪 Mini‑Labs table ▸
-    - 1.3 Retrieval-Augmented Generation (RAG) Variants
-        - 🔍 RAG‑Variants table ▸
-        - 🛠️ How each RAG variant works ▸
-    - 1.4 Prompt Engineering 101
-2. [🚀 Frontier Models (2025‑Q2)](#section-2)
-    - 🔍 Frontier Models table ▸
-    - 2.1 Model Architecture Cheat‑Sheet
-        - 🏗️ Model Architecture Cheat‑Sheet table ▸
-        - 🔍 State‑Space Models (SSM) — Linear‑time context ▸
-        - 🔍 Retrieval‑Augmented Transformers (RETRO‑style) ▸
-    - 2.2 Model Modalities & Classes
-        - 🔍 Model Modalities table ▸
-3. [🛠️ Ecosystem & Tooling](#section-3)
-    - 3.1 Core Platform for Experiments (Focus: AI × Web3)
-    - 3.2 AI Search Engines (Research / Thinking Modes)
-    - 3.3 AI‑Infused Coding Tools & IDEs
-    - 3.4 Desktop Chat Clients & Local Runners
-    - 3.5 Open‑Source Utilities & Creative Suite
-    - 3.6 Agent Frameworks & Orchestrators
-    - 3.7 Web3 × AI — Protocols & Marketplaces
-4. [🧑‍🔬 Research & Thought Leadership](#section-4)
-5. [🌐 Applied Case Studies](#section-5)
-6. [⚖️ Ethics, Safety & Policy](#section-6)
-    - 6.1 Key AI Safety & Regulatory Initiatives
-    - 6.2 International AI Governance Initiatives
-    - 6.3 Industry Self-Regulation Efforts
-    - 6.4 Ethics Guidelines Timeline
-7. [🎓 Student Opportunities](#section-7)
-8. [📜 Appendices & Further Reading](#section-8)
-    - Quantum Horizons
-    - Advanced Challenges
+- [**AI Development Resource Master List (Unified Edition – April 18, 2025)**](#ai-development-resource-master-list-unified-edition--april-18-2025)
+  - [📑 Table of Contents](#-table-of-contents)
+- [1 | 🏛️ Historical Foundations \& Core Concepts](#1--️-historical-foundations--core-concepts)
+    - [1.1 Interactive Timelines \& Visualizers](#11-interactive-timelines--visualizers)
+    - [1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)](#12-training-pipeline-pretrain--finetune--rlhf)
+    - [1.3 Retrieval-Augmented Generation (RAG) Variants](#13-retrieval-augmented-generation-rag-variants)
+    - [1.4 | 📝 Prompt Engineering 101](#14---prompt-engineering-101)
+- [2 | 🚀 Frontier Models (2025‑Q2)](#2---frontier-models-2025q2)
+    - [2.1 🔍 Model Architecture Cheat‑Sheet](#21--model-architecture-cheatsheet)
+    - [2.2 Model Modalities \& Classes](#22-model-modalities--classes)
+- [3 | 🛠️ Ecosystem \& Tooling](#3--️-ecosystem--tooling)
+    - [3.1 Core Platform for Experiments (Focus: AI × Web3)](#31-core-platform-for-experiments-focus-ai--web3)
+    - [3.2 AI Search Engines (Research / Thinking Modes)](#32-ai-search-engines-research--thinking-modes)
+    - [3.3 AI‑Infused Coding Tools \& IDEs](#33-aiinfused-coding-tools--ides)
+    - [3.4 Desktop Chat Clients \& Local Runners](#34-desktop-chat-clients--local-runners)
+    - [3.5 Open‑Source Utilities \& Creative Suite](#35-opensource-utilities--creative-suite)
+    - [3.6 Agent Frameworks \& Orchestrators](#36-agent-frameworks--orchestrators)
+    - [3.7 Web3 × AI — Protocols \& Marketplaces](#37-web3--ai--protocols--marketplaces)
+- [4 | 🧑‍🔬 Research \& Thought Leadership](#4---research--thought-leadership)
+- [5 | 🌐 Applied Case Studies](#5---applied-case-studies)
+- [6 | ⚖️ Ethics, Safety \& Policy](#6--️-ethics-safety--policy)
+    - [Notable AI Ethics \& Regulatory Frameworks](#notable-ai-ethics--regulatory-frameworks)
+    - [Global AI Governance Beyond EU/US](#global-ai-governance-beyond-euus)
+    - [Corporate Governance \& Voluntary Standards](#corporate-governance--voluntary-standards)
+    - [Evolution of AI Ethics Principles (2016-2025)](#evolution-of-ai-ethics-principles-2016-2025)
+- [7 | 🎓 Student Opportunities](#7---student-opportunities)
+    - [Advanced Challenges](#advanced-challenges)
+- [8 | 📜 Appendices \& Further Reading](#8---appendices--further-reading)
+    - [Mandatory Reading](#mandatory-reading)
 
 ---
 
@@ -63,14 +53,14 @@
 </details>
 
 <details>
-<summary>📅 Historical Milestones since 1956 ▸</summary>
+<summary>📅 Historical Milestones Since 1956 ▸</summary>
 
 - **1956 — Dartmouth Summer Research Project** coins the term "artificial intelligence." (Source: Dartmouth College)  
 - **1986 — Back‑propagation breakthrough** enables multi‑layer neural nets (Rumelhart, Hinton, Williams). (Nature 323)  
 - **2012 — AlexNet** wins ImageNet, igniting the deep‑learning era. (NeurIPS 2012 paper)  
 - **2017 — "Attention Is All You Need"** introduces the transformer architecture. (arXiv 1706.03762)  
 - **2020 — GPT‑3** shows few‑shot learning with 175 B parameters. (arXiv 2005.14165)  
-- **2022 — ChatGPT** popularises conversational LLMs, hitting 100 M users in two months. (Wikipedia)  
+- **2022 — ChatGPT** popularizes conversational LLMs, hitting 100 M users in two months. (Wikipedia)  
 - **2024 — Gemini 2.5 Pro** reaches a 1‑million‑token context window. (Google DeepMind)  
 - **2025 — GPT‑4o** becomes OpenAI's default multimodal model, replacing GPT‑4. (OpenAI release notes)
 
@@ -78,7 +68,7 @@
 
 ### 1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)
 <details>
-<summary>⚙️ Training‑Pipeline table ▸</summary>
+<summary>⚙️ Training‑Pipeline Table ▸</summary>
 
 | Stage | Classic definition | Typical recipe | 2025 upgrade |
 |---|---|---|---|
@@ -113,7 +103,7 @@
 </details>
 
 <details>
-<summary>🧪 Mini‑Labs table ▸</summary>
+<summary>🧪 Mini‑Labs Table ▸</summary>
 
 | Lab | GPU need | Guide |
 |---|---|---|
@@ -125,7 +115,7 @@
 
 ### 1.3 Retrieval-Augmented Generation (RAG) Variants  
 <details>
-<summary>🔍 RAG‑Variants table ▸</summary>
+<summary>🔍 RAG‑Variants Table ▸</summary>
 
 | Variant | Core idea | When it shines |
 |---|---|---|
@@ -141,7 +131,7 @@
 </details>
 
 <details>
-<summary>🛠️ How each RAG variant works ▸</summary>
+<summary>🛠️ How Each RAG Variant Works ▸</summary>
 
 * **Plain RAG (base‑line)** – Embed → similarity search → stuff context. General‑purpose and fast.  
 * **Graph RAG** – Build a knowledge graph (nodes = entities / code symbols), follow edges, then fetch passages. Excels at multi‑hop reasoning and large codebases.  
@@ -157,7 +147,7 @@
 ### 1.4 | 📝 Prompt Engineering 101
 
 <details>
-<summary>📝 Prompt‑Engineering table ▸</summary>
+<summary>�� Prompt‑Engineering Table ▸</summary>
 
 | Pattern | Core idea | Example / Colab |
 |---|---|---|
@@ -165,6 +155,7 @@
 | ReAct | Interleave reasoning & tool actions. | https://github.com/ydixon/reaxt-agent-search-demo |
 | Self‑Critique / Reflexion | Model critiques & revises its own answer. | https://github.com/reflexion-ai/reflexion |
 | Tree‑of‑Thought | Branch multiple reasoning paths, vote on best. | https://github.com/princeton-nlp/tree-of-thought |
+| Prompting‑Induced Planning | Break tasks into planning steps using chain‑of‑thought induced prompts. | https://cookbook.openai.com/examples/gpt4-1_prompting_guide#prompting-induced-planning--chain-of-thought |
 
 </details>
 
@@ -219,7 +210,7 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 </details>
 
 <details>
-<summary>🔍 State‑Space Models (SSM) — Linear‑time context ▸</summary>
+<summary>🔍 State‑Space Models (SSM) — Linear‑time Context ▸</summary>
 
 SSMs replace O(N²) attention with **state‑space convolution kernels**.  
 * **Key idea:** hidden state hₜ evolves via linear ODE; output is causal convolution.  
@@ -282,7 +273,7 @@ Costs = retrieval latency & datastore infra.
 ### 3.2 AI Search Engines (Research / Thinking Modes)
 
 <details>
-<summary>🔎 AI‑Search‑Engines table ▸</summary>
+<summary>🔎 AI‑Search‑Engines Table ▸</summary>
 
 | Engine | Modes / Flagship Feature | Model Backend | Free Tier | DR* | Notes |
 |---|---|---|---|:---:|---|
@@ -294,6 +285,7 @@ Costs = retrieval latency & datastore infra.
 | **[You.com](https://you.com)** | Research mode scans 200+ sources, cluster view | GPT‑4o & Claude | Free & Pro | ✔ | Strong on academic PDFs |
 | **[Phind](https://phind.com)** | Dev‑centric "Explain Code" + snippet search | Mixtral fine‑tune | Free & Pro | ❌ | Code reasoning focus |
 | **[Komo AI](https://komo.ai)** | Mind‑map visual search, citation graph | OSS Llama‑3 | Free | ❌ | Brainstorm UI |
+| **[alphaXiv Assistant](https://www.alphaxiv.org/assistant)** | ArXiv paper exploration & summarization | (Custom) | Free (login required) | ✔ | Academic literature search & trending research Q&A |
 
 > *DR = Deep Research / Thinking mode (multi‑step autonomous research).*
 
@@ -333,7 +325,7 @@ Costs = retrieval latency & datastore infra.
 ### 3.4 Desktop Chat Clients & Local Runners
 
 <details>
-<summary>💬 Desktop Chat table ▸</summary>
+<summary>💬 Desktop Chat Table ▸</summary>
 
 | App | What it does | Models supported | Link |
 |---|---|---|---|
@@ -349,7 +341,7 @@ Costs = retrieval latency & datastore infra.
 ### 3.5 Open‑Source Utilities & Creative Suite
 
 <details>
-<summary>🎨 Utilities & Creative Suite ▸</summary>
+<summary>🎨 Open‑Source Utilities & Creative Suite ▸</summary>
 
 | Category | Tool | What it does | Link |
 |---|---|---|---|
@@ -372,7 +364,7 @@ Costs = retrieval latency & datastore infra.
 ### 3.6 Agent Frameworks & Orchestrators
 
 <details>
-<summary>🤖 Agent‑Frameworks table ▸</summary>
+<summary>🤖 Agent‑Frameworks Table ▸</summary>
 
 | Framework | Highlight | Link |
 |---|---|---|
@@ -387,7 +379,7 @@ Costs = retrieval latency & datastore infra.
 ### 3.7 Web3 × AI — Protocols & Marketplaces
 
 <details>
-<summary>⛓️ Web3 × AI table ▸</summary>
+<summary>⛓️ Web3 × AI Table ▸</summary>
 
 | Category | Project / Protocol | Core value‑prop | Link |
 |---|---|---|---|
