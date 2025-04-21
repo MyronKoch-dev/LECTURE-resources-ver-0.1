@@ -538,10 +538,13 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 
 ### Advanced Challenges
 
-
 ⚡ Advanced Challenges ▸
 
-Groq LPU benchmarks • Adversarial Claude prompts • Beat AlphaFold 3 with OpenFold • Spoof GPT‑5 via Llama‑3‑400B • Optimize NVIDIA Blackwell inference
+- **[Groq LPU benchmarks](https://groq.com/technology/):** Measure language model inference speed and latency on Groq's specialized LPU hardware. Their hardware is incredibly fast, so it's worth it to find a way to benchmark it and then execute. Go for it!
+- **[Adversarial Claude prompts](https://www.anthropic.com/research):** Craft prompts to test the safety and robustness limits of Anthropic's Claude models (red-teaming). Breaking models is incredibly fun, And if you get really into it, you can use it to get more out of the models than they normally offer.
+- **[Beat AlphaFold 3 with OpenFold](https://github.com/aqlaboratory/openfold):** Aim to match or exceed AlphaFold 3's protein structure prediction performance using the open-source OpenFold implementation. This is exactly the kind of challenge that changes the world.
+- **[Spoof GPT‑5 via Llama‑3‑400B](https://ai.meta.com/blog/meta-llama-3/):** Hypothetical challenge to replicate anticipated GPT-5 capabilities using Meta's large (in-training) Llama-3 400B model. Do the research, Figure out what is expected of GPT-5, Then train a LoRa, create MCP servers, do whatever it takes to make it happen. This is not for the weak.
+
 
 
 
