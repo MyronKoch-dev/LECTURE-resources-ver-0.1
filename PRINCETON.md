@@ -9,27 +9,27 @@
 - [**AI Development Resource Master List (Unified Edition – April 18, 2025)**](#ai-development-resource-master-list-unified-edition--april-18-2025)
   - [📑 Table of Contents](#-table-of-contents)
 - [1 | 🏛️ Historical Foundations \& Core Concepts](#1--️-historical-foundations--core-concepts)
-    - [1.1 Interactive Timelines \& Visualizers](#11-interactive-timelines--visualizers)
-    - [1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)](#12-training-pipeline-pretrain--finetune--rlhf)
-    - [1.3 Retrieval-Augmented Generation (RAG) Variants](#13-retrieval-augmented-generation-rag-variants)
-    - [1.4 | 📝 Prompt Engineering 101](#14---prompt-engineering-101)
+    - [1.1 ⭐ Interactive Timelines \& Visualizers](#11--interactive-timelines--visualizers)
+    - [1.2 ⭐ Training Pipeline (Pre‑train → Fine‑tune → RLHF)](#12--training-pipeline-pretrain--finetune--rlhf)
+    - [1.3 ⭐ Retrieval-Augmented Generation (RAG) Variants](#13--retrieval-augmented-generation-rag-variants)
+    - [1.4 ⭐ | 📝 Prompt Engineering 101](#14----prompt-engineering-101)
 - [2 | 🚀 Frontier Models (2025‑Q2)](#2---frontier-models-2025q2)
-    - [2.1 🔍 Model Architecture Cheat‑Sheet](#21--model-architecture-cheatsheet)
-    - [2.2 Model Modalities \& Classes](#22-model-modalities--classes)
+    - [2.1 ⭐ 🔍 Model Architecture Cheat‑Sheet](#21---model-architecture-cheatsheet)
+    - [2.2 ⭐ Model Modalities \& Classes](#22--model-modalities--classes)
 - [3 | 🛠️ Ecosystem \& Tooling](#3--️-ecosystem--tooling)
-    - [3.1 Core Platform for Experiments (Focus: AI × Web3)](#31-core-platform-for-experiments-focus-ai--web3)
-    - [3.2 AI Search Engines (Research / Thinking Modes)](#32-ai-search-engines-research--thinking-modes)
-    - [3.3 AI‑Infused Coding Tools \& IDEs](#33-aiinfused-coding-tools--ides)
-    - [3.4 Desktop Chat Clients \& Local Runners](#34-desktop-chat-clients--local-runners)
-    - [3.5 Open‑Source Utilities \& Creative Suite](#35-opensource-utilities--creative-suite)
-    - [3.6 Agent Frameworks \& Orchestrators](#36-agent-frameworks--orchestrators)
+    - [3.1 ⭐ Core Platform for Experiments (Focus: AI × Web3)](#31--core-platform-for-experiments-focus-ai--web3)
+    - [3.2 ⭐ AI Search Engines (Research / Thinking Modes)](#32--ai-search-engines-research--thinking-modes)
+    - [3.3 ⭐ AI‑Infused Coding Tools \& IDEs](#33--aiinfused-coding-tools--ides)
+    - [3.4 ⭐ Desktop Chat Clients \& Local Runners](#34--desktop-chat-clients--local-runners)
+    - [3.5 ⭐ Open‑Source Utilities \& Creative Suite](#35--opensource-utilities--creative-suite)
+    - [3.6 ⭐ Agent Frameworks \& Orchestrators](#36--agent-frameworks--orchestrators)
     - [LangChain Ecosystem \& Visual Wrappers](#langchain-ecosystem--visual-wrappers)
     - [Multi-Agent Workflow Engines](#multi-agent-workflow-engines)
     - [Minimalist \& Open-Source Agent Libraries](#minimalist--open-source-agent-libraries)
     - [Tool-Use \& Integration-Focused](#tool-use--integration-focused)
     - [Decentralized \& Web3-Oriented](#decentralized--web3-oriented)
     - [General-Purpose Automation Platforms](#general-purpose-automation-platforms)
-    - [3.7 Web3 × AI — Protocols \& Marketplaces](#37-web3--ai--protocols--marketplaces)
+    - [3.7 ⭐ Web3 × AI — Protocols \& Marketplaces](#37--web3--ai--protocols--marketplaces)
 - [4 | 🧑‍🔬 Research \& Thought Leadership](#4---research--thought-leadership)
 - [5 | 🌐 Applied Case Studies](#5---applied-case-studies)
 - [6 | ⚖️ Ethics, Safety \& Policy](#6--️-ethics-safety--policy)
@@ -44,9 +44,10 @@
 
 ---
 
+
 <a id="section-1"></a>
 # 1 | 🏛️ Historical Foundations & Core Concepts
-### 1.1 Interactive Timelines & Visualizers
+### 1.1 ⭐ Interactive Timelines & Visualizers
 
 <details>
 <summary>🔭 Interactive Timelines & Visualizers ▸</summary>
@@ -72,7 +73,7 @@
 
 </details>
 
-### 1.2 Training Pipeline (Pre‑train → Fine‑tune → RLHF)
+### 1.2 ⭐ Training Pipeline (Pre‑train → Fine‑tune → RLHF)
 <details>
 <summary>⚙️ Training‑Pipeline Table ▸</summary>
 
@@ -119,7 +120,7 @@
 
 </details>
 
-### 1.3 Retrieval-Augmented Generation (RAG) Variants  
+### 1.3 ⭐ Retrieval-Augmented Generation (RAG) Variants  
 <details>
 <summary>🔍 RAG‑Variants Table ▸</summary>
 
@@ -150,7 +151,7 @@
 
 </details>
 
-### 1.4 | 📝 Prompt Engineering 101
+### 1.4 ⭐ | 📝 Prompt Engineering 101
 
 <details>
 <summary> 📝 Prompt‑Engineering Table ▸</summary>
@@ -198,7 +199,7 @@ Frontier models are the latest, most advanced AI systems from leading labs, sett
 ² MMLU (0‑100). Scores vary ±0.3 depending on evaluation harness.</sub>
 </details>
 
-### 2.1 🔍 Model Architecture Cheat‑Sheet
+### 2.1 ⭐ 🔍 Model Architecture Cheat‑Sheet
 
 <details>
 <summary>🏗️ Model Architecture Cheat‑Sheet table ▸</summary>
@@ -239,7 +240,7 @@ Costs = retrieval latency & datastore infra.
 
 </details>
 
-### 2.2 Model Modalities & Classes
+### 2.2 ⭐ Model Modalities & Classes
 
 <details>
 <summary>🔍 Model Modalities table ▸</summary>
@@ -263,7 +264,7 @@ Costs = retrieval latency & datastore infra.
 <a id="section-3"></a>
 # 3 | 🛠️ Ecosystem & Tooling
 
-### 3.1 Core Platform for Experiments (Focus: AI × Web3)
+### 3.1 ⭐ Core Platform for Experiments (Focus: AI × Web3)
 <details>
 <summary>🧪 Core‑Platform table ▸</summary>
 
@@ -276,7 +277,7 @@ Costs = retrieval latency & datastore infra.
 
 </details>
 
-### 3.2 AI Search Engines (Research / Thinking Modes)
+### 3.2 ⭐ AI Search Engines (Research / Thinking Modes)
 
 <details>
 <summary>🔎 AI‑Search‑Engines Table ▸</summary>
@@ -299,7 +300,7 @@ Costs = retrieval latency & datastore infra.
 
 </details>
 
-### 3.3 AI‑Infused Coding Tools & IDEs
+### 3.3 ⭐ AI‑Infused Coding Tools & IDEs
 
 <details>
 <summary>🛠️ Coding Tools table ▸</summary>
@@ -328,7 +329,7 @@ Costs = retrieval latency & datastore infra.
 | CLI | OpenAI Codex CLI | Command-line interface for OpenAI Codex | https://github.com/openai/codex |
 </details>
 
-### 3.4 Desktop Chat Clients & Local Runners
+### 3.4 ⭐ Desktop Chat Clients & Local Runners
 
 <details>
 <summary>💬 Desktop Chat Table ▸</summary>
@@ -344,7 +345,7 @@ Costs = retrieval latency & datastore infra.
 | Chorus | Chat with multiple models side‑by‑side and synthesize answers | OpenAI, Anthropic, local GGUF | https://chorus.sh |
 </details>
 
-### 3.5 Open‑Source Utilities & Creative Suite
+### 3.5 ⭐ Open‑Source Utilities & Creative Suite
 
 <details>
 <summary>🎨 Open‑Source Utilities & Creative Suite ▸</summary>
@@ -367,7 +368,7 @@ Costs = retrieval latency & datastore infra.
 | Framework | LlamaIndex | Data framework bridging docs → embeddings → LLM | https://github.com/run-llama/llama_index |
 </details>
 
-### 3.6 Agent Frameworks & Orchestrators
+### 3.6 ⭐ Agent Frameworks & Orchestrators
 
 <details>
 <summary>🤖 Agent‑Frameworks Table ▸</summary>
@@ -413,7 +414,7 @@ Costs = retrieval latency & datastore infra.
 
 </details>
 
-### 3.7 Web3 × AI — Protocols & Marketplaces
+### 3.7 ⭐ Web3 × AI — Protocols & Marketplaces
 
 <details>
 <summary>⛓️ Web3 × AI Table ▸</summary>
