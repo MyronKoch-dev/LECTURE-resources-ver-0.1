@@ -53,16 +53,37 @@
 
 
 
-📅 Historical Milestones Since 1956 ▸
+📅 **15 Earth-Shaking AI Milestones Since 1956**
 
-- **1956 — Dartmouth Summer Research Project** coins the term "artificial intelligence." (Source: Dartmouth College)  
-- **1986 — Back‑propagation breakthrough** enables multi‑layer neural nets (Rumelhart, Hinton, Williams). (Nature 323)  
-- **2012 — AlexNet** wins ImageNet, igniting the deep‑learning era. (NeurIPS 2012 paper)  
-- **2017 — "Attention Is All You Need"** introduces the transformer architecture. (arXiv 1706.03762)  
-- **2020 — GPT‑3** shows few‑shot learning with 175 B parameters. (arXiv 2005.14165)  
-- **2022 — ChatGPT** popularizes conversational LLMs, hitting 100 M users in two months. (Wikipedia)  
-- **2024 — Gemini 2.5 Pro** reaches a 1‑million‑token context window. (Google DeepMind)  
-- **2025 — GPT‑4o** becomes OpenAI's default multimodal model, replacing GPT‑4. (OpenAI release notes)
+1.  **1956 — Birth of AI:** Term coined at Dartmouth Summer Research Project.
+
+2.  **1986 — Backpropagation:** Enables multi-layer neural nets, paving the way for deep learning.
+
+3.  **2011 — Watson Wins Jeopardy!:** IBM's AI defeats champions, showcasing natural language understanding.
+
+4.  **2012 — AlexNet Wins ImageNet:** Deep convolutional nets triumph in image recognition.
+
+5.  **2016 — AlphaGo Beats Lee Sedol:** DeepMind's AI masters Go via self-learning, beating the world champion.
+
+6.  **2017 — Transformers Arrive:** "Attention Is All You Need" introduces architecture revolutionizing NLP.
+
+7.  **2020 — GPT-3 Shows Few-Shot Learning:** OpenAI's 175B model performs tasks with minimal examples.
+
+8.  **2022 — ChatGPT Goes Mainstream:** Hits 100M users in 2 months, popularizing conversational AI.
+
+9.  **2024 — Gemini 1.5 Pro's Large Context:** Achieves 2M token window, enabling reasoning over vast data.
+
+10. **2025 — GPT-4o is Multimodal:** OpenAI default integrates text, image, audio processing.
+
+11. **2025 — Reasoning Models Emerge:** AI tackles complex, multi-step reasoning tasks.
+
+12. **2025 — AI Agents Proliferate:** Autonomous agents capable of decisions, actions, and learning appear.
+
+13. **2025 — AI Reaches Human-Level Coding:** Models demonstrate proficiency in writing and debugging code.
+
+14. **2025 — AI Aids Scientific Discovery:** Accelerates research in drug discovery, climate modeling, etc.
+
+15. **2025 — AI Personalizes Education:** Adaptive learning platforms tailor education to individual needs.
 
 
 
