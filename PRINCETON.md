@@ -45,10 +45,10 @@
 
 🔭 Interactive Timelines & Visualizers ▸
 
-- **AI Timeline:** <https://ai-timeline.org/>  
-- **LLM 3‑D Walkthrough:** <https://bbycroft.net/llm>  
-- **Transformer Explainer:** <https://poloclub.github.io/transformer-explainer/>  
-- **Prompt‑Chaining Primer:** <https://www.agentrecipes.com/prompt-chaining>
+- **AI Timeline:** [ai-timeline.org](https://ai-timeline.org/){:target="_blank"}  
+- **LLM 3‑D Walkthrough:** [bbycroft.net/llm](https://bbycroft.net/llm){:target="_blank"}  
+- **Transformer Explainer:** [poloclub.github.io/transformer-explainer](https://poloclub.github.io/transformer-explainer/){:target="_blank"}  
+- **Prompt‑Chaining Primer:** [agentrecipes.com/prompt-chaining](https://www.agentrecipes.com/prompt-chaining){:target="_blank"}
 
 
 
