@@ -23,12 +23,12 @@
     - [3.4 ⭐ Desktop Chat Clients \& Local Runners](#34--desktop-chat-clients--local-runners)
     - [3.5 ⭐ Open‑Source Utilities \& Creative Suite](#35--opensource-utilities--creative-suite)
     - [3.6 ⭐ Agent Frameworks \& Orchestrators](#36--agent-frameworks--orchestrators)
-    - [LangChain Ecosystem \& Visual Wrappers](#langchain-ecosystem--visual-wrappers)
-    - [Multi-Agent Workflow Engines](#multi-agent-workflow-engines)
-    - [Minimalist \& Open-Source Agent Libraries](#minimalist--open-source-agent-libraries)
-    - [Tool-Use \& Integration-Focused](#tool-use--integration-focused)
-    - [Decentralized \& Web3-Oriented](#decentralized--web3-oriented)
-    - [General-Purpose Automation Platforms](#general-purpose-automation-platforms)
+      - [LangChain Ecosystem \& Visual Wrappers](#langchain-ecosystem--visual-wrappers)
+      - [Multi-Agent Workflow Engines](#multi-agent-workflow-engines)
+      - [Minimalist \& Open-Source Agent Libraries](#minimalist--open-source-agent-libraries)
+      - [Tool-Use \& Integration-Focused](#tool-use--integration-focused)
+      - [Decentralized \& Web3-Oriented](#decentralized--web3-oriented)
+      - [General-Purpose Automation Platforms](#general-purpose-automation-platforms)
     - [3.7 ⭐ Web3 × AI — Protocols \& Marketplaces](#37--web3--ai--protocols--marketplaces)
 - [4 | 🧑‍🔬 Research \& Thought Leadership](#4---research--thought-leadership)
 - [5 | 🌐 Applied Case Studies](#5---applied-case-studies)
@@ -486,7 +486,7 @@ Follow on **X/Twitter** with notifications; mine quality replies for other high-
 
 2. **[Perplexity AI](https://www.perplexity.ai)**  
    Free AI answer engine with "Workspaces" for collaborative multi‑query research and citation management.  
-   • Pro tier unlocks GPT‑4o context and file uploads.  
+   • Pro tier unlocks longer context, more Pro-level queries, more voice chat, and other features.  
    • Popular for team literature reviews.
 
 3. **[Runway Gen‑3 Alpha](https://runwayml.com/research/introducing-gen-3-alpha)**  
