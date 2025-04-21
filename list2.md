@@ -23,6 +23,12 @@
     - [3.4 Desktop Chat Clients \& Local Runners](#34-desktop-chat-clients--local-runners)
     - [3.5 Open‑Source Utilities \& Creative Suite](#35-opensource-utilities--creative-suite)
     - [3.6 Agent Frameworks \& Orchestrators](#36-agent-frameworks--orchestrators)
+    - [LangChain Ecosystem \& Visual Wrappers](#langchain-ecosystem--visual-wrappers)
+    - [Multi-Agent Workflow Engines](#multi-agent-workflow-engines)
+    - [Minimalist \& Open-Source Agent Libraries](#minimalist--open-source-agent-libraries)
+    - [Tool-Use \& Integration-Focused](#tool-use--integration-focused)
+    - [Decentralized \& Web3-Oriented](#decentralized--web3-oriented)
+    - [General-Purpose Automation Platforms](#general-purpose-automation-platforms)
     - [3.7 Web3 × AI — Protocols \& Marketplaces](#37-web3--ai--protocols--marketplaces)
 - [4 | 🧑‍🔬 Research \& Thought Leadership](#4---research--thought-leadership)
 - [5 | 🌐 Applied Case Studies](#5---applied-case-studies)
@@ -366,13 +372,44 @@ Costs = retrieval latency & datastore infra.
 <details>
 <summary>🤖 Agent‑Frameworks Table ▸</summary>
 
-| Framework | Highlight | Link |
-|---|---|---|
-| AutoGen | Multi‑agent workflow engine (Microsoft) | https://github.com/microsoft/autogen |
-| LangGraph | Graph‑based state‑machine wrapper for LangChain agents | https://github.com/langchain-ai/langgraph |
-| ElizaOS | Decentralized agent OS for Web3 automations | https://github.com/eliza-os/ElizaOS |
-| MetaGPT | Multi‑agent code‑generation (Spec → PR) | https://github.com/geekan/MetaGPT |
-| DSPy | Declarative structured prompting framework | https://github.com/stanfordnlp/dspy |
+### LangChain Ecosystem & Visual Wrappers
+
+| Framework   | Highlight                                                    | Link                                               |
+|-------------|--------------------------------------------------------------|----------------------------------------------------|
+| LangGraph   | Graph‑based state‑machine wrapper for LangChain agents       | https://github.com/langchain-ai/langgraph          |
+| Langflow    | Visual UI for LangChain/RAG workflows                        | https://github.com/logspace-ai/langflow            |
+
+### Multi-Agent Workflow Engines
+
+| Framework   | Highlight                                                    | Link                                               |
+|-------------|--------------------------------------------------------------|----------------------------------------------------|
+| AutoGen     | Multi‑agent workflow engine (Microsoft)                      | https://github.com/microsoft/autogen               |
+| CrewAI      | Collaborative agent workflows (role-playing, delegation)     | https://github.com/joaomdmoura/crewAI              |
+| MetaGPT     | Multi‑agent code‑generation (Spec → PR)                      | https://github.com/geekan/MetaGPT                  |
+
+### Minimalist & Open-Source Agent Libraries
+
+| Framework   | Highlight                                                    | Link                                               |
+|-------------|--------------------------------------------------------------|----------------------------------------------------|
+| smolagents  | Minimalist agent library (Hugging Face)                      | https://github.com/huggingface/smolagents          |
+
+### Tool-Use & Integration-Focused
+
+| Framework           | Highlight                                            | Link                                               |
+|---------------------|------------------------------------------------------|----------------------------------------------------|
+| HuggingFace Agents  | Use tools via Transformers models                    | https://huggingface.co/docs/transformers/main/en/transformers_agents |
+
+### Decentralized & Web3-Oriented
+
+| Framework   | Highlight                                                    | Link                                               |
+|-------------|--------------------------------------------------------------|----------------------------------------------------|
+| ElizaOS     | Decentralized agent OS for Web3 automations                  | https://github.com/eliza-os/ElizaOS                |
+
+### General-Purpose Automation Platforms
+
+| Framework   | Highlight                                                    | Link                                               |
+|-------------|--------------------------------------------------------------|----------------------------------------------------|
+| n8n         | General-purpose workflow automation platform (can orchestrate LLMs and agentic tasks; broader than just agent frameworks) | https://n8n.io/ |
 
 </details>
 
