@@ -286,16 +286,20 @@ Click this QR code and answer the few questions to see which path you'd get reco
 # Meet the Frontier Models (2/2)
 
 <!-- _comment:
-*   "Continuing the Frontier Models..."
-*   Links: [[Gemini Flash]](https://deepmind.google/technologies/gemini/flash/) [[Gemini Pro]](https://deepmind.google/technologies/gemini/pro/)
-*   *(Remember to check the source doc for others like Llama, DeepSeek, Mixtral, Qwen if they need mentioning)*
+NEW: Including the latest open-weight models is crucial, as they are rapidly closing the gap with proprietary models. DeepSeek V3, Qwen 2.5-1M, and Llama-3 70B are all state-of-the-art, open, and commercially usable. These models are not just for hobbyists—many startups and researchers use them for real-world applications, and they often serve as the backbone for local/private deployments and custom fine-tuning.
 -->
 
-*   **Highlighting Key Players & Models (Cont.):**
-    *   **Google:**
-        *   `Gemini 2.5 Flash`: Cost-effective MoE, **1 Million token context**.
-        *   `Gemini 2.5 Pro Preview`: 1M context + enhanced reasoning.
-    *   *(Optional: Mention other key open models like Llama-3 70B, Mixtral 8x22B, DeepSeek V3, Qwen 2.5-1M)*
+**Highlighting Key Players & Models (Cont.):**
+
+- **Google**
+    - `Gemini 2.5 Flash`: Cost-effective MoE, 1M token context.
+    - `Gemini 2.5 Pro Preview`: 1M context, enhanced reasoning.
+- **Meta**
+    - `Llama-3 70B`: Open-weight, strong coding, commercial use.
+- **DeepSeek**
+    - `DeepSeek V3`: +50% reasoning vs V2, top open weight benchmarks.
+- **Alibaba**
+    - `Qwen 2.5-1M`: 1M token context, MoE, open-source first.
 
 ---
 
@@ -304,10 +308,12 @@ Click this QR code and answer the few questions to see which path you'd get reco
 <!-- _comment:
 *   "Alright, we know the models and techniques. Now, let's look at the tools and platforms that bring AI capabilities to users and developers." *(Transition)*
 *   "This ecosystem is vast and growing daily, but we'll highlight key categories."
+*   "First and foremost you're gonna want to get some API keys. The easiest way to get a variety of keys is through single source. One of my favorites is Open Router, so I'll recommend that for now, Though other services are always popping up."
 -->
 
 *   Focus on practical tools for Research, Coding, Agents, and Creativity.
 
+ https://openrouter.ai/models
 ---
 
 # AI Search Engines & Research Tools
@@ -315,9 +321,9 @@ Click this QR code and answer the few questions to see which path you'd get reco
 <!-- _comment:
 *   "Standard search is being revolutionized by AI. Engines like Perplexity, Google Gemini, ChatGPT, and DeepSeek offer conversational search and synthesis." *(Referencing Section 6.2 Table)*
 *   "These are invaluable for research, learning, and getting up to speed on new domains quickly."
-*   Links: [[Perplexity]](https://www.perplexity.ai) [[Gemini]](https://gemini.google.com) [[DeepSeek]](https://deepseek.com)
--->
 
+-->
+*   Links: [[Perplexity]](https://www.perplexity.ai) [[Gemini]](https://gemini.google.com) [[DeepSeek]](https://deepseek.com)
 *   **Beyond Keywords:** Understand intent, summarize, cite, allow follow-ups.
 *   **Deep Research Modes:** Many offer multi-step investigation, source analysis, report generation (Perplexity, Gemini Advanced, ChatGPT agent). Significant leap beyond simple Q&A.
 
@@ -328,9 +334,9 @@ Click this QR code and answer the few questions to see which path you'd get reco
 <!-- _comment:
 *   "AI is also transforming software development. Tools range from autocompletion to full-fledged coding agents." *(Referencing Section 6.3 Table)*
 *   "These tools significantly boost developer productivity but require careful oversight."
-*   Links: [[Cursor]](https://www.cursor.sh) [[v0]](https://v0.dev) [[Continue]](https://www.continue.dev) [[Cline]](https://cline.bot)
--->
 
+-->
+*   Links: [[Cursor]](https://www.cursor.com) [[v0]](https://v0.dev) [[Continue]](https://www.continue.dev) [[Cline]](https://cline.bot) [[Roo Code]](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-code)
 *   **Spectrum of Assistance:**
     *   **Autocompletes:** GitHub Copilot, Tabby (self-hosted).
     *   **Chat/Debug Assistants:** Integrated chat in VS Code, Cursor, JetBrains AI.
