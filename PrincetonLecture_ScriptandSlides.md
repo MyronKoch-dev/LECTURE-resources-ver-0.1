@@ -163,7 +163,7 @@ Click this QR code and answer the few questions to see which path you'd get reco
 *   "You don't need to memorize all these, but understanding the Dense vs. MoE distinction is key to understanding why some models are faster or have different capabilities."
 *   *(Optional: Briefly mention State-Space Models like Mamba as a non-Transformer alternative for very long context, referencing Section 2.3)* "There are also newer architectures like State-Space Models aiming for even longer context windows, but Transformers remain dominant for now."
 -->
-
+https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0681d04f-0cd6-45a7-b1f1-a37f9269d01d_1116x1126.gif
 *   **Main Types:**
     *   **Dense Transformer:** Classic (GPT-3/4). All parts active. Robust but expensive.
     *   **Mixture-of-Experts (MoE):** Routes tokens to specialist sub-networks (e.g., Mixtral, Gemini 1.5). High param count, cheaper compute. Complex routing.
@@ -454,7 +454,7 @@ NEW: Including the latest open-weight models is crucial, as they are rapidly clo
 
 <!-- _comment:
 *   "AI is also changing how we represent ourselves digitally."
-*   "This raises fascinating possibilities for productivity and communication, but also significant ethical questions around identity, deepfakes, and consent that society needs to address."
+*   "This raises fascinating possibilities for productivity and communication, but also significant ethical questions around identity,  deepfakes, and consent that society needs to address."
 *   Link: [[ElevenLabs]](https://elevenlabs.io/)
 -->
 
