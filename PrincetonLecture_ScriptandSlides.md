@@ -12,8 +12,10 @@ class: lead
 ---
 
 <!-- _comment:
-*   "Welcome everyone. Today, we're diving into the rapidly evolving world of AI development."
-*   "We'll cover the essential concepts, the latest tools, and look at how these powerful technologies, especially large language models, are being built and applied, with a special focus on the intersection with emerging Web3 platforms."
+*   "THANKS TO PRINCETON UNIVERSITY FOR HOSTING US. 
+THANKS TO ANGELA (or "moontrips") FOR IDENTIFYING THIS OPPORTUNITY, AND FOR ALL THE GREAT WORK SHE'S DONE WITH ANDROMEDA AND WITH WEB3 UNIVERSITY.
+
+PLEASE TAKE A MOMENT TO SCAN THE QR CODES TO CONNECT WITH W3U ON TWITTER AND GITHUB.
 -->
 
 ![Connect with Web3 University QR Codes](./images/Web3U_QR_codes.png)
@@ -32,6 +34,7 @@ class: lead
 
 ---
 
+## "Slow at first, then suddenly...." 
 # The AI Revolution is Here
 
 <!-- _comment:
@@ -41,7 +44,8 @@ class: lead
 *   *(Optional: Mention a recent, relatable AI news headline or application).*
 -->
 
-*   **Key Drivers:** Transformer Architecture (2017), Massive Datasets, Compute Power (GPUs and especially TPUs), Browser-Use.
+*   **Key Drivers:** Transformer Architecture (Google, 2017), Massive Datasets, Compute Power (GPUs and especially TPUs). 
+*    Soon, Nvidia's "Spark" PCs will put TPUs on consumers desk, for under $5k
 
 ---
 
@@ -49,20 +53,22 @@ class: lead
 
 <!-- _comment:
 *   "A particularly exciting frontier is the convergence of AI and Web3 – technologies like blockchain, decentralized networks, and crypto."
-*   "This isn't just theoretical. We're seeing real platforms emerge, aiming to build AI-native decentralized systems. We'll explore Andromeda Protocol as a prime example shortly." [[Link: Andromeda Protocol]](https://andromedaprotocol.io) [[Link: Bittensor]](https://bittensor.com) [[Link: Akash]](https://akash.network)
+*   "This isn't just theoretical. We're seeing real platforms emerge, aiming to build AI-native decentralized systems. We'll explore some examples including Andromeda Protocol shortly.." 
 -->
 
+**[[Link: Andromeda Protocol]](https://andromedaprotocol.io) [[Link: Bittensor]](https://bittensor.com) [[Link: Akash]](https://akash.network) [[Link: SingularityNET]](https://singularitynet.io) [[Link: ChainGPT]](https://www.chaingpt.org)**
+
 *   **Synergies:**
-    *   AI enhancing Web3: Smart contract auditing, DAO governance assistance, automated agent interactions on-chain, intuitive user interfaces for complex protocols.
+    *   AI enhancing Web3: Smart contract generation, DAO governance assistance, automated agent interactions on-chain, intuitive user interfaces for complex protocols.
     *   Web3 enhancing AI: Decentralized compute/storage for training/inference (e.g., Bittensor, Akash), verifiable credentials for AI models/outputs, data provenance, new incentive models for AI development.
 
 ---
 
 # A Brief History - Key Milestones
-
+### > https://ai-timeline.org/
 <!-- _comment:
-*   "To understand where we are, let's quickly touch upon some pivotal moments." *(Referencing Section 1 of the Markdown resource)*
-*   "The pace of progress, especially since the Transformer paper, has been exponential. What took decades is now happening in months."
+*   "LOOK AT IT GO!! To understand where we are, let's quickly touch upon some pivotal moments." *(Referencing Section 1 of the Markdown resource)*
+*   "The pace of progress, especially since the Transformer paper, has been exponential, trending parabolic. What took decades is now happening in months or even days. This will increase further with better models and faster computing."
 *   **(Visual Aid):** *(Simple timeline graphic, referencing `ai-timeline.org`)* [[Link: AI Timeline]](https://ai-timeline.org/)
 -->
 
@@ -87,7 +93,7 @@ class: lead
 
 ---
 
-# Bridging Web3 and AI on Andromeda (1/2)
+# Bridging Web3 and AI on Andromeda (1/3)
 
 <!-- _comment:
 *   "So where does AI fit into this Web3 OS?"
@@ -95,13 +101,14 @@ class: lead
 *   **(Visual Aid):** *(Speaker refers to slide/points)* "Again, you can explore the main site ([andromedaprotocol.io](https://andromedaprotocol.io)) or check out some demo videos for a visual sense." *(Links to specific demos if available)* [[4]](https://www.youtube.com/watch?v=u1XkLzbIzB0) [[5]](https://www.youtube.com/watch?v=14yPeonB2P4)
 -->
 
-*   **The Opportunity:** Embed AI directly into the platform to assist users and enable AI-driven on-chain logic.
+*   **The Opportunity:** Embed AI into the platform to help users and enable AI-driven on-chain logic.
 *   **Feature 1: AI-Assisted Onboarding:** Guided, conversational AI to help new users understand concepts, use ADOs, and navigate the ecosystem.
 *   **Vision:** Seamless blend of AI and Web3 to make decentralized tech accessible and easier to harness.
 
 ---
 
-# Bridging Web3 and AI on Andromeda (2/2)
+
+# AI on Andromeda (2/3)
 
 <!-- _comment:
 *   "Continuing with the AI features..."
@@ -114,6 +121,14 @@ class: lead
     *   Uses *your own* API keys (privacy/control).
     *   Can suggest ADOs, help configure, generate code snippets (CLI), anticipate next steps.
     *   *(Experimental - may have bugs, browser automation tech evolving).* [[3]](https://docs.andromedaprotocol.io/andromeda/andromeda-cli/introduction)
+
+---
+# AI on Andromeda (3/3)
+
+<!-- Here, why don't you take a look at our new onboarding platform? It's in beta, and not all the features are there. You can see a spot where the Chrome extension will be downloadable.
+-->
+Click this QR code and answer the few questions to see which path you'd get recommended by our bot. You can also choose your own path from the left sidebar.
+![Connect with Web3 University QR Codes](./images/OOP_beta_QR_for_Princeton.png)
 
 ---
 

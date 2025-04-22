@@ -29,7 +29,6 @@
     - [6.1 ⭐ Core Platform for Experiments (Focus: AI × Web3)](#61--core-platform-for-experiments-focus-ai--web3)
     - [6.2 ⭐ AI Search Engines (Research / Thinking Modes)](#62--ai-search-engines-research--thinking-modes)
     - [6.3 ⭐ AI‑Infused Coding Tools \& IDEs](#63--aiinfused-coding-tools--ides)
-    - [6.4 ⭐ Desktop Chat Clients \& Local Runners](#64--desktop-chat-clients--local-runners)
     - [6.5 ⭐ Open‑Source Utilities \& Creative Suite](#65--opensource-utilities--creative-suite)
     - [6.6 ⭐ Agent Frameworks \& Orchestrators](#66--agent-frameworks--orchestrators)
       - [Multi-Agent Workflow Engines](#multi-agent-workflow-engines)
@@ -331,19 +330,6 @@ A thriving ecosystem of tools, platforms, and frameworks supports AI development
 
 ---
 
-### 6.4 ⭐ Desktop Chat Clients & Local Runners
-
-💬 Desktop Chat Table ▸
-
-| App | What it does | Models supported | Link |
-|---|---|---|---|
-| ChatGPT Desktop | Native macOS / Windows app; global hot‑key, screenshot & file chat | GPT‑4o, o‑series | https://openai.com/chatgpt/desktop/ |
-| Claude Desktop | Anthropic desktop client with drag‑drop files and Claude 3 family | Claude 3.7 Sonnet / Opus | https://support.anthropic.com/en/articles/10065433-installing-claude-for-desktop |
-| Perplexity Desktop | macOS App Store build; "Workspaces" + Research Mode | o4‑mini‑high (Pro) + free LLM | https://www.perplexity.ai/mac |
-| MSTY | Offline‑first multiverse chat with branch views | Any local GGUF + OpenAI / Anthropic | https://msty.app |
-| LM Studio | Discover, download & run OSS LLMs locally | Llama‑3, DeepSeek, Gemma, etc. | https://lmstudio.ai |
-| AnythingLLM Desktop | Turnkey local RAG + chat with multiple OSS models | GGUF / ggml models; OpenAI key optional | https://useanything.com |
-| Chorus | Chat with multiple models side‑by‑side and synthesize answers | OpenAI, Anthropic, local GGUF | https://chorus.sh |
 | Ollama | Local LLM runner & API backend; powers many desktop apps | Llama‑2/3, Gemma, Mistral, Qwen, etc. | https://ollama.com |
 
 ---
