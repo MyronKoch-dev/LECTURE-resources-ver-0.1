@@ -454,4 +454,16 @@ class: lead
 *   Understanding core concepts & tools is key.
 *   **Questions?**
 
+---
+
+<!-- Centered contact slide for Myron Koch -->
+
+# Connect with Me
+
+
+**Myron Koch**  
+[X (Twitter): @myronkoch](https://x.com/myronkoch)  
+[LinkedIn: myronkoch](https://linkedin.com/in/myronkoch)
+
+
 --- 
