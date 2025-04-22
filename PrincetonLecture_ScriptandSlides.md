@@ -1,5 +1,6 @@
 ---
 marp: true
+class: center
 ---
 
 <!--
@@ -10,7 +11,10 @@ class: lead
 
 ---
 
-
+<!-- _comment:
+*   "Welcome everyone. Today, we're diving into the rapidly evolving world of AI development."
+*   "We'll cover the essential concepts, the latest tools, and look at how these powerful technologies, especially large language models, are being built and applied, with a special focus on the intersection with emerging Web3 platforms."
+-->
 
 ![Connect with Web3 University QR Codes](./images/Web3U_QR_codes.png)
 
@@ -24,6 +28,7 @@ class: lead
 -->
 
 *   **Today's Agenda:** Core AI concepts, Frontier Models, Development Tools, AI x Web3 Intersection (Focus: Andromeda Protocol), Future Trends.
+*   For the extended Resources document, go to http://openexamples.com
 
 ---
 
@@ -36,7 +41,7 @@ class: lead
 *   *(Optional: Mention a recent, relatable AI news headline or application).*
 -->
 
-*   **Key Drivers:** Transformer Architecture (2017), Massive Datasets, Compute Power (GPUs/TPUs).
+*   **Key Drivers:** Transformer Architecture (2017), Massive Datasets, Compute Power (GPUs and especially TPUs), Browser-Use.
 
 ---
 
@@ -456,14 +461,10 @@ class: lead
 
 ---
 
-<!-- Centered contact slide for Myron Koch -->
-
 # Connect with Me
-
 
 **Myron Koch**  
 [X (Twitter): @myronkoch](https://x.com/myronkoch)  
 [LinkedIn: myronkoch](https://linkedin.com/in/myronkoch)
-
 
 --- 

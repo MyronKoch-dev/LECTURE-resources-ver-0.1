@@ -1,12 +1,12 @@
-# **AI Development Resource Master List (Reorganized – April 18, 2025)**
+# **AI Development Resource Master List (UPDATED – April 18, 2025)**
 
-> *Living document originally compiled for Harvard, MIT, and Oxford programs—now merged into a single, deduplicated reference.*  
+> *Living document originally compiled for Harvard, MIT, Cornell and Oxford programs—now merged into a single, deduplicated reference.*  
 > *Contributions via pull‑request are welcome.*
 
 ---
 
 ## 📑 Table of Contents
-- [**AI Development Resource Master List (Reorganized – April 18, 2025)**](#ai-development-resource-master-list-reorganized--april-18-2025)
+- [**AI Development Resource Master List (UPDATED – April 18, 2025)**](#ai-development-resource-master-list-updated--april-18-2025)
   - [📑 Table of Contents](#-table-of-contents)
   - [1. Historical Foundations](#1-historical-foundations)
   - [2. AI \& LLM Fundamentals](#2-ai--llm-fundamentals)
@@ -43,10 +43,10 @@
     - [7.2 ⭐ Applied Case Studies](#72--applied-case-studies)
     - [7.3 ⭐ Student Opportunities \& Advanced Challenges](#73--student-opportunities--advanced-challenges)
       - [Student Opportunities](#student-opportunities)
-    - [Advanced Challenges](#advanced-challenges)
+      - [Advanced Challenges](#advanced-challenges)
     - [7.4 ⭐ Appendices \& Further Reading](#74--appendices--further-reading)
-    - [Mandatory Reading](#mandatory-reading)
-    - [7.5 ⭐ Emerging Trends & Future Horizons](#75--emerging-trends--future-horizons)
+      - [Mandatory Reading](#mandatory-reading)
+    - [7.5 ⭐ Emerging Trends \& Future Horizons](#75--emerging-trends--future-horizons)
 
 ---
 
