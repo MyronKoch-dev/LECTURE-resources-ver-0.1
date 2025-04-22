@@ -2,6 +2,20 @@
 marp: true
 ---
 
+<!--
+_slide: bg
+class: lead
+-->
+![bg](./images/MLK_AI_Background.png)
+
+---
+
+
+
+![Connect with Web3 University QR Codes](./images/Web3U_QR_codes.png)
+
+---
+
 # Introduction: The AI Development Landscape
 
 <!-- _comment:

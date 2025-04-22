@@ -43,9 +43,9 @@
     - [7.2 ⭐ Applied Case Studies](#72--applied-case-studies)
     - [7.3 ⭐ Student Opportunities \& Advanced Challenges](#73--student-opportunities--advanced-challenges)
       - [Student Opportunities](#student-opportunities)
-      - [Advanced Challenges](#advanced-challenges)
+    - [Advanced Challenges](#advanced-challenges)
     - [7.4 ⭐ Appendices \& Further Reading](#74--appendices--further-reading)
-      - [Mandatory Reading](#mandatory-reading)
+    - [Mandatory Reading](#mandatory-reading)
     - [7.5 ⭐ Emerging Trends & Future Horizons](#75--emerging-trends--future-horizons)
 
 ---
