@@ -336,7 +336,7 @@ NEW: Including the latest open-weight models is crucial, as they are rapidly clo
 *   "These tools significantly boost developer productivity but require careful oversight."
 
 -->
-*   Links: [[Cursor]](https://www.cursor.com) [[v0]](https://v0.dev) [[Continue]](https://www.continue.dev) [[Cline]](https://cline.bot) [[Roo Code]](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-code)
+*   Links: [[Cursor]](https://www.cursor.com) [[v0]](https://v0.dev) [[Continue]](https://www.continue.dev) [[Cline]](https://cline.bot) [[Roo Code]](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-code) [[Warp Terminal]](https://warp.dev)
 *   **Spectrum of Assistance:**
     *   **Autocompletes:** GitHub Copilot, Tabby (self-hosted).
     *   **Chat/Debug Assistants:** Integrated chat in VS Code, Cursor, JetBrains AI.
