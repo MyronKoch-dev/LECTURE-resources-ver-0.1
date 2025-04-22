@@ -30,7 +30,7 @@ PLEASE TAKE A MOMENT TO SCAN THE QR CODES TO CONNECT WITH W3U ON TWITTER AND GIT
 -->
 
 *   **Today's Agenda:** Core AI concepts, Frontier Models, Development Tools, AI x Web3 Intersection (Focus: Andromeda Protocol), Future Trends.
-*   For the extended Resources document, go to http://openexamples.com
+*   To follow along on the extended Resources document, go to http://openexamples.com ....I'll be referencing specific tables and figures throughout the talk.
 
 ---
 
@@ -87,7 +87,7 @@ PLEASE TAKE A MOMENT TO SCAN THE QR CODES TO CONNECT WITH W3U ON TWITTER AND GIT
 *   "The analogy to how tools simplified traditional web development is apt – lowering the barrier to entry and speeding up innovation."
 -->
 
-*   **What is Andromeda?** A Web3 Operating System built on Cosmos SDK for simpler cross-chain dApp development. [[1]](https://docs.andromedaprotocol.io/andromeda/chain/running-a-node)
+*   **What is Andromeda?** A Web3 Operating System built on Cosmos SDK for simpler cross-chain dApp development. [[1]](https://app.andromedaprotocol.io/flex-builder)
 *   **Core Value Prop:** Simplify building cross-chain dApps, reducing need for deep smart contract expertise.
 *   **How? ADOs:** Uses Andromeda Digital Objects (ADOs) - composable, pre-built smart contract modules (like digital LEGOs) for faster development. [[2]](https://docs.andromedaprotocol.io/andromeda/andromeda-digital-objects/introduction-to-ados)
 
@@ -127,9 +127,11 @@ PLEASE TAKE A MOMENT TO SCAN THE QR CODES TO CONNECT WITH W3U ON TWITTER AND GIT
 
 <!-- Here, why don't you take a look at our new onboarding platform? It's in beta, and not all the features are there. You can see a spot where the Chrome extension will be downloadable.
 -->
-Click this QR code and answer the few questions to see which path you'd get recommended by our bot. You can also choose your own path from the left sidebar.
-![Connect with Web3 University QR Codes](./images/OOP_beta_QR_for_Princeton.png)
 
+Click this QR code and answer the few questions to get a custom onboarding path for Andromeda. [onboarding platform](https://oop-1-omega.vercel.app/)
+
+![OOP](./images/OOP_beta_QR_for_Princeton.png)
+[onboarding platform](https://oop-1-omega.vercel.app/)
 ---
 
 # AI & LLM Fundamentals: Under the Hood
@@ -383,7 +385,7 @@ NEW: Including the latest open-weight models is crucial, as they are rapidly clo
 *   "These tools are democratizing content creation across various media."
 *   Link: [[ComfyUI]](https://github.com/comfyanonymous/ComfyUI)
 -->
-
+[1](https://www.midjourney.com), [2](https://www.krea.ai), [3](https://ideogram.ai), [4](https://openai.com/dall-e-3), [5](https://runwayml.com), [6](https://suno.com), [7](https://www.udio.com), [8](https://www.descript.com) 
 *   **Key Creative Tools:**
     *   **Image:** MidJourney, Krea, Ideogram, DALL-E 3.
     *   **Video:** RunwayML (Gen-3/4), others.
