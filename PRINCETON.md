@@ -344,6 +344,7 @@ A thriving ecosystem of tools, platforms, and frameworks supports AI development
 | LM Studio | Discover, download & run OSS LLMs locally | Llama‑3, DeepSeek, Gemma, etc. | https://lmstudio.ai |
 | AnythingLLM Desktop | Turnkey local RAG + chat with multiple OSS models | GGUF / ggml models; OpenAI key optional | https://useanything.com |
 | Chorus | Chat with multiple models side‑by‑side and synthesize answers | OpenAI, Anthropic, local GGUF | https://chorus.sh |
+| Ollama | Local LLM runner & API backend; powers many desktop apps | Llama‑2/3, Gemma, Mistral, Qwen, etc. | https://ollama.com |
 
 ---
 
